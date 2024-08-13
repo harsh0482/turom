@@ -1,0 +1,165 @@
+/*================
+  header-top start
+  ================*/
+.header-top {
+    a {
+        color: $dark-black;
+        font-family: $inter;
+    }
+    .left-content,
+    .right-content> {
+        ul {
+            li {
+                position: relative;
+
+                &:not(:last-child)::after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 14px;
+                    background-color: $gray;
+                    top: 4px;
+                    right: 0;
+                }
+
+                
+            }
+
+        }
+    }
+
+    .right-content {
+        .dropdown {
+            width: 100px;
+            border: 1px solid $gray;
+            border-radius: 20px;
+            text-align: center;
+
+            &:focus,
+            .btn:focus {
+                outline: unset;
+                box-shadow: unset;
+            }
+
+            .dropdown-menu {
+                min-width: 5rem;
+                padding: 0;
+                border-radius: unset;
+                transform: translate(16px, 28px) !important;
+
+                .dropdown-item:hover {
+                    color: $white;
+                    background-color: $sky;
+                }
+            }
+        }
+
+    }
+}
+
+// }
+
+/*==============
+header-top end
+==============*/
+
+/*==============
+header start
+==============*/
+.header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/line-pattern.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 90px;
+        width: 100%;
+        z-index: 10;
+        background-image: unset;
+        background-color: $white;
+        transition: all 0.4s ease;
+        animation: fadeInDown 1s ease;
+
+        @keyframes fadeInDown {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+    }
+   
+      
+    .bar {
+
+        padding: 8px;
+        background-color: $sky;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        i {
+            font-size: 22px;
+            color: $white;
+        }
+    }
+
+    .menu-list {
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            display: block;
+            position: relative;
+            text-transform: capitalize;
+            color: $dark-black;
+            font-family: $inter;
+        }
+    }
+
+    // .bg_mask{
+    //     mask-image: url('../img/logo_bg_mask.png');
+    // }
+    // .img_bg {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0px;
+    //     width: 20%;
+    //     mask-image: url('../img/logo_bg_mask.png');
+    //     // z-index: -1;
+    //     height: 92px;
+    //     background-color: $sky;
+    // }
+}
+
+/*==============
+header end
+==============*/
+.wapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}

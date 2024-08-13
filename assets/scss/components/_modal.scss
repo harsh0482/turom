@@ -1,0 +1,45 @@
+.modal {
+    .modal-dialog {
+        .modal-body {
+            .nav-pills {
+                .nav-item {
+                    .nav-link {
+                        color: $dark-blue;
+
+                        &.active {
+                            background-color: $dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+form {
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+
+        &:focus {
+            outline: unset;
+            border-color: unset;
+            box-shadow: none;
+        }
+    }
+
+    button {
+        outline: unset;
+        border: unset;
+        width: 100%;
+        border-radius: unset;
+        padding: 10px 0px !important;
+    }
+}

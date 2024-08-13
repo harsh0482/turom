@@ -1,0 +1,160 @@
+.footer {
+    background-color: $dark-blue;
+    border-bottom: 1px solid $gray;
+    .footer_top {
+        margin-bottom: 60px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $gray;
+
+        .newletter_form {
+            // max-width: 660px;
+
+            .form-control {
+                border-radius: 30px;
+                padding-left: 30px;
+                height: 60px;
+                background-color: transparent;
+                color: $white;
+            }
+
+            .main-btn {
+                min-width: 225px;
+                text-align: center;
+                background-color: $sky;
+                padding: 0 !important;
+
+                &::before {
+                    background-color: $white;
+                }
+
+                &:hover:before {
+                    width: 100%;
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                }
+
+                a {
+                    color: $white;
+                }
+
+                &:hover a {
+                    color: $dark-blue;
+                }
+
+                &:hover i {
+                    color: $sky;
+                }
+
+            }
+
+            ::placeholder {
+                color: $white;
+                font-weight: 500;
+                font-size: 15px;
+            }
+
+        }
+    }
+
+    .widget {
+        .about_text {
+            font-family: $inter;
+            color: $text-color;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        a{
+            color: $text-color;
+        }
+        .about-social {
+            a {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // color: $white;
+                font-size: 17px;
+
+                &:hover {
+                    background-color: $sky;
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+
+        .widget_title {
+            color: $white;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .widget_menu {
+            li + li{
+                margin-top: 15px;
+            }
+            .widget_link {
+                a {
+                    display: inline-block;
+                    position: relative;
+                    
+                    &::before {
+                        content: "\f105";
+                        font-family: "Font Awesome 5 Free";
+                        display: inline-block;
+                        padding-right: 8px;
+                        vertical-align: middle;
+                        font-weight: 600;
+                    }
+                    &:hover{
+                        color: $sky;
+                    }
+                }
+            }
+        }
+        .details{
+            a{
+             &:hover{
+                color: $sky;
+             }   
+            }
+        }
+        .widget_contact{
+            max-width: 260px;
+
+            li + li{
+                margin-top: 18px;
+            }
+        }
+        .insta-gallery{
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(3,1fr);
+            max-width: 330px;
+            .gallery-thumb{
+                img{
+                    width: 100%;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+}
+.footer-bottom{
+    background-color: $dark-blue;
+    padding: 20px 0px;
+    
+    p{
+        color: $text-color;
+    }
+    span{
+        color: $text-color;
+        font-family: $inter;
+        font-size: 16px;
+    }
+}
