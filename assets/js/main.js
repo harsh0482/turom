@@ -162,3 +162,162 @@ const swiper1 = new Swiper(".tour-swiper", {
     }
   }
 });
+// slider meet-guide-swiper
+const swiper3 = new Swiper(".meet-guide-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: !0
+  },
+  autoplay: {
+    delay: 4000,
+    speed: 800,
+  },
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    576: {
+      slidesPerView: 1,
+      // spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+});
+
+// offer-deals
+$('.offer-deals .accordion-tab-item').hover(function () {
+  var value = $(this).attr('data-src');
+  $('#card-cover').attr('src', value);
+});
+
+// popular-destination-swiper
+var popular_destination_swiper = new Swiper(".popular-destination-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    1199: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 4,
+    }
+  }
+});
+
+// company-swiper
+const company_swiper = new Swiper(".company-swiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  freeMode: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    767: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    1199: {
+      slidesPerView: 6,
+    },
+    1400: {
+      slidesPerView: 8,
+    }
+  }
+});
+// company-swiper
+const blog_swiper = new Swiper(".blog-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    1199: {
+      slidesPerView: 3,
+    }
+  }
+});
+
+// Testimonial
+const testimonial = new Swiper(".testimonial-slider", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+  },
+  spaceBetween: 40,
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 2
+    }
+  }
+});
+
+
+// counter
+$('.counter-number').each(function () {
+  $(this).prop('Counter', 0).animate({
+    Counter: $(this).text()
+  }, {
+    duration: 2000,
+    easing: 'swing',
+    step: function (now) {
+      $(this).text(Math.ceil(now));
+    }
+  });
+}); 

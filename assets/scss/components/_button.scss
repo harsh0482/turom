@@ -29,7 +29,14 @@
 
     &:hover {
         color: $white;
+        text-decoration: none;
     }
+}
+
+.offer-deals .main-btn,
+.best-memorable .main-btn {
+        padding: 18px 35px !important;
+    
 }
 
 .white-btn {
