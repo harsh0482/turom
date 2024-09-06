@@ -77,12 +77,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                // color: $white;
                 font-size: 17px;
 
                 &:hover {
                     background-color: $sky;
                     transition: all 0.4s ease;
+                }
+                &:hover i{
+                    animation: fadeInDown 0.3s linear;
                 }
             }
         }

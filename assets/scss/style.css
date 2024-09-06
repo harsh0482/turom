@@ -998,6 +998,9 @@ form button {
   background-color: #1ca8cb;
   transition: all 0.4s ease;
 }
+.footer .widget .about-social a:hover i {
+  animation: fadeInDown 0.3s linear;
+}
 .footer .widget .widget_title {
   color: #fff;
   font-size: 25px;
@@ -1688,6 +1691,25 @@ form button {
   }
   .header .menu-list .mobile-menu > ul li a {
     padding: 7px 0px;
+  }
+  .header .menu-list .mobile-menu > ul .dropdown_menu > a::after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 50px;
+    background-color: #E9F6F9;
+    float: right;
+  }
+  .header .menu-list .mobile-menu > ul .dropdown_menu > a.active::after {
+    content: "\f146";
+  }
+  .header .menu-list .mobile-menu > ul .dropdown_menu > a.active::before {
+    content: "\f107";
+    color: #1ca8cb;
   }
   .header .menu-list .mobile-menu > ul .menu_item:first-child {
     border-top: unset !important;

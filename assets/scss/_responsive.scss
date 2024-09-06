@@ -228,6 +228,29 @@
                         }
                     }
 
+                    .dropdown_menu {
+                        > a::after {
+                            content: "\f067";
+                            font-family:"Font Awesome 5 Free";
+                            width: 22px;
+                            height: 22px;
+                            line-height: 22px;
+                            text-align: center;
+                            font-size: 13px;
+                            border-radius: 50px;
+                            background-color:#E9F6F9;
+                            float: right;
+                        }
+                        >a.active{
+                            &::after{
+                                content: "\f146";
+                            }
+                            &::before{
+                                content: "\f107";
+                                color: $sky;                                
+                            }
+                        }
+                    }
                     .menu_item {
 
                         &:first-child {
@@ -235,10 +258,6 @@
                         }
 
                         .dropdown_list {
-
-                            // height: 0px;
-                            // opacity: 0;
-                            // visibility: hidden;
                             a {
                                 padding-left: 20px;
                             }
@@ -555,13 +574,14 @@
     // offer-deals
     .offer-deals {
         .offer-deals-wrapp {
-            .card_hover{
+            .card_hover {
                 width: 100%;
                 max-width: 280px;
                 margin: 0 auto;
             }
         }
     }
+
     .footer {
         .newletter_form {
             max-width: 100%;
@@ -591,10 +611,11 @@
         .offer-deals-wrapp {
             .accordion {
                 .accordion-item {
-                    min-width: auto  !important;
+                    min-width: auto !important;
                 }
             }
-            .card_hover{
+
+            .card_hover {
                 width: 100%;
                 max-width: 280px;
                 margin: 0 auto;

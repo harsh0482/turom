@@ -35,9 +35,11 @@ if ($(window).width() < 1200) {
   $(".dropdown_list").slideUp('');
   $(".menu-list li.menu_item > a").on("click", function () {
     $(this).parents('.mobile-menu').find(".dropdown_list").slideUp('');
+    $(this).removeClass("active");
     if ($(this).next(".dropdown_list").is(':hidden')) {
       $(this).next(".dropdown_list").slideToggle('');
-    }
+      $(this).toggleClass("active");
+    }  
   });
 }
 
