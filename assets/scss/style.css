@@ -784,7 +784,7 @@ header start
   }
 }
 .header .bar {
-  padding: 8px;
+  padding: 8px 8px 6px 8px;
   background-color: #1ca8cb;
   border-radius: 5px;
   display: flex;
