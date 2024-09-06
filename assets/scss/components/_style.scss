@@ -3,7 +3,9 @@
     padding-left: 0;
     box-sizing: border-box;
 }
-
+body.body_hidden{
+    overflow: hidden;
+}
 // our-featured  start
 
 .our-featured {
@@ -358,10 +360,11 @@
             .counter-card {
                 position: relative;
                 background-color: #E9F6F9;
-                padding: 93px 28px;
                 width: 264px;
                 height: 264px;
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 margin: auto;
                 text-align: center;
                 border-radius: 50%;
@@ -369,7 +372,7 @@
                 margin-top: 140px;
 
                 &:hover .counter-shape {
-                    animation: spin 10s linear infinite
+                    animation: spin 10s linear infinite;
                 }
 
                 @keyframes spin {

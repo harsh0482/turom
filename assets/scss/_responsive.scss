@@ -180,7 +180,7 @@
             height: 100%;
             width: 300px;
             background-color: $white;
-            z-index: 44;
+            z-index: 999 !important;
             border-right: 3px solid $sky;
             transition: all 0.4s ease;
 
@@ -323,9 +323,10 @@
     // .section-title {
     //     margin-bottom: 35px;
     // }
-    .title-area{
+    .title-area {
         margin-bottom: 33px;
     }
+
     // our-featured  start
     .our-featured {
         .destination-area {
@@ -352,9 +353,9 @@
     }
 
     // .best-memorable
-    .best-memorable{
-        .row{
-            .gallery-box_wrap:not(:first-child){
+    .best-memorable {
+        .row {
+            .gallery-box_wrap:not(:first-child) {
                 margin-top: 20px !important;
             }
         }
@@ -448,19 +449,19 @@
     .counter-card {
         width: 250px !important;
         height: 250px !important;
-        padding: 81px 28px;
     }
 
     .counter-card .counter-shape {
         width: 290px !important;
         height: 290px !important;
         inset: -20px !important;
-        
+
         span {
             bottom: 51px !important;
             right: 13px !important;
         }
     }
+
     .counter-card-wrap:nth-child(even) .counter-card .counter-shape span {
         top: 22px !important;
         right: 39px !important;
@@ -501,9 +502,11 @@
 
         }
     }
+
     // counter-sec
     .counter-sec {
         padding-top: 480px !important;
+
         .row {
             .counter-card-wrap:nth-child(1) .counter-card {
                 margin-top: 0px !important;
@@ -512,17 +515,18 @@
             .counter-card-wrap {
                 .counter-card {
                     margin-top: 70px !important;
-                    
+
                 }
             }
-            
+
         }
     }
 }
 
 @media screen and (max-width :480px) {
-     //swiper
-     .slider .mySwiper2 {
+
+    //swiper
+    .slider .mySwiper2 {
         .hero-inner {
 
             .content {
@@ -530,6 +534,7 @@
             }
         }
     }
+
     .padding-py-70 {
         padding: 40px 0px !important;
     }
@@ -543,6 +548,20 @@
         font-size: 35px !important;
     }
 
+    .counter-sec {
+        padding-top: 400px !important;
+    }
+
+    // offer-deals
+    .offer-deals {
+        .offer-deals-wrapp {
+            .card_hover{
+                width: 100%;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+    }
     .footer {
         .newletter_form {
             max-width: 100%;
@@ -559,7 +578,7 @@
 
 @media screen and (max-width :380px) {
     .padding-py-70 {
-        padding: 35px 0px !important;
+        padding: 60px 0px !important;
     }
 
     //slider
@@ -567,7 +586,63 @@
         display: none !important;
     }
 
+    // offer-deals
+    .offer-deals {
+        .offer-deals-wrapp {
+            .accordion {
+                .accordion-item {
+                    min-width: auto  !important;
+                }
+            }
+            .card_hover{
+                width: 100%;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+    }
 
+    // counter-sec
+    .counter-sec {
+        padding-top: 375px !important;
 
+        .row {
+            .counter-card-wrap {
+                &:nth-child(even) .counter-card .counter-shape span {
+                    top: 19px !important;
+                    right: 34px !important;
+                }
 
+                .counter-card {
+                    width: 220px !important;
+                    height: 220px !important;
+                    margin-top: 50px !important;
+
+                    .counter-shape {
+                        inset: -15px !important;
+                        width: 250px !important;
+                        height: 250px !important;
+
+                        span {
+                            bottom: 43px !important;
+                            right: 11px !important;
+                            width: 22px !important;
+                            height: 22px !important;
+                        }
+                    }
+
+                    .media-body {
+                        .box-number {
+                            font-size: 38px !important;
+                            margin-bottom: 0 !important;
+                        }
+
+                        .counter-title {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
