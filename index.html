@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
     <!-- fancybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./vendor/css/swiper-bundle.min.css" />
-    <!-- bootstrap  -->
-    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
     <!-- animate -->
     <link rel="stylesheet" href="./vendor/css/animate.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <!-- sal animation -->
+    <link rel="stylesheet" href="https://assets.codepen.io/9487/sal.css">
     <!-- offer counter -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css">
     <!-- fontawsome -->
@@ -371,9 +372,8 @@
                         <div class="section-subtitle ">Top Destination</div>
                         <h2 class="section-title ">Our Featured Destination</h2>
                     </div>
-                    <div
-                        class="destination-area d-flex align-items-center justify-content-between flex-column flex-md-row">
-                        <div class="destination-item active">
+                    <div class="destination-area d-flex align-items-center justify-content-between flex-column flex-md-row">
+                        <div class="destination-item active" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
                             <img src="./assets/img/home/destination_2_1.jpg" alt="img" class="img-fluid">
                             <div class="destination-content">
                                 <h4 class="box-title">Thailand</h4>
@@ -381,7 +381,7 @@
                             </div>
                             <a href="#" class="white-btn des-btn">book now </a>
                         </div>
-                        <div class="destination-item">
+                        <div class="destination-item" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
                             <img src="./assets/img/home/destination_2_2.jpg" alt="img" class="img-fluid">
                             <div class="destination-content">
                                 <h4 class="box-title">Belgium</h4>
@@ -389,7 +389,7 @@
                             </div>
                             <a href="#" class="white-btn des-btn">book now </a>
                         </div>
-                        <div class="destination-item">
+                        <div class="destination-item" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
                             <img src="./assets/img/home/destination_2_3.jpg" alt="img" class="img-fluid">
                             <div class="destination-content">
                                 <h4 class="box-title">Island</h4>
@@ -397,7 +397,7 @@
                             </div>
                             <a href="#" class="white-btn des-btn">book now </a>
                         </div>
-                        <div class="destination-item">
+                        <div class="destination-item" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
                             <img src="./assets/img/home/destination_2_4.jpg" alt="img" class="img-fluid">
                             <div class="destination-content">
                                 <h4 class="box-title">Maldives</h4>
@@ -530,9 +530,9 @@
 
     <!-- Offer Deals start -->
     <section class="offer-deals padding-py-70 pt-0">
-        <div class="container  th-container2">
-            <div class="row">
-                <div class="col-xl-7">
+        <div class="container  th-container2 pt-3 overflow-hidden">
+            <div class="row ">
+                <div class="col-xl-7 " data-sal-delay="100" data-sal="slide-right" data-sal-duration="800">
                     <div class="offer-deals-wrapp pe-0 pe-xl-4">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-tab-item" data-src="assets/img/home/offer_img_1.jpg">
@@ -626,7 +626,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 ps-3">
+                <div class="col-xl-5 ps-3" data-sal-delay="140" data-sal="slide-left" data-sal-duration="800">
                     <div class="title-area pe-xl-5 text-center text-lg-start">
                         <div class="section-subtitle ">Last Discount for you</div>
                         <h2 class="section-title ">Offer Deals & Discount</h2>
@@ -657,7 +657,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="mt-5 text-center text-lg-start">
+                    <div class="mt-5 text-center text-lg-start">
                         <a href="#" class="main-btn ">
                             Get More Offer<i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </a>
@@ -793,7 +793,7 @@
     <section class="counter-sec padding-py-70">
         <div class="container th-container2">
             <div class="row">
-                <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                <div class="col-sm-6 col-xl-3 counter-card-wrap" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
                     <div class="counter-card">
                         <div class="counter-shape"><span></span></div>
                         <div class="media-body">
@@ -802,7 +802,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                <div class="col-sm-6 col-xl-3 counter-card-wrap" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
                     <div class="counter-card">
                         <div class="counter-shape"><span></span></div>
                         <div class="media-body">
@@ -811,7 +811,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                <div class="col-sm-6 col-xl-3 counter-card-wrap" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
                     <div class="counter-card">
                         <div class="counter-shape"><span></span></div>
                         <div class="media-body">
@@ -820,7 +820,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 counter-card-wrap">
+                <div class="col-sm-6 col-xl-3 counter-card-wrap" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
                     <div class="counter-card">
                         <div class="counter-shape"><span></span></div>
                         <div class="media-body">
@@ -855,7 +855,7 @@
                 </div>
             </div>
             <div class="row mt-5 mt-lg-0">
-                <div class="col-lg-3 gallery-box_wrap d-flex align-items-center">
+                <div class="col-lg-3 gallery-box_wrap d-flex align-items-center" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
                     <div class="galler-box">
                         <div class="gallery-img">
                             <a href="./assets/img/home/gallery_2_1.jpg" data-fancybox="gallery1">
@@ -867,7 +867,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 gallery-box_wrap">
+                <div class="col-lg-3 gallery-box_wrap" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
                     <div class="galler-box">
                         <div class="gallery-img">
                             <a href="./assets/img/home/gallery_2_2.jpg" data-fancybox="gallery1">
@@ -889,7 +889,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 gallery-box_wrap">
+                <div class="col-lg-3 gallery-box_wrap" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
                     <div class="galler-box">
                         <div class="gallery-img">
                             <a href="./assets/img/home/gallery_2_4.jpg" data-fancybox="gallery1">
@@ -911,7 +911,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 gallery-box_wrap">
+                <div class="col-lg-3 gallery-box_wrap" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
                     <div class="galler-box">
                         <div class="gallery-img">
                             <a href="./assets/img/home/gallery_2_6.jpg" data-fancybox="gallery1">
@@ -1481,9 +1481,27 @@
         </div>
     </div>
     <!-- footer end -->
+
+    <!-- jquery js -->
+    <script src="./vendor/js/jquery-3.7.1.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="./vendor/js/bootstrap.bundle.js"></script>
     <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- offer counter -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="./vendor/js/swiper-bundle.min.js"></script>
+    <!-- sal js -->
+    <script src="https://assets.codepen.io/9487/sal.js"></script>
+    <!-- coustom js -->
+    <script src="./assets/js/main.js"></script>
     <script>
+        sal({
+            'threshold': 0.01,
+            once: false
+        });
+
         Fancybox.bind("[data-fancybox]", {
             // Your custom options
         });
@@ -1491,18 +1509,7 @@
             Thumbs: false,
             Toolbar: false
         });
-
     </script>
-    <!-- bootstrap cdn -->
-    <script src="./vendor/js/bootstrap.bundle.js"></script>
-    <!-- jquery js -->
-    <script src="./vendor/js/jquery-3.7.1.js"></script>
-    <!-- offer counter -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="./vendor/js/swiper-bundle.min.js"></script>
-    <!-- coustom js -->
-    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
