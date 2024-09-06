@@ -818,6 +818,7 @@ header end
   background-color: rgba(0, 0, 0, 0.3);
   visibility: hidden;
   opacity: 0;
+  z-index: 3;
   transition: all 0.4s ease;
 }
 .wapper.active {

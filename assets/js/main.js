@@ -43,22 +43,19 @@ if ($(window).width() < 1200) {
 
 //toggle menu
 $(document).ready(function () {
-  $(document).on("click",'.bar',function(){
+  $(document).on("click", '.bar', function () {
     $('.menu-list').toggleClass("open");
     $(".wapper").toggleClass("active");
-    // $(this).toggleClass("toggle-active");
     $("body").toggleClass("body_hidden");
   })
-  $(document).on("click",'.colse',function(){
+  $(document).on("click", '.colse', function () {
     $('.menu-list').removeClass("open");
     $(".wapper").removeClass("active");
-    // $(this).removeClassClass("toggle-active");
     $("body").removeClass("body_hidden");
   });
-  $(".wapper").on( "click", function() {
+  $(".wapper").on("click", function () {
     $(".menu-list").removeClass('open');
     $(this).removeClass("active");
-    // $('.menu-action').removeClass("toggle-active");
     $('body').removeClass("body_hidden");
   });
   //destination item
