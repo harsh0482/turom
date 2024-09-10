@@ -326,3 +326,17 @@ $('.counter-number').each(function () {
     }
   });
 }); 
+
+// //animation
+// sal({
+//   'threshold': 0.01,
+//   once: false
+// });
+
+// Fancybox.bind("[data-fancybox]", {
+//   // Your custom options
+// });
+// Fancybox.bind('[data-fancybox="gallery1"]', {
+//   Thumbs: false,
+//   Toolbar: false
+// });

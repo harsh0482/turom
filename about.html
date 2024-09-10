@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page</title>
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- animate -->
+    <link rel="stylesheet" href="./vendor/css/animate.css">
+    <!-- sal animation -->
+    <link rel="stylesheet" href="https://assets.codepen.io/9487/sal.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./vendor/css/fontawsome-all.min.css">
+    <!-- nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" />
+    <!-- coustom css -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+
+<body>
+    <!-- header-top start -->
+    <div class="header-top border-bottom">
+        <div class="container container-th">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="left-content d-none d-xl-block py-2">
+                        <ul class="d-flex">
+                            <li class="pe-3">
+                                <i class="fa-solid fa-location-dot me-2"></i><span>45 New Eskaton Road, Austria</span>
+                            </li>
+                            <li class="ps-3">
+                                <i class="fa-solid fa-clock me-2"></i><span>Sun to Friday: 8.00 am - 7.00 pm</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12">
+                    <div class="right-content py-2 d-flex justify-content-xl-end justify-content-center ">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-circle-dollar-to-slot me-2"></i>USD
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">CNY</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">AUD</a></li>
+                            </ul>
+                        </div>
+                        <div class="header_link d-flex align-items-center">
+                            <ul class="d-flex">
+                                <li class="d-none d-md-inline-block px-3 header_link_li"><a href="#">FAQ</a></li>
+                                <li class="d-none d-md-inline-block px-3 header_link_li"><a href="#">Support</a></li>
+                                <li class="ps-3 header_link_li"><a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Sign in Register<i
+                                            class="fa-solid fa-user ms-2"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal register-->
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile">Register</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                                <form action="" class="needs-validation" novalidate>
+                                    <h3>Sign in to your account</h3>
+                                    <div class="mt-3">
+                                        <label for="username" class="form-label">User
+                                            Name</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter username
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter password
+                                        </div>
+                                    </div>
+                                    <button class="main-btn mt-3" type="submit">
+                                        <a href="#" class="text-white">login <i
+                                                class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                                    </button>
+
+                                    <div class="mt-4 mb-2">
+                                        <a href="#" class="forgot_link fs-5">Forgot Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <form action="" class="needs-validation" novalidate>
+                                    <h3>Sign in to your account</h3>
+                                    <div class="mt-3">
+                                        <label for="username" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter name
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter email
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter password
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="cpassword" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="cpassword" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter Confirm Password
+                                        </div>
+                                    </div>
+                                    <button class="main-btn mt-3 mb-2" type="submit">
+                                        <a href="#" class="text-white">sing up <i
+                                                class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-top end -->
+
+    <!-- header start -->
+    <header class="header">
+        <div class="container container-th">
+            <div class="row ">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <div class="logo-brand">
+                        <a href="index.html">
+                            <img src="./assets/img/logo3.svg" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="bar d-block d-xl-none">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <div class="menu-list">
+                        <div class="side_logo d-block d-xl-none">
+                            <img src="./assets/img/logo3.svg" alt="logo">
+                            <div class="colse d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="mobile-menu">
+                            <ul class="d-flex">
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="index.html">home <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="#">Home Travel</a></li>
+                                        <li class="dropdown_item"><a href="#">Home Tour</a></li>
+                                        <li class="dropdown_item"><a href="#">Home Agency</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="about.html">about us</a>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">Destination <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="#">Destination</a></li>
+                                        <li class="dropdown_item"><a href="#">Destination Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">service <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="#">Services</a></li>
+                                        <li class="dropdown_item"><a href="#">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">activities <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="#">activities</a></li>
+                                        <li class="dropdown_item"><a href="#">activities Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="#">Shop</a></li>
+                                        <li class="dropdown_item"><a href="#">Gallery</a></li>
+                                        <li class="dropdown_item"><a href="#">Our Tour</a></li>
+                                        <li class="dropdown_item"><a href="#">Tour Details</a></li>
+                                        <li class="dropdown_item"><a href="#">Tour Guider</a></li>
+                                        <li class="dropdown_item"><a href="#">Tour Guider Details</a></li>
+                                        <li class="dropdown_item"><a href="#">Faq Page</a></li>
+                                        <li class="dropdown_item"><a href="#">Price Package</a></li>
+                                        <li class="dropdown_item"><a href="#">Error Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">blog <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="#">Blog</a></li>
+                                        <li class="dropdown_item"><a href="#">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item"><a href="contact.html">contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="main-btn d-none">book now <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- this is box shodow full screen -->
+    <div class="wapper"></div>
+
+    <!-- header end -->
+
+    <div class="background_wrapper">
+        <div class="container">
+            <h1 class="breadcumb-title">about tourm</h1>
+            <ul class="breadcumb-menu">
+                <li><a href="index.html">home</a></li>
+                <li class="ps-2">about tourm</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- welcome-tourm start -->
+    <section class="welcome-tourm padding-py-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7" data-sal-delay="100" data-sal="slide-right" data-sal-duration="800">
+                    <div class="img-box">
+                        <div class="img1">
+                            <img src="./assets/img/about/about_3_1.jpg" alt="about img">
+                        </div>
+                        <div class="img2">
+                            <img src="./assets/img/about/about_3_2.jpg" alt="about img">
+                        </div>
+                        <div class="img3 movingx">
+                            <img src="./assets/img/about/about_3_3.jpg" alt="about img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 mt-5 mt-xl-0" data-sal-delay="140" data-sal="slide-left" data-sal-duration="800">
+                    <div class="title-area text-start mb-4">
+                        <div class="section-subtitle ">Welcome To Tourm</div>
+                        <h2 class="section-title ">We are world reputeted travel agency</h2>
+                    </div>
+                    <p class="p">There are many variations of passages of available but the majority have suffered
+                        alteration in
+                        some form, by injected hum randomised words.</p>
+                    <p class="mt-4 p">Leiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                    <div class="about-item-wrap">
+                        <div class="about-item d-flex align-items-center">
+                            <div class="about-item-img">
+                                <img src="./assets/img/about/about_1_1.svg" alt="about">
+                            </div>
+                            <div class="about-item-content">
+                                <h5>Exclusive Trip</h5>
+                                <p class="p">There are many variations of passages of available but the majority.</p>
+                            </div>
+                        </div>
+                        <div class="about-item d-flex align-items-center mt-4">
+                            <div class="about-item-img">
+                                <img src="./assets/img/about/about_1_2.svg" alt="about">
+                            </div>
+                            <div class="about-item-content">
+                                <h5>Safety First Always</h5>
+                                <p class="p">There are many variations of passages of available but the majority.</p>
+                            </div>
+                        </div>
+                        <div class="about-item d-flex align-items-center mt-4">
+                            <div class="about-item-img">
+                                <img src="./assets/img/about/about_1_3.svg" alt="about">
+                            </div>
+                            <div class="about-item-content">
+                                <h5>Professional Guide</h5>
+                                <p class="p">There are many variations of passages of available but the majority.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="main-btn">Contact With Us <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- welcome-tourm end -->
+    <!-- footer start -->
+    <footer class="footer padding-py-70">
+        <div class="container th-container2">
+            <div class="footer_top">
+                <div class="row justify-content-between align-items-center border_bottom " data-sal-delay="100"
+                    data-sal="slide-up" data-sal-duration="800">
+                    <div class="col-lg-5">
+                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">
+                            get updated the
+                            latest newsletter</h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <form action="" class="d-flex  newletter_form">
+                            <input type="email" class="form-control  me-4" placeholder="Enter Email">
+                            <div class="main-btn d-flex align-items-center justify-content-center">
+                                <a href="#">subscribe now <i class="fa-brands fa-telegram"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xl-3" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <div class="about_logo">
+                            <a href="#">
+                                <img src="./assets/img/logo-white.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual
+                            capital model.
+                            Appropriately create interactive infrastructures</p>
+                        <div class="about-social d-flex align-items-center gap-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <ul class="widget_menu">
+                            <li class="widget_link">
+                                <a href="#">home</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">about us</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">our service</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">terms of service</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">tour booking now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Get In Touch</h3>
+                        <ul class="widget_contact">
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">+01 234 567 890</a>
+                                    <a href="#" class="d-block">+09 876 543 210</a>
+                                </div>
+                            </li>
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">mailinfo00@tourm.com</a>
+                                    <a href="#" class="d-block">support24@tourm.com</a>
+                                </div>
+                            </li>
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">
+                                        789 Inner Lane, Holy park, California, USA</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="500" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Instagram Post</h3>
+                        <div class="insta-gallery ">
+                            <a href="./assets/img/gallery_1_1.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_1.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_2.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_2.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_3.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_3.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_4.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_4.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_5.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_5.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_6.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_6.jpg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container th-container2">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All
+                        Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-none d-md-flex align-items-center justify-content-end">
+                        <span class="me-4">We Accept</span>
+                        <img src="./assets/img/cards.png" alt="card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- jquery js -->
+    <script src="./vendor/js/jquery-3.7.1.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="./vendor/js/bootstrap.bundle.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- sal js -->
+    <script src="https://assets.codepen.io/9487/sal.js"></script>
+    <!-- nice-select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- coustom js -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        //animation
+        sal({
+            'threshold': 0.01,
+            once: false
+        });
+
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+        Fancybox.bind('[data-fancybox="gallery1"]', {
+            Thumbs: false,
+            Toolbar: false
+        });
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+    </script>
+
+</body>
+
+</html>

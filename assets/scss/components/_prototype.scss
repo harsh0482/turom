@@ -1,9 +1,11 @@
 ::-webkit-scrollbar-thumb {
-    background: $sky !important; 
-  }
-  ::-webkit-scrollbar {
+    background: $sky !important;
+}
+
+::-webkit-scrollbar {
     width: 5px;
-  }
+}
+
 a,
 ul,
 li,
@@ -24,128 +26,161 @@ li {
     list-style: none;
 }
 
-.padding-py-70{
+.padding-py-70 {
     padding: 120px 0px;
 }
-p{
+
+p {
     font-family: $inter;
     font-size: 16px;
+}
+.p{
+    color: #6e7070;
 }
 a {
     text-decoration: none;
     font-family: $inter;
     font-size: 16px;
     text-transform: capitalize;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
     }
 }
-.h1,h1 {
+
+.h1,
+h1 {
     font-size: 80px;
     line-height: 1.18
 }
 
-.h2,h2 {
+.h2,
+h2 {
     font-size: 48px;
-     line-height:1.327; 
+    line-height: 1.327;
 }
 
-.h3,h3 {
+.h3,
+h3 {
     font-size: 32px;
     line-height: 1.278
 }
 
-.h4,h4 {
+.h4,
+h4 {
     font-size: 30px;
     line-height: 1.333;
 }
 
-.h5,h5 {
+.h5,
+h5 {
     font-size: 24px;
     line-height: 1.417
 }
 
-.h6,h6 {
+.h6,
+h6 {
     font-size: 20px;
     line-height: 1.5
 }
 
 @media (max-width: 1199px) {
-    .h1,h1 {
-        font-size:54px;
+
+    .h1,
+    h1 {
+        font-size: 54px;
         line-height: 1.3
     }
 
-    .h2,h2 {
+    .h2,
+    h2 {
         font-size: 36px;
         line-height: 1.3;
     }
 
-    .h3,h3 {
+    .h3,
+    h3 {
         font-size: 30px
     }
 
-    .h4,h4 {
+    .h4,
+    h4 {
         font-size: 24px
     }
 
-    .h5,h5 {
+    .h5,
+    h5 {
         font-size: 20px
     }
 
-    .h6,h6 {
+    .h6,
+    h6 {
         font-size: 16px
     }
 }
 
 @media (max-width: 767px) {
-    .h1,h1 {
-        font-size:40px
+
+    .h1,
+    h1 {
+        font-size: 40px
     }
 
-    .h2,h2 {
+    .h2,
+    h2 {
         font-size: 34px;
         line-height: 1.3
     }
 
-    .h3,h3 {
+    .h3,
+    h3 {
         font-size: 26px
     }
 
-    .h4,h4 {
+    .h4,
+    h4 {
         font-size: 22px
     }
 
-    .h5,h5 {
+    .h5,
+    h5 {
         font-size: 18px
     }
 
-    .h6,h6 {
+    .h6,
+    h6 {
         font-size: 16px
     }
 }
 
 @media (max-width: 575px) {
-    .h1,h1 {
-        font-size:34px;
+
+    .h1,
+    h1 {
+        font-size: 34px;
         line-height: 1.35
     }
 
-    .h2,h2 {
+    .h2,
+    h2 {
         font-size: 28px
     }
 }
 
 @media (max-width: 375px) {
-    .h1,h1 {
-        font-size:32px;
+
+    .h1,
+    h1 {
+        font-size: 32px;
     }
 }
-.title-area{
+
+.title-area {
     text-align: center;
     margin-bottom: 50px;
 }
-.section-subtitle{
+
+.section-subtitle {
     font-family: $Montez;
     display: block;
     color: $dark-blue;
@@ -153,12 +188,14 @@ a {
     line-height: 40px;
     font-weight: 400;
 }
-.section-title{
+
+.section-title {
     font-family: $Manrope;
     color: $dark-blue;
     // margin-bottom: 50px;
     font-weight: 700;
 }
+
 .tour-text {
     font-size: 18px;
     color: $dark-blue;
@@ -167,4 +204,57 @@ a {
     max-width: 687px;
     display: block;
     margin: 20px auto 0px;
+}
+
+//background_wrapper
+
+.background_wrapper {
+    background-image: url("../img/breadcumb-bg.jpg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 0px;
+    position: relative;
+
+    .breadcumb-title {
+        font-size: 54px;
+        font-family: $Manrope;
+        color: $white;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .breadcumb-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            position: relative;
+
+            &:first-child::after {
+                content: "";
+                background-image: url("../img/arrow-right\ \(1\).svg");
+                background-size: 100% 100%;
+                top: 3px;
+                width: 18px;
+                height: 16px;
+                display: inline-flex;
+                position: relative;
+                margin-left: 6px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        li,
+        a {
+            color: $white;
+            font-family: $inter;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
 }

@@ -229,28 +229,31 @@
                     }
 
                     .dropdown_menu {
-                        > a::after {
+                        >a::after {
                             content: "\f067";
-                            font-family:"Font Awesome 5 Free";
+                            font-family: "Font Awesome 5 Free";
                             width: 22px;
                             height: 22px;
                             line-height: 22px;
                             text-align: center;
                             font-size: 13px;
                             border-radius: 50px;
-                            background-color:#E9F6F9;
+                            background-color: #E9F6F9;
                             float: right;
                         }
-                        >a.active{
-                            &::after{
+
+                        >a.active {
+                            &::after {
                                 content: "\f146";
                             }
-                            &::before{
+
+                            &::before {
                                 content: "\f107";
-                                color: $sky;                                
+                                color: $sky;
                             }
                         }
                     }
+
                     .menu_item {
 
                         &:first-child {
@@ -328,20 +331,26 @@
             }
         }
     }
+
+    //background_wrapper
+    .background_wrapper {
+        padding: 145px 0px;
+
+        .breadcumb-title {
+            margin-bottom: 5px !important;
+        }
+
+        .breadcumb-menu {
+
+            li,
+            a {
+                font-size: 16px !important;
+            }
+        }
+    }
 }
 
 @media screen and (max-width :991px) {
-    // h1 {
-    //     font-size: 40px;
-    // }
-
-    // h2 {
-    //     font-size: 30px;
-    // }
-
-    // .section-title {
-    //     margin-bottom: 35px;
-    // }
     .title-area {
         margin-bottom: 33px;
     }
@@ -377,6 +386,21 @@
             .gallery-box_wrap:not(:first-child) {
                 margin-top: 20px !important;
             }
+        }
+    }
+
+    //background_wrapper
+    .background_wrapper {
+        padding: 130px 0px;
+    }
+
+    //video-box
+    .video-box {
+        padding-bottom: 60px;
+
+        .paly-btn {
+            height: 100px;
+            width: 100px;
         }
     }
 }
@@ -485,6 +509,27 @@
         top: 22px !important;
         right: 39px !important;
     }
+
+    //video-box
+    .video-box {
+        padding-bottom: 40px;
+
+        .paly-btn {
+            height: 80px;
+            width: 80px;
+        }
+    }
+
+    // welcome-tourm
+    .welcome-tourm {
+        overflow: hidden;
+
+        .img-box {
+            .img2 {
+                right: 0%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width :575px) {
@@ -540,6 +585,31 @@
 
         }
     }
+
+    // welcome-tourm
+    .welcome-tourm {
+        .img-box {
+
+            .img1,
+            .img2 {
+                text-align: center;
+            }
+
+            .img2 {
+                position: relative !important;
+                margin-top: 30px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .breadcumb-title {
+        font-size: 45px !important;
+    }
 }
 
 @media screen and (max-width :480px) {
@@ -592,6 +662,45 @@
                 height: 60px;
             }
 
+        }
+    }
+
+    //form_contain
+    .form_contain {
+        .contact-form {
+            padding: 25px;
+
+            h3 {
+                margin-bottom: 20px;
+            }
+
+            .form-group {
+                .form-control {
+                    padding: 12px 15px !important;
+                }
+
+                img {
+                    top: 13px;
+                    right: 15px;
+                }
+            }
+
+            .nice-select {
+                padding: 12px 15px !important;
+
+
+                .list {
+                    width: 100%;
+                    border-radius: unset !important;
+                    border-bottom: 3px solid $sky;
+                }
+            }
+
+            .main-btn {
+                margin-top: 30px;
+                padding: 15px 30px !important;
+                border-radius: 48px;
+            }
         }
     }
 }
@@ -665,5 +774,9 @@
                 }
             }
         }
+    }
+
+    .breadcumb-title {
+        font-size: 35px !important;
     }
 }
