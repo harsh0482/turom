@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about page</title>
+    <title>Destination page</title>
     <!-- bootstrap  -->
     <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
     <!-- fancybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="./vendor/css/swiper-bundle.min.css" />
     <!-- animate -->
     <link rel="stylesheet" href="./vendor/css/animate.css">
     <!-- sal animation -->
@@ -254,478 +252,384 @@
 
     <div class="background_wrapper">
         <div class="container">
-            <h1 class="breadcumb-title">about tourm</h1>
+            <h1 class="breadcumb-title">Destination</h1>
             <ul class="breadcumb-menu">
                 <li><a href="index.html">home</a></li>
-                <li class="ps-2">about tourm</li>
+                <li class="ps-2">Destination</li>
             </ul>
         </div>
     </div>
 
-    <!-- welcome-tourm start -->
-    <section class="welcome-tourm padding-py-70 overflow-hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7" data-sal-delay="100" data-sal="slide-right" data-sal-duration="800">
-                    <div class="img-box">
-                        <div class="img1">
-                            <img src="./assets/img/about/about_3_1.jpg" alt="about img">
-                        </div>
-                        <div class="img2">
-                            <img src="./assets/img/about/about_3_2.jpg" alt="about img">
-                        </div>
-                        <div class="img3 movingx">
-                            <img src="./assets/img/about/about_3_3.jpg" alt="about img">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5 mt-5 mt-xl-0" data-sal-delay="140" data-sal="slide-left" data-sal-duration="800">
-                    <div class="title-area text-start mb-4">
-                        <div class="section-subtitle ">Welcome To Tourm</div>
-                        <h2 class="section-title ">We are world reputeted travel agency</h2>
-                    </div>
-                    <p class="p">There are many variations of passages of available but the majority have suffered
-                        alteration in
-                        some form, by injected hum randomised words.</p>
-                    <p class="mt-4 p">Leiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-                    <div class="about-item-wrap">
-                        <div class="about-item d-flex align-items-center">
-                            <div class="about-item-img">
-                                <img src="./assets/img/about/about_1_1.svg" alt="about">
-                            </div>
-                            <div class="about-item-content">
-                                <h5>Exclusive Trip</h5>
-                                <p class="p">There are many variations of passages of available but the majority.</p>
-                            </div>
-                        </div>
-                        <div class="about-item d-flex align-items-center mt-4">
-                            <div class="about-item-img">
-                                <img src="./assets/img/about/about_1_2.svg" alt="about">
-                            </div>
-                            <div class="about-item-content">
-                                <h5>Safety First Always</h5>
-                                <p class="p">There are many variations of passages of available but the majority.</p>
-                            </div>
-                        </div>
-                        <div class="about-item d-flex align-items-center mt-4">
-                            <div class="about-item-img">
-                                <img src="./assets/img/about/about_1_3.svg" alt="about">
-                            </div>
-                            <div class="about-item-content">
-                                <h5>Professional Guide</h5>
-                                <p class="p">There are many variations of passages of available but the majority.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="main-btn">Contact With Us <i
-                                class="fa-solid fa-arrow-right-long ms-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- welcome-tourm end -->
 
-    <!-- Services start -->
-    <section class="services padding-py-70">
+    <section class="destination padding-py-70">
         <div class="container th-container2">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-area" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="section-subtitle ">Services We Offer</div>
-                        <h2 class="section-title ">Our Amazing services</h2>
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <div class="search-form-area">
+                        <input type="text" placeholder="Search">
+                        <div class="search_btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-auto mt-4 mt-md-0">
+                    <div class="sorting-filter-wrap d-flex gap-4">
+                        <div class="tab_list d-flex align-items-center ">
+                            <div class="grid tab_list_btn btnactive"><i class="fa-solid fa-table-cells-large"></i></div>
+                            <div class="de_list tab_list_btn"><i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <select>
+                            <option value="menu_order" selected="selected">Default Sorting</option>
+                            <option value="popularity">Sort by popularity</option>
+                            <option value="rating">Sort by average rating</option>
+                            <option value="date">Sort by latest</option>
+                            <option value="price">Sort by price: low to high</option>
+                            <option value="price-desc">Sort by price: high to low</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div class="row gy-4">
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_1.jpg" alt="img">
+            <div class="row mt-4">
+                <div class="col-xxl-9 col-lg-8">
+                    <div class="row gy-4 grid" id="single_card">
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_1.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Dubai</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$980.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Photo Shoot</a></h3>
-                            <p>20 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_2.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Italy</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$880.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_3.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">France</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$680.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_4.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Maldives</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$580.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_5.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Belgium</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$980.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_6.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Brazil</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$380.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_7.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Spain</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$980.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_9.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Newziland</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$780.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="destination_card">
+                                <div class="destination_img">
+                                    <img src="./assets/img/destination/tour_3_8.jpg" alt="img">
+                                </div>
+                                <div class="destination_content">
+                                    <a href="#" class="card_title">Greece</a>
+                                    <div class="tour-rating d-flex gap-3">
+                                        <div class="star-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>(4.8 Rating)</span>
+                                    </div>
+                                    <h5 class="box_price">$580.00<span>/Person</span></h5>
+                                    <div class="destination_bottom d-flex justify-content-between align-items-center">
+                                        <span>
+                                            <i class="fa-solid fa-clock me-2"></i> 7 Days
+                                        </span>
+                                        <a href="#" class="main-btn ">
+                                            book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="destination_pagination d-flex align-items-center justify-content-center ">
+                            <li><a href="#" class="activebtn">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#" class="next_btn">Next<i
+                                        class="fa-solid fa-arrow-right-long ms-2 align-middle"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_2.jpg" alt="img">
+                <div class="col-xxl-3 col-lg-4 mt-5 mt-lg-0">
+                    <div class="sidebar">
+                        <div class="categories">
+                            <h4 class="categories_title">Categories</h4>
+                            <ul class="categories_list">
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">City
+                                        Tour<span>(8)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">Beach
+                                        Tours<span>(6)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">Wildlife
+                                        Tours<span>(2)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">News &
+                                        Tips<span>(8)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">Adventure
+                                        Tours<span>(9)</span></a>
+                                </li>
+                                <li class="border-0"><img src="./assets/img/destination/map.svg" alt="map"><a href="#"
+                                        class="pb-0">Mountain Tours<span>(10)</span></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Tour Guide</a></h3>
-                            <p>22 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_3.jpg" alt="img">
-                        </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Cozy Event</a></h3>
-                            <p>23 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_4.jpg" alt="img">
-                        </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Interesting Rest</a></h3>
-                            <p>24 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_5.jpg" alt="img">
-                        </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Kayaking</a></h3>
-                            <p>25 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_6.jpg" alt="img">
-                        </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Safe Flight</a></h3>
-                            <p>26 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_7.jpg" alt="img">
-                        </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Entertainment</a></h3>
-                            <p>27 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="services_card">
-                        <div class="services_img">
-                            <img src="./assets/img/about/destination_4_8.jpg" alt="img">
-                        </div>
-                        <div class="services_content text-center">
-                            <h3><a href="#" class="box-title">Delicisious Food</a></h3>
-                            <p>28 Listing</p>
-                            <a href="#" class="main-btn ">
-                                book now<i class="fa-solid fa-arrow-right-long ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services end -->
-
-    <!-- testimonial start -->
-    <section class="testimonial padding-py-70 pt-0 overflow-hidden">
-        <div class="container-fluid px-3 px-md-0">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-area" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="section-subtitle ">Testimonial</div>
-                        <h2 class="section-title ">What Client Say About us</h2>
-                    </div>
-
-                    <div class="swiper testi_monial" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimal_card">
-                                    <div class="testimal_header d-flex justify-content-between">
-                                        <div class="testimal_left d-flex">
-                                            <div class="card_profile ">
-                                                <img src="./assets/img/home/testi_1_1.jpg" alt="testi"
-                                                    class="rounded-circle">
-                                            </div>
-                                            <div class="card_conatin ps-3">
-                                                <h3>Angelina Rose</h3>
-                                                <span>Traveller</span>
-                                            </div>
-                                        </div>
-                                        <div class="testimal_right">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">Throughout the interior, eco-friendly materials like reclaimed
-                                        wood, bamboo flooring, and recycled glass countertops create a luxurious yet
-                                        sustainable ambiance.
-                                    </p>
-                                    <div class="testimal_qutoe">
-                                        <img src="./assets/img/about/testi-quote.svg" alt="qutoe">
-                                    </div>
+                        <div class="recent_post">
+                            <h4 class="categories_title">Recent Posts</h4>
+                            <div class="recent_post_item d-flex gap-3 mt-0">
+                                <div class="recent_img">
+                                    <img src="./assets/img/destination/recent-post-1-1.jpg" alt="img">
+                                </div>
+                                <div class="recent_content">
+                                    <a href="#">Exploring The Green Spaces Of the island maldives</a>
+                                    <a href="#" class="date"><i class="fas fa-calendar-alt"></i> 22/6/2024</a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="testimal_card">
-                                    <div class="testimal_header d-flex justify-content-between">
-                                        <div class="testimal_left d-flex">
-                                            <div class="card_profile ">
-                                                <img src="./assets/img/home/testi_1_2.jpg" alt="testi"
-                                                    class="rounded-circle">
-                                            </div>
-                                            <div class="card_conatin ps-3">
-                                                <h3>Maria Doe</h3>
-                                                <span>Traveller</span>
-                                            </div>
-                                        </div>
-                                        <div class="testimal_right">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">A sophisticated rainwater harvesting system collects and
-                                        filters rainwater for irrigation and non-potable uses, reducing reliance on
-                                        municipal water sources. Greywater systems
-                                    </p>
-                                    <div class="testimal_qutoe">
-                                        <img src="./assets/img/about/testi-quote.svg" alt="qutoe">
-                                    </div>
+                            <div class="recent_post_item d-flex gap-3">
+                                <div class="recent_img">
+                                    <img src="./assets/img/destination/recent-post-1-2.jpg" alt="img">
+                                </div>
+                                <div class="recent_content">
+                                    <a href="#">Harmony With Nature Of Belgium Tour and travle</a>
+                                    <a href="#" class="date"><i class="fas fa-calendar-alt"></i> 25/6/2024</a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="testimal_card">
-                                    <div class="testimal_header d-flex justify-content-between">
-                                        <div class="testimal_left d-flex">
-                                            <div class="card_profile ">
-                                                <img src="./assets/img/home/testi_1_1.jpg" alt="testi"
-                                                    class="rounded-circle">
-                                            </div>
-                                            <div class="card_conatin ps-3">
-                                                <h3>Alex Jordan</h3>
-                                                <span>Traveller</span>
-                                            </div>
-                                        </div>
-                                        <div class="testimal_right">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">“Solar panels adorn the roof, harnessing renewable energy to
-                                        power the home and even feed excess electricity back into the grid.
-                                        High-performance insulation and triple-glazed”
-                                    </p>
-                                    <div class="testimal_qutoe">
-                                        <img src="./assets/img/about/testi-quote.svg" alt="qutoe">
-                                    </div>
+                            <div class="recent_post_item d-flex gap-3 pb-1">
+                                <div class="recent_img">
+                                    <img src="./assets/img/destination/recent-post-1-3.jpg" alt="img">
+                                </div>
+                                <div class="recent_content">
+                                    <a href="#">Blog Image
+                                        Exploring The Green Spaces Of Realar Residence</a>
+                                    <a href="#" class="date"><i class="fas fa-calendar-alt"></i> 27/6/2024</a>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="testimal_card">
-                                    <div class="testimal_header d-flex justify-content-between">
-                                        <div class="testimal_left d-flex">
-                                            <div class="card_profile ">
-                                                <img src="./assets/img/home/testi_1_1.jpg" alt="testi"
-                                                    class="rounded-circle">
-                                            </div>
-                                            <div class="card_conatin ps-3">
-                                                <h3>Angelina Rose</h3>
-                                                <span>Traveller</span>
-                                            </div>
-                                        </div>
-                                        <div class="testimal_right">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">Throughout the interior, eco-friendly materials like reclaimed
-                                        wood, bamboo flooring, and recycled glass countertops create a luxurious yet
-                                        sustainable ambiance.
-                                    </p>
-                                    <div class="testimal_qutoe">
-                                        <img src="./assets/img/about/testi-quote.svg" alt="qutoe">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimal_card">
-                                    <div class="testimal_header d-flex justify-content-between">
-                                        <div class="testimal_left d-flex">
-                                            <div class="card_profile ">
-                                                <img src="./assets/img/home/testi_1_2.jpg" alt="testi"
-                                                    class="rounded-circle">
-                                            </div>
-                                            <div class="card_conatin ps-3">
-                                                <h3>Maria Doe</h3>
-                                                <span>Traveller</span>
-                                            </div>
-                                        </div>
-                                        <div class="testimal_right">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">A sophisticated rainwater harvesting system collects and
-                                        filters rainwater for irrigation and non-potable uses, reducing reliance on
-                                        municipal water sources. Greywater systems
-                                    </p>
-                                    <div class="testimal_qutoe">
-                                        <img src="./assets/img/about/testi-quote.svg" alt="qutoe">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimal_card">
-                                    <div class="testimal_header d-flex justify-content-between">
-                                        <div class="testimal_left d-flex">
-                                            <div class="card_profile ">
-                                                <img src="./assets/img/home/testi_1_1.jpg" alt="testi"
-                                                    class="rounded-circle">
-                                            </div>
-                                            <div class="card_conatin ps-3">
-                                                <h3>Alex Jordan</h3>
-                                                <span>Traveller</span>
-                                            </div>
-                                        </div>
-                                        <div class="testimal_right">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">“Solar panels adorn the roof, harnessing renewable energy to
-                                        power the home and even feed excess electricity back into the grid.
-                                        High-performance insulation and triple-glazed”
-                                    </p>
-                                    <div class="testimal_qutoe">
-                                        <img src="./assets/img/about/testi-quote.svg" alt="qutoe">
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial end -->
-
-    <!-- company logo start-->
-    <section class="company-logo padding-py-70 pt-0" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-        <div class="container  container-th">
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper company-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_2.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_2.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_3.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_3.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_4.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_4.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_5.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_5.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_8.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_8.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_2.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_2.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_3.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_3.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_4.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_4.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_5.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_5.svg" alt="logo" class="gray-logo">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="company_box">
-                                    <img src="./assets/img/home/brand_1_8.svg" alt="logo" class="main-logo">
-                                    <img src="./assets/img/home/brand_1_8.svg" alt="logo" class="gray-logo">
-                                </div>
+                        <div class="popular_tags">
+                            <h4 class="categories_title">Popular Tags</h4>
+                            <div class="popular_tags_btn">
+                                <a href="#">Tour</a>
+                                <a href="#">Adventure</a>
+                                <a href="#">Rent</a>
+                                <a href="#">Innovate</a>
+                                <a href="#">Hotel</a>
+                                <a href="#">Modern</a>
+                                <a href="#">Luxury</a>
+                                <a href="#">Travel</a>
                             </div>
                         </div>
                     </div>
@@ -733,8 +637,6 @@
             </div>
         </div>
     </section>
-    <!-- company logo end-->
-
     <!-- footer start -->
     <footer class="footer padding-py-70">
         <div class="container th-container2">
@@ -742,8 +644,7 @@
                 <div class="row justify-content-between align-items-center border_bottom " data-sal-delay="100"
                     data-sal="slide-up" data-sal-duration="800">
                     <div class="col-lg-5">
-                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">
-                            get updated the
+                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">get updated the
                             latest newsletter</h2>
                     </div>
                     <div class="col-lg-7">
@@ -764,8 +665,7 @@
                                 <img src="./assets/img/logo-white.svg" alt="">
                             </a>
                         </div>
-                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual
-                            capital model.
+                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual capital model.
                             Appropriately create interactive infrastructures</p>
                         <div class="about-social d-flex align-items-center gap-3">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -864,8 +764,7 @@
         <div class="container th-container2">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All
-                        Rights Reserved.</p>
+                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="d-none d-md-flex align-items-center justify-content-end">
@@ -884,12 +783,9 @@
     <script src="./vendor/js/bootstrap.bundle.js"></script>
     <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <!-- Swiper JS -->
-    <script src="./vendor/js/swiper-bundle.min.js"></script>
     <!-- sal js -->
     <script src="https://assets.codepen.io/9487/sal.js"></script>
     <!-- coustom js -->
-    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
         //animation
