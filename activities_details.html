@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Details</title>
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- animate -->
+    <link rel="stylesheet" href="./vendor/css/animate.css">
+    <!-- sal animation -->
+    <link rel="stylesheet" href="https://assets.codepen.io/9487/sal.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./vendor/css/swiper-bundle.min.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./vendor/css/fontawsome-all.min.css">
+    <!-- coustom css -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+
+<body>
+     <!-- header-top start -->
+     <div class="header-top border-bottom">
+        <div class="container container-th">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="left-content d-none d-xl-block py-2">
+                        <ul class="d-flex">
+                            <li class="pe-3">
+                                <i class="fa-solid fa-location-dot me-2"></i><span>45 New Eskaton Road, Austria</span>
+                            </li>
+                            <li class="ps-3">
+                                <i class="fa-solid fa-clock me-2"></i><span>Sun to Friday: 8.00 am - 7.00 pm</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12">
+                    <div class="right-content py-2 d-flex justify-content-xl-end justify-content-center ">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-circle-dollar-to-slot me-2"></i>USD
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">CNY</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">AUD</a></li>
+                            </ul>
+                        </div>
+                        <div class="header_link d-flex align-items-center">
+                            <ul class="d-flex">
+                                <li class="d-none d-md-inline-block px-3 header_link_li"><a href="faq.html">FAQ</a></li>
+                                <li class="d-none d-md-inline-block px-3 header_link_li"><a href="contact.html">Support</a></li>
+                                <li class="ps-3 header_link_li"><a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Sign in Register<i
+                                            class="fa-solid fa-user ms-2"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal register-->
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile">Register</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                                <form action="" class="needs-validation" novalidate>
+                                    <h3>Sign in to your account</h3>
+                                    <div class="mt-3">
+                                        <label for="username" class="form-label">User
+                                            Name</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter username
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter password
+                                        </div>
+                                    </div>
+                                    <button class="main-btn mt-3" type="submit">
+                                        <a href="#" class="text-white">login <i
+                                                class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                                    </button>
+
+                                    <div class="mt-4 mb-2">
+                                        <a href="#" class="forgot_link fs-5">Forgot Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <form action="" class="needs-validation" novalidate>
+                                    <h3>Sign in to your account</h3>
+                                    <div class="mt-3">
+                                        <label for="username" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter name
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter email
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter password
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="cpassword" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="cpassword" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter Confirm Password
+                                        </div>
+                                    </div>
+                                    <button class="main-btn mt-3 mb-2" type="submit">
+                                        <a href="#" class="text-white">sing up <i
+                                                class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-top end -->
+
+    <!-- header start -->
+    <header class="header">
+        <div class="container container-th">
+            <div class="row ">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <div class="logo-brand">
+                        <a href="index.html">
+                            <img src="./assets/img/logo3.svg" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="bar d-block d-xl-none">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <div class="menu-list">
+                        <div class="side_logo d-block d-xl-none">
+                            <img src="./assets/img/logo3.svg" alt="logo">
+                            <div class="colse d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="mobile-menu">
+                            <ul class="d-flex">
+                                <li class="menu_item  position-relative">
+                                    <a href="index.html">home</a>
+                                    <!-- <ul class="dropdown_list" dropdown_menu>
+                                        <li class="dropdown_item"><a href="#">Home Travel</a></li>
+                                        <li class="dropdown_item"><a href="#">Home Tour</a></li>
+                                        <li class="dropdown_item"><a href="#">Home Agency</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="menu_item">
+                                    <a href="about.html">about us</a>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">Destination <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="destination.html">Destination</a></li>
+                                        <li class="dropdown_item"><a href="destination_details.html">Destination Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">service <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="service.html">Services</a></li>
+                                        <li class="dropdown_item"><a href="service_details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">activities <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="activities.html">activities</a></li>
+                                        <li class="dropdown_item"><a href="activities_details.html">activities Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="#">Shop</a></li>
+                                        <li class="dropdown_item"><a href="gallery.html">Gallery</a></li>
+                                        <li class="dropdown_item"><a href="our_tour.html">Our Tour</a></li>
+                                        <li class="dropdown_item"><a href="tour_details.html">Tour Details</a></li>
+                                        <li class="dropdown_item"><a href="tour_guider.html">Tour Guider</a></li>
+                                        <li class="dropdown_item"><a href="guider_details.html">Tour Guider Details</a></li>
+                                        <li class="dropdown_item"><a href="faq.html">Faq Page</a></li>
+                                        <li class="dropdown_item"><a href="price_package.html">Price Package</a></li>
+                                        <li class="dropdown_item"><a href="error.html">Error Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">blog <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="blog.html">Blog</a></li>
+                                        <li class="dropdown_item"><a href="blog_details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item"><a href="contact.html">contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="main-btn d-none">book now <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- this is box shodow full screen -->
+    <div class="wapper"></div>
+
+    <!-- header end -->
+
+    <div class="background_wrapper">
+        <div class="container">
+            <h1 class="breadcumb-title">Activity Single</h1>
+            <ul class="breadcumb-menu">
+                <li><a href="index.html">home</a></li>
+                <li class="ps-2">Activity Single</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="destination_details destination padding-py-70">
+        <div class="container th-container2">
+            <div class="row">
+                <div class="col-xxl-8 col-lg-7">
+                    <div class="single_page">
+                        <div class="slider_area">
+                            <div class="swiper tour_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_2.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_3.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_4.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper tour_thum_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_1.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_2.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_3.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tour-slider-img">
+                                            <img src="./assets/img/activities/tour_inner_2_4.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <div class="page-meta d-flex gap-2 align-items-center">
+                                <a href="#" class="page-tag">Featured</a>
+                                <span class="ratting"><i class="fa-sharp fa-solid fa-star"></i><span>4.8</span>
+                            </div>
+
+                            <h2 class="box-title">Explore the Beauty of Maldives and enjoy</h2>
+                            <p class="blog-text">
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
+                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Quis autem vel eum iure
+                                reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                                qui dolorem eum fugiat quo voluptas nulla pariatur Quis autem vel eum iure reprehenderit
+                                qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                                eum fugiat quo voluptas nulla pariatur
+                            </p>
+                            <p class="blog-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                                reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                                qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+
+
+                            <div class="tour-snapshot">
+                                <h3>Tour Snapshot</h3>
+                                <div class="tour-snap-wrapp">
+                                    <div class="tour-snap">
+                                        <div class="icon">
+                                            <img src="./assets/img/activities/clock-regular.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">Duration:</span>
+                                            <span>8h</span>
+                                        </div>
+                                    </div>
+                                    <div class="tour-snap">
+                                        <div class="icon">
+                                            <img src="./assets/img/activities/guide2.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">Group Size:</span>
+                                            <span> 12</span>
+                                        </div>
+                                    </div>
+                                    <div class="tour-snap">
+                                        <div class="icon">
+                                            <img src="./assets/img/activities/ship.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">Near Public</span>
+                                            <span>Transportation</span>
+                                        </div>
+                                    </div>
+                                    <div class="tour-snap">
+                                        <div class="icon">
+                                            <img src="./assets/img/activities/01.svg" alt="icon">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">Free Cancellation</span>
+                                            <a href="#">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="box-title">Overview</h2>
+                            <p class="blog-text">
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
+                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Quis autem vel eum iure
+                                reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                                qui dolorem eum fugiat quo voluptas nulla pariatur.
+                            </p>
+
+                            <h2 class="box-title">Highlights</h2>
+                            <p class="blog-text">voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                explicabo. Dolorem ipsum quia dolor sit amet, consectetur, adipisci.</p>
+                            <ul class="checklist blog-text">
+                                <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Visit most
+                                    popular location of Maldives</li>
+                                <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Buffet
+                                    Breakfast for all traveler with good quality.</li>
+                                <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Expert guide
+                                    always guide you and give informations.</li>
+                                <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Best Hotel
+                                    for all also great food.</li>
+                                <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Helping all
+                                    traveler for Money Exchange.</li>
+                                <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Buffet
+                                    Breakfast for all traveler with good quality..</li>
+                                <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Buffet
+                                    Breakfast for all traveler with good quality.</li>
+                            </ul>
+
+                            <h2 class="box-title">Important Information</h2>
+                            <p class="blog-text">
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
+                                quia dolor sit amet, consectetur, adipisci.
+                            </p>
+                            <div class="destination-checklist">
+                                <ul class="checklist">
+                                    <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Expert
+                                        guide</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img"
+                                            class="pe-3">Admission to Windsor Castle</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Wi-Fi
+                                        and USB Charging On-board
+                                    </li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img"
+                                            class="pe-3">Admission to Stonehenge</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img"
+                                            class="pe-3">Departure Date</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Hotel
+                                        pick-up and drop-off</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img"
+                                            class="pe-3">Departures from 01st April 2024: Tour departs at 8 am</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img"
+                                            class="pe-3">(boarding at 7.30 am), Victoria Coach Station Gate 1-5</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img"
+                                            class="pe-3">Duration: 11h</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Mobile
+                                        tickets accepted</li>
+                                    <li><img src="./assets/img/destination/download.svg" alt="img" class="pe-3">Instant
+                                        confirmation</li>
+                                </ul>
+                            </div>
+
+                            <h2 class="box-title">Included and Excluded</h2>
+                            <p class="blog-text">
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
+                                quia dolor sit amet, consectetur, adipisci.
+                            </p>
+                            <div class="destination-checklist">
+                                <ul class="checklist">
+                                    <li><img src="./assets/img/activities/right_green.svg" alt="img" class="pe-3">Hotel
+                                        Fair</li>
+                                    <li><img src="./assets/img/activities/right_green.svg" alt="img"
+                                            class="pe-3">Transportation</li>
+                                    <li><img src="./assets/img/activities/right_green.svg" alt="img"
+                                            class="pe-3">Breakfast
+                                    </li>
+                                    <li><img src="./assets/img/activities/right_green.svg" alt="img"
+                                            class="pe-3">Sightseeing</li>
+                                    <li><img src="./assets/img/activities/right_green.svg" alt="img" class="pe-3">Travel
+                                        Tax</li>
+                                    <li><img src="./assets/img/activities/right_green.svg" alt="img"
+                                            class="pe-3">Seasonal Food</li>
+                                </ul>
+                                <ul class="checklist">
+                                    <li><img src="./assets/img/activities/X.svg" alt="img" class="pe-3">WIFI</li>
+                                    <li><img src="./assets/img/activities/X.svg" alt="img" class="pe-3">Swimming Pool
+                                    </li>
+                                    <li><img src="./assets/img/activities/X.svg" alt="img" class="pe-3">GYM
+                                    </li>
+                                    <li><img src="./assets/img/activities/X.svg" alt="img" class="pe-3">Travel Insurance
+                                    </li>
+                                    <li><img src="./assets/img/activities/X.svg" alt="img" class="pe-3">Family Expenses
+                                    </li>
+
+                                    <li><img src="./assets/img/activities/X.svg" alt="img" class="pe-3">Family Expenses
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="activity-location">
+                                <h3>Activity Location</h3>
+                                <div class="location-map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29749.225124029366!2d72.86179986239642!3d21.245598798571976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f4fb5c0b087%3A0xb7aabd8a90da0679!2sMota%20Varachha%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1725949081199!5m2!1sen!2sin"
+                                        width="100%" height="375" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="reviews">
+                                <h2 class="box-title ">Reviews (3)</h2>
+                                <div class="reviews_commets">
+                                    <div class="comment-avater">
+                                        <img src="./assets/img/destination/comment-author-1.jpg" alt="img"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="comment-content">
+                                        <h3 class="name mb-0">Adam Jhon</h3>
+                                        <div class="comment-wrapp">
+                                            <span>20 Jun, 2024</span>
+                                            <span>08:56pm</span>
+                                            <span class="star_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <p>
+                                            Credibly pontificate transparent quality vectors with quality mindshare.
+                                            Efficiently architect worldwide strategic theme areas after user.
+                                        </p>
+                                        <div class="like">
+                                            <i class="fa-solid fa-thumbs-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews_commets">
+                                    <div class="comment-avater">
+                                        <img src="./assets/img/destination/comment-author-4.jpg" alt="img"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="comment-content">
+                                        <h3 class="name mb-0">Maria Willson</h3>
+                                        <div class="comment-wrapp">
+                                            <span>23 Jun, 2024</span>
+                                            <span>08:56pm</span>
+                                            <span class="star_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <p>
+                                            It is different from airport transfer or port transfer, which are services
+                                            that pick you up
+                                        </p>
+                                        <div class="like">
+                                            <i class="fa-solid fa-thumbs-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews_commets mb-0">
+                                    <div class="comment-avater">
+                                        <img src="./assets/img/destination/comment-author-5.jpg" alt="img"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="comment-content">
+                                        <h3 class="name mb-0">Michel Edwards</h3>
+                                        <div class="comment-wrapp">
+                                            <span>27 Jun, 2024</span>
+                                            <span>08:56pm</span>
+                                            <span class="star_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                        <p>
+                                            Credibly pontificate transparent quality vectors with quality mindshare.
+                                            Efficiently architect worldwide strategic theme areas after user.
+                                        </p>
+                                        <div class="like">
+                                            <i class="fa-solid fa-thumbs-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reply_form">
+                                <h3 class="mb-1">Leave a Reply</h3>
+                                <p>Your email address will not be published. Required fields are marked</p>
+                                <form action="" class="row gy-4">
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" class="form-control" placeholder="Full Name*" required>
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" class="form-control" placeholder="Your Email*" required>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <input type="text" class="form-control" placeholder="Website" required>
+                                        <i class="fa-solid fa-globe"></i>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <textarea rows="4" class="form-control" placeholder="Comment*"
+                                            required></textarea>
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </div>
+                                    <div class="col-12 form-group form-check d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input" id="save" required>
+                                        <label for="save" class="form-check-label">Save my name, email, and website in
+                                            this browser for the next time I comment.</label>
+                                    </div>
+
+                                    <button class="main-btn">send message<img src="./assets/img/plane.svg"
+                                            alt="img "></button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-5 mt-5 mt-lg-0">
+                    <div class="sidebar">
+                        <div class="search-form-area">
+                            <input type="text" placeholder="Search">
+                            <div class="search_btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <h4 class="categories_title">Categories</h4>
+                            <ul class="categories_list">
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">City
+                                        Tour<span>(8)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">Beach
+                                        Tours<span>(6)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">Wildlife
+                                        Tours<span>(2)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">News &
+                                        Tips<span>(8)</span></a>
+                                </li>
+                                <li><img src="./assets/img/destination/map.svg" alt="map"><a href="#">Adventure
+                                        Tours<span>(9)</span></a>
+                                </li>
+                                <li class="border-0"><img src="./assets/img/destination/map.svg" alt="map"><a href="#"
+                                        class="pb-0">Mountain Tours<span>(10)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="book_now">
+                            <h4 class="book_title"><span>From</span> $75.00</h4>
+                            <div class="info-list">
+                                <strong>Date</strong>
+                                <span>sun 15 June - Fri 20 July</span>
+                            </div>
+                            <div class="info-list">
+                                <strong>Number of travelers</strong>
+                                <span>2 adults - 1 childeren - 1 room</span>
+                            </div>
+                            <a href="#" class="main-btn">book now <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                            <div class="review">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>88% of travelers recommend this experience</span>
+                            </div>
+                        </div>
+                        <div class="popular_tags">
+                            <h4 class="categories_title">Popular Tags</h4>
+                            <div class="popular_tags_btn">
+                                <a href="#">Tour</a>
+                                <a href="#">Adventure</a>
+                                <a href="#">Rent</a>
+                                <a href="#">Innovate</a>
+                                <a href="#">Hotel</a>
+                                <a href="#">Modern</a>
+                                <a href="#">Luxury</a>
+                                <a href="#">Travel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer start -->
+    <footer class="footer padding-py-70">
+        <div class="container th-container2">
+            <div class="footer_top">
+                <div class="row justify-content-between align-items-center border_bottom " data-sal-delay="100"
+                    data-sal="slide-up" data-sal-duration="800">
+                    <div class="col-lg-5">
+                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">get updated the
+                            latest newsletter</h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <form action="" class="d-flex  newletter_form">
+                            <input type="email" class="form-control  me-4" placeholder="Enter Email">
+                            <div class="main-btn d-flex align-items-center justify-content-center">
+                                <a href="#">subscribe now <i class="fa-brands fa-telegram"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xl-3" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <div class="about_logo">
+                            <a href="#">
+                                <img src="./assets/img/logo-white.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual capital model.
+                            Appropriately create interactive infrastructures</p>
+                        <div class="about-social d-flex align-items-center gap-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <ul class="widget_menu">
+                            <li class="widget_link">
+                                <a href="#">home</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">about us</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">our service</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">terms of service</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">tour booking now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Get In Touch</h3>
+                        <ul class="widget_contact">
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">+01 234 567 890</a>
+                                    <a href="#" class="d-block">+09 876 543 210</a>
+                                </div>
+                            </li>
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">mailinfo00@tourm.com</a>
+                                    <a href="#" class="d-block">support24@tourm.com</a>
+                                </div>
+                            </li>
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">
+                                        789 Inner Lane, Holy park, California, USA</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="500" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Instagram Post</h3>
+                        <div class="insta-gallery ">
+                            <a href="./assets/img/gallery_1_1.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_1.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_2.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_2.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_3.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_3.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_4.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_4.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_5.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_5.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_6.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_6.jpg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container th-container2">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-none d-md-flex align-items-center justify-content-end">
+                        <span class="me-4">We Accept</span>
+                        <img src="./assets/img/cards.png" alt="card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- jquery js -->
+    <script src="./vendor/js/jquery-3.7.1.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="./vendor/js/bootstrap.bundle.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- sal js -->
+    <script src="https://assets.codepen.io/9487/sal.js"></script>
+    <!-- Swiper JS -->
+    <script src="./vendor/js/swiper-bundle.min.js"></script>
+    <!-- coustom js -->
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        //animation
+        sal({
+            'threshold': 0.01,
+            once: false
+        });
+
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+        Fancybox.bind('[data-fancybox="gallery1"]', {
+            Thumbs: false,
+            Toolbar: false
+        });
+    </script>
+
+</body>
+
+</html>

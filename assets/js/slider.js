@@ -70,7 +70,7 @@ const swiper3 = new Swiper(".meet-guide-swiper", {
     speed: 1000,
     pagination: {
         el: ".swiper-pagination",
-        clickable: !0
+        clickable: !0,
     },
     autoplay: {
         delay: 4000,
@@ -104,6 +104,7 @@ const swiper3 = new Swiper(".meet-guide-swiper", {
 var popular_destination_swiper = new Swiper(".popular-destination-swiper", {
     slidesPerView: 3,
     spaceBetween: 24,
+    speed: 1500,
     loop: true,
     autoplay: {
         delay: 2500,
@@ -204,6 +205,112 @@ const swiper4 = new Swiper(".testi_monial", {
         },
         767: {
             slidesPerView: 2,
+        }
+    }
+});
+
+// service slider
+const service = new Swiper(".service-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 24,
+    speed: 1500,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 1,
+        },
+        767: {
+            slidesPerView: 2,
+        },
+        1199: {
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 4,
+        }
+    }
+});
+//tour_swiper
+const tour_swiper = new Swiper(".tour_swiper", {
+    freeMode: true,
+    effect: "fade",
+    loop: true,
+    speed: 1500,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    thumbs:{
+        swiper:".tour_thum_swiper",
+    }
+})
+//tour_thum_swiper
+const tour_thum_swiper = new Swiper(".tour_thum_swiper", {
+    effect: "slide",
+    loop: true,
+    spaceBetween: 24,
+    speed: 1500,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        767: {
+            slidesPerView: 2,
+        },
+        1199: {
+            slidesPerView: 3,
+        }
+    }
+})
+
+// slider meet-guide-swiper
+const guider_details_swiper = new Swiper(".guider_details_swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    speed: 1000,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: !0,
+    },
+    autoplay: {
+        delay: 4000,
+        speed: 800,
+    },
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 30
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1199: {
+            slidesPerView: 3,
+            spaceBetween: 30
         }
     }
 });

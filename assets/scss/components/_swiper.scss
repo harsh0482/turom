@@ -397,87 +397,8 @@
 }
 
 // meet-guide-swiper
-.meet-guide-swiper {
-    .team_box {
-        position: relative;
-
-        // overflow: hidden;
-        &:hover .media_content {
-            background-color: $sky !important;
-            color: $white !important;
-        }
-
-        &:hover .box-title {
-            color: $white;
-        }
-
-        &:hover .social a {
-            color: $white !important;
-            border-color: $white !important;
-        }
-
-        &:hover .team_img img {
-            transform: scale(1.1);
-            transition: all 0.4s linear;
-        }
-
-        .team_img {
-            width: 100%;
-            max-width: 190px;
-            border: 3px solid $white;
-            border-radius: 50%;
-            margin: 0 auto;
-            overflow: hidden;
-
-            img {
-                width: 100%;
-                max-width: 100%;
-                border-radius: 50%;
-                transition: all 0.4s linear;
-            }
-        }
-
-        .team_content {
-            background-color: $white;
-            padding: 125px 16px 16px 16px;
-            margin-top: -100px;
-            border-radius: 16px;
-
-            .media_content {
-                border-radius: 16px;
-                padding: 24px 28px;
-                background-color: #E9F6F9;
-                transition: all 0.4s linear;
-
-                .box-title {
-                    font-weight: 600;
-                }
-
-                .team-des {
-                    font-weight: 400;
-                    display: block;
-                    margin-bottom: 5px;
-                }
-
-                .social {
-                    display: flex;
-                    justify-content: center;
-                    gap: 8px;
-
-                    a {
-                        width: 30px;
-                        height: 30px;
-                        border: 1px solid $sky;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 50%;
-                        color: $sky;
-                    }
-                }
-            }
-        }
-    }
+.meet-guide-swiper,.guider_details_swiper {
+ 
 
     .swiper-pagination {
         display: block;
@@ -650,6 +571,7 @@
     .swiper-slide.swiper-slide-active {
         margin-bottom: 80px !important;
         margin-top: 0px !important;
+
         // width: calc(720px) !important;
         & .testimal_qutoe {
             background-color: $sky;
@@ -686,5 +608,55 @@
             }
 
         }
+    }
+}
+
+//service slider
+.service-swiper {
+    .swiper-wrapper {
+        padding-bottom: 10px;
+    }
+
+    .swiper-pagination {
+        display: block;
+        overflow: hidden;
+        height: 20px;
+        margin: auto;
+        position: relative;
+        margin-top: 45px;
+
+        span {
+            font-size: 0;
+            opacity: 1;
+            margin: 0px 14px !important;
+            border: 1px solid #113D48;
+            color: #E4E4E4;
+            background: transparent;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+
+            &.swiper-pagination-bullet-active {
+                background-color: $sky ;
+                border-color: $sky;
+            }
+
+        }
+    }
+}
+
+//tour_swiper activites page
+.slider_area {
+        
+        .tour_thum_swiper{
+            margin-top: 20px;
+        }
+}
+.tour-slider-img {
+    border-radius: 10px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
     }
 }

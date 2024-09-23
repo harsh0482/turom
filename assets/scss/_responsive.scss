@@ -55,6 +55,26 @@
         }
     }
 
+    // .destination-checklist page
+    .destination-checklist {
+        .checklist {
+            min-width: 250px !important;
+        }
+    }
+
+    //service page
+    .affordable .price_card .price_content {
+        padding: 0px 40px 30px;
+    }
+
+    //activities page
+    .tour-snapshot {
+        .tour-snap-wrapp {
+            display: grid !important;
+            grid-template-columns: auto auto;
+            gap: 20px;
+        }
+    }
 }
 
 @media screen and (min-width :1199px) {
@@ -348,6 +368,14 @@
             }
         }
     }
+
+    //destination_details page 
+
+    .destination_details {
+        .blockqutoes {
+            padding: 22px 25px 22px 35px;
+        }
+    }
 }
 
 @media screen and (max-width :991px) {
@@ -413,6 +441,22 @@
                 i {
                     font-size: 12px !important;
                     margin-right: 0 !important;
+                }
+            }
+        }
+    }
+
+    //sidebar
+    .sidebar {
+        padding-left: 0;
+    }
+
+    //faq page
+    .faq {
+        .accordion {
+            .accordion-header {
+                .accordion-button {
+                    font-size: 20px !important;
                 }
             }
         }
@@ -555,6 +599,32 @@
             padding: 24px 24px 16px 24px !important;
         }
     }
+
+    //destination_detials page: 
+    .reviews {
+        .reviews_commets {
+            display: block !important;
+
+            .comment-avater {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    //blog page
+    .reviews {
+        .children {
+            margin-left: 40px !important;
+        }
+    }
+
+    //gallery page
+    .gallery_filter {
+        .filter_menu {
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media screen and (max-width :575px) {
@@ -635,195 +705,334 @@
     .breadcumb-title {
         font-size: 45px !important;
     }
-}
 
-@media screen and (max-width :480px) {
-
-    //swiper
-    .slider .mySwiper2 {
-        .hero-inner {
-
-            .content {
-                top: 27%;
-            }
-        }
-    }
-
-    .padding-py-70 {
-        padding: 40px 0px !important;
-    }
-
-    .section-title {
-        margin-bottom: 30px;
-        font-size: 30px;
-    }
-
-    .section-subtitle {
-        font-size: 35px !important;
-    }
-
-    .counter-sec {
-        padding-top: 400px !important;
-    }
-
-    // offer-deals
-    .offer-deals {
-        .offer-deals-wrapp {
-            .card_hover {
-                width: 100%;
-                max-width: 280px;
-                margin: 0 auto;
-            }
-        }
-    }
-
-    .footer {
-        .newletter_form {
-            max-width: 100%;
-            flex-direction: column;
-
-            .main-btn {
-                margin-top: 20px;
-                height: 60px;
-            }
-
-        }
-    }
-
-    //form_contain
-    .form_contain {
-        .contact-form {
-            padding: 25px;
-
-            h3 {
-                margin-bottom: 20px;
-            }
-
-            .form-group {
-                .form-control {
-                    padding: 12px 15px !important;
-                }
-
-                img {
-                    top: 13px;
-                    right: 15px;
-                }
-            }
-
-            .nice-select {
-                padding: 12px 15px !important;
-
-
-                .list {
-                    width: 100%;
-                    border-radius: unset !important;
-                    border-bottom: 3px solid $sky;
-                }
-            }
-
-            .main-btn {
-                margin-top: 30px;
-                padding: 15px 30px !important;
-                border-radius: 48px;
-            }
-        }
-    }
-
-    // destination page
-    .destination .sidebar .recent_post .recent_post_item {
+    //destination-checklist
+    .single_page .page-content .destination-checklist {
         flex-direction: column;
-    }
-    .destination {
-        .destination_pagination {
-            li {
-                margin: 0 3px;
-                a {
-                    width: 40px;
-                    height: 40px;
-                    font-size: 17px;
 
-                    &.next_btn {
-                        padding: 0 18px;
-                        border-radius: 22px;
-                    }
+        .checklist-1 {
+            border: unset !important;
+            margin-top: 15px;
+            padding-left: unset;
+        }
+    }
+
+    .single_page .checklist {
+        width: 100%;
+        min-width: 0 !important;
+    }
+
+    //destination_details page 
+    .destination_details {
+        .blockqutoes {
+            padding: 20px 20px 20px 30px !important;
+
+            &::before {
+                content: "";
+                height: 40px;
+                width: 30px;
+            }
+
+            &::after {
+                font-size: 27px;
+            }
+
+            .scite {
+                font-size: 18px;
+                padding: 1px 30px 1px 15px;
+                bottom: -12px;
+            }
+        }
+
+    }
+
+    .reviews {
+        .reviews_commets {
+            .comment-content {
+                .comment-wrapp {
+                    margin-bottom: 15px;
                 }
+
+                .like {
+                    position: relative !important;
+                    margin-top: 10px;
+                }
+
             }
         }
     }
-}
 
-@media screen and (max-width :380px) {
-    .padding-py-70 {
-        padding: 60px 0px !important;
-    }
 
-    //slider
-    .coustom_swiper_btn {
-        display: none !important;
-    }
-
-    // offer-deals
-    .offer-deals {
-        .offer-deals-wrapp {
+        //faq page
+        .faq {
             .accordion {
-                .accordion-item {
-                    min-width: auto !important;
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 18px !important;
+                        padding: 16px 25px !important;
+                    }
+    
+                    .accordion-body {
+                        padding: 16px 25px !important;
+                    }
+    
                 }
             }
+        }
+    @media screen and (max-width :480px) {
 
-            .card_hover {
-                width: 100%;
-                max-width: 280px;
-                margin: 0 auto;
+        //swiper
+        .slider .mySwiper2 {
+            .hero-inner {
+
+                .content {
+                    top: 27%;
+                }
+            }
+        }
+
+        .padding-py-70 {
+            padding: 40px 0px !important;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .section-subtitle {
+            font-size: 35px !important;
+        }
+
+        .counter-sec {
+            padding-top: 400px !important;
+        }
+
+        // offer-deals
+        .offer-deals {
+            .offer-deals-wrapp {
+                .card_hover {
+                    width: 100%;
+                    max-width: 280px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .footer {
+            .newletter_form {
+                max-width: 100%;
+                flex-direction: column;
+
+                .main-btn {
+                    margin-top: 20px;
+                    height: 60px;
+                }
+
+            }
+        }
+
+        //form_contain
+        .form_contain {
+            .contact-form {
+                padding: 25px;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                .form-group {
+                    .form-control {
+                        padding: 12px 15px !important;
+                    }
+
+                    img {
+                        top: 13px;
+                        right: 15px;
+                    }
+                }
+
+                .nice-select {
+                    padding: 12px 15px !important;
+
+
+                    .list {
+                        width: 100%;
+                        border-radius: unset !important;
+                        border-bottom: 3px solid $sky;
+                    }
+                }
+
+                .main-btn {
+                    margin-top: 30px;
+                    padding: 15px 30px !important;
+                    border-radius: 48px;
+                }
+            }
+        }
+
+        // destination page
+        .destination .sidebar .recent_post .recent_post_item {
+            flex-direction: column;
+        }
+
+        .destination {
+            .destination_pagination {
+                li {
+                    margin: 0 3px;
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 17px;
+
+                        &.next_btn {
+                            padding: 0 18px;
+                            border-radius: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Tour Snapshot activities page
+        .tour-snapshot {
+            .tour-snap-wrapp {
+                grid-template-columns: auto;
             }
         }
     }
 
-    // counter-sec
-    .counter-sec {
-        padding-top: 375px !important;
+    @media screen and (max-width :380px) {
+        .padding-py-70 {
+            padding: 60px 0px !important;
+        }
 
-        .row {
-            .counter-card-wrap {
-                &:nth-child(even) .counter-card .counter-shape span {
-                    top: 19px !important;
-                    right: 34px !important;
+        //slider
+        .coustom_swiper_btn {
+            display: none !important;
+        }
+
+        // offer-deals
+        .offer-deals {
+            .offer-deals-wrapp {
+                .accordion {
+                    .accordion-item {
+                        min-width: auto !important;
+                    }
                 }
 
-                .counter-card {
-                    width: 220px !important;
-                    height: 220px !important;
-                    margin-top: 50px !important;
+                .card_hover {
+                    width: 100%;
+                    max-width: 280px;
+                    margin: 0 auto;
+                }
+            }
+        }
 
-                    .counter-shape {
-                        inset: -15px !important;
-                        width: 250px !important;
-                        height: 250px !important;
+        // counter-sec
+        .counter-sec {
+            padding-top: 375px !important;
 
-                        span {
-                            bottom: 43px !important;
-                            right: 11px !important;
-                            width: 22px !important;
-                            height: 22px !important;
-                        }
+            .row {
+                .counter-card-wrap {
+                    &:nth-child(even) .counter-card .counter-shape span {
+                        top: 19px !important;
+                        right: 34px !important;
                     }
 
-                    .media-body {
-                        .box-number {
-                            font-size: 38px !important;
-                            margin-bottom: 0 !important;
+                    .counter-card {
+                        width: 220px !important;
+                        height: 220px !important;
+                        margin-top: 50px !important;
+
+                        .counter-shape {
+                            inset: -15px !important;
+                            width: 250px !important;
+                            height: 250px !important;
+
+                            span {
+                                bottom: 43px !important;
+                                right: 11px !important;
+                                width: 22px !important;
+                                height: 22px !important;
+                            }
                         }
 
-                        .counter-title {
-                            font-size: 24px;
+                        .media-body {
+                            .box-number {
+                                font-size: 38px !important;
+                                margin-bottom: 0 !important;
+                            }
+
+                            .counter-title {
+                                font-size: 24px;
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
-    .breadcumb-title {
-        font-size: 35px !important;
+        .breadcumb-title {
+            font-size: 35px !important;
+        }
+
+        //destination_details page 
+        .blog-text {
+            font-size: 16px !important;
+        }
+
+        .destination_details {
+            .blockqutoes {
+                padding: 16px 25px !important;
+
+                .scite {
+                    font-size: 16px;
+                    padding: 1px 30px 1px 15px;
+                    bottom: -12px;
+                }
+            }
+
+        }
+
+        //service page
+        .affordable .price_card .price_header {
+            padding: 30px 15px;
+        }
+
+        .affordable .price_card .price_content {
+            padding: 0px 30px 30px !important;
+        }
+
+        .affordable .price_card .price_btn .main-btn {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        //activites page
+        .sidebar .filter_price .price-range-slider .range-value input {
+            width: 100%;
+            max-width: 100px;
+            margin: 20px 0px 20px 6px !important;
+        }
+
+        //blog page
+        .reviews {
+            .children {
+                margin-left: 0px !important;
+            }
+        }
+
+        //gallery page
+        .gallery_filter {
+            .filter_menu {
+                gap: 8px !important;
+
+                .buttons {
+                    padding: 6px 15px !important;
+                }
+            }
+        }
     }
 }

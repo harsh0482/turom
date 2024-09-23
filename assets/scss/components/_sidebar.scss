@@ -1,0 +1,327 @@
+.sidebar {
+    padding-left: 10px;
+
+    .categories_title {
+        font-size: 25px;
+        color: $dark-blue;
+        border-bottom: 3px solid #e9edf5;
+        padding-bottom: 10px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 30px;
+            top: 100%;
+            left: 0;
+            background-color: $sky;
+        }
+    }
+
+    .categories,
+    .recent_post,
+    .popular_tags,
+    .book_now ,
+    .filter_price{
+        border: 1px solid #BCCED2;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .categories {
+        .categories_list {
+            margin-top: 15px;
+
+            li {
+                position: relative;
+                border-bottom: 1px solid #BCCED2;
+
+                img {
+                    position: absolute;
+                    top: 13px;
+                    left: 0;
+                }
+
+                a {
+                    color: $dark-blue;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 13px 0px;
+                    position: relative;
+                    z-index: 2;
+                    padding-left: 30px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $sky;
+                        transition: all 0.3s ease;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .activities {
+        margin-top: 30px;
+        .categories_list {
+
+            li {
+                svg {
+                    position: absolute;
+                    top: 16px;
+                    left: 0;
+                    width: 100%;
+                    max-width: 16px;
+
+                    path{
+                        fill: #3a3a3aec !important;
+                        transition: all 0.3s ease;
+                    } 
+                }
+                &:hover svg path{
+                    fill:#1ca8cb !important;
+                    transition: all 0.3s ease;
+
+                }
+            }
+        }
+    }
+
+    .book_now {
+        margin-top: 30px;
+
+        .book_title {
+            font-size: 28px;
+            font-weight: 600;
+            color: $dark-blue;
+            padding-bottom: 10px;
+
+            span {
+                font-size: 17px;
+                font-weight: 400;
+            }
+        }
+
+        .info-list {
+            padding: 12px;
+            border: 1px solid #E1E4E5;
+            border-radius: 4px;
+            margin-bottom: 25px;
+
+            strong {
+                display: block;
+                font-weight: 500;
+                font-size: 16px;
+            }
+
+            span {
+                color: #6c7585;
+                font-size: 14px;
+            }
+        }
+
+        .main-btn {
+            background-color: $sky;
+            margin-bottom: 25px !important;
+
+            &::before {
+                background-color: $dark-blue;
+            }
+        }
+
+        .review {
+            i {
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                border-radius: 50px;
+                background-color: #E9F6F9;
+                color: $sky;
+                margin-right: 8px;
+                -webkit-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    color: $white;
+                    background-color: $sky;
+                }
+            }
+
+            span {
+                font-size: 16px;
+                color: #6c7585;
+            }
+        }
+    }
+
+
+
+    .recent_post {
+        margin-top: 30px;
+
+        .categories_title {
+            margin-bottom: 25px;
+        }
+
+        .recent_post_item {
+            margin-top: 20px;
+
+            &:hover .recent_img::before {
+                scale: 1;
+                transition: all 0.4s ease;
+            }
+
+            .recent_img {
+                position: relative;
+                overflow: hidden;
+                border-radius: 5px;
+                height: 80px;
+                width: 100%;
+                min-width: 80px;
+                max-width: 80px;
+
+                &::before {
+                    content: "\f0c1";
+                    font-family: "FontAwesome";
+                    font-size: 20px;
+                    color: $sky;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 5px;
+                    z-index: 1;
+                    text-align: center;
+                    align-content: center;
+                    scale: 0;
+                    transition: all 0.4s ease;
+
+                }
+            }
+
+            .recent_content {
+                a {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $dark-blue;
+                    display: block;
+                    transition: all 0.3s linear;
+
+                    &:hover {
+                        color: $sky;
+                        transition: all 0.3s linear;
+
+                    }
+                }
+
+                .date {
+                    font-size: 16px !important;
+                    color: #6c7585;
+                    margin-top: 5px;
+
+                    i {
+                        color: #6c7585 !important;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .popular_tags {
+        margin-top: 30px;
+
+        .popular_tags_btn {
+            margin-top: 20px;
+
+            a {
+                display: inline-block;
+                padding: 9.5px 14px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+                color: $dark-blue;
+                font-size: 16px;
+                font-weight: 400;
+                background-color: #E9F6F9;
+                border-radius: 4px;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    background-color: $sky;
+                    color: $white;
+                    transition: all 0.3s linear;
+
+                }
+            }
+        }
+    }
+
+    //destination_details
+    .search-form-area {
+        border-radius: 16px;
+        padding: 20px;
+        background-color: #E9F6F9;
+        margin-bottom: 30px;
+
+        input {
+            background-color: #fff;
+        }
+
+        .search_btn {
+            max-width: 35px;
+            height: 35px;
+            top: 31px;
+            right: 30px;
+        }
+    }
+    // filter_price activities page
+    .filter_price{
+        margin-top: 30px;
+          .price-range-slider .range-value {
+            color: #6c7585;
+          }
+          .price-range-slider .range-value input {
+            background: none;
+            color: #6c7585;
+            font-size: 16px;
+            font-weight: initial;
+            box-shadow: none;
+            border: none;
+            outline: unset;
+            margin: 20px 0 20px 10px;
+          }
+          .price-range-slider .range-bar {
+            border: none;
+            background: transparent;
+            border: 1px solid #E1E4E5;
+            height: 8px;
+            width: 100%;
+            // margin-left: 8px;
+          }
+          .price-range-slider .range-bar .ui-slider-range {
+            background: #06b9c0;
+          }
+          .price-range-slider .range-bar .ui-slider-handle {
+            border: none;
+            border-radius: 25px;
+            background: #fff;
+            border: 1px solid #06b9c0;
+            height: 17px;
+            width: 17px;
+            top: -0.52em;
+            cursor: pointer;
+          }
+          .ui-slider-handle:focus-visible{
+            outline: none;
+            box-shadow: 1.5px 2.598px 10px 0px rgba(0, 0, 0, 0.15);
+          }
+          
+    }
+}

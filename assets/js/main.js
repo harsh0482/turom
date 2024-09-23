@@ -67,20 +67,35 @@ $(document).ready(function () {
   //destination page
 
   $('.sorting-filter-wrap .tab_list_btn').on('click', function (e) {
-    if($(this).hasClass('de_list')){
-      // $('#single_card #col').addClass('col-12').removeClass('col-md-6 , col-xxl-4');
-      $('#single_card').addClass('de_list').removeClass('grid');
+    if ($(this).hasClass('de_list')) {
+      $('.single_card').addClass('de_list').removeClass('grid');
       $(this).addClass('btnactive');
       $('.grid').removeClass('btnactive');
-      
+
     }
     else if ($(this).hasClass('grid')) {
-      // $('#single_card #col').addClass('col-md-6 , col-xxl-4').removeClass('col-12');
-      $('#single_card').addClass('grid').removeClass('de_list');
+      $('.single_card').addClass('grid').removeClass('de_list');
       $(this).addClass('btnactive');
       $('.de_list').removeClass('btnactive');
     }
   });
+
+  //gallery page
+
+  $('.buttons').click(function () {
+
+    $(this).addClass('active').siblings().removeClass('active');
+
+    let filter = $(this).attr('data-filter')
+
+    if (filter == 'all') {
+      $('.image_box').show(400);
+    } else {
+      $('.image_box').not('.' + filter).hide(200);
+      $('.image_box').filter('.' + filter).show(400);
+    }
+  });
+  
 });
 $(document).on("click", function (event) {
 
@@ -126,5 +141,6 @@ $('.counter-number').each(function () {
     }
   });
 });
+
 
 
