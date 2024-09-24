@@ -1,3 +1,7 @@
+//*** Loader Show ***//
+$(window).on('load', function(){
+  $('.codex-loader').fadeOut();
+});
 //login modal validation
 (function () {
   'use strict'

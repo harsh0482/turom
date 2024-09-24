@@ -1,0 +1,130 @@
+// ****************
+//   contact page
+// ****************
+.our-contact {
+    .about-contact {
+        gap: 24px;
+        border: 1px solid #E1E4E6;
+        border-radius: 8px;
+        padding: 24px 24px 18px;
+
+        &:hover .icon {
+            background-color: $sky;
+            color: $white;
+            transition: all 0.3s linear;
+
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: $dark-blue;
+            transition: all 0.3s linear;
+
+            i {
+                color: $white;
+                font-size: 32px;
+            }
+        }
+
+        .content {
+            h6 {
+                font-weight: 600;
+                color: $dark-blue;
+                margin-bottom: 2px;
+            }
+
+            p {
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+//form_contain
+.form_contain {
+    padding: 70px 0px;
+    background-image: url("../img/video_bg_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .contact-form {
+        background-color: #fff;
+        box-shadow: 0px 20px 20px rgba(204, 204, 204, 0.25);
+        border-radius: 16px;
+        padding: 40px;
+
+        h3 {
+            color: $dark-blue;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            position: relative;
+
+            .form-control {
+                padding: 15px 25px !important;
+                font-size: 15px !important;
+                font-weight: 500;
+                border-radius: 8px !important;
+
+                &:focus {
+                    border: 1px solid $sky !important;
+                }
+            }
+
+            img {
+                position: absolute;
+                top: 17px;
+                right: 25px;
+            }
+        }
+
+        .nice-select {
+            padding: 15px 25px !important;
+            font-size: 15px !important;
+            font-weight: 500;
+            border-radius: 8px !important;
+            float: unset !important;
+            height: unset !important;
+            line-height: unset !important;
+            color: #6c7585;
+
+            &:focus {
+                border: 1px solid $sky !important;
+            }
+
+            &:after {
+                width: 9px !important;
+                height: 9px !important;
+                right: 20px !important;
+            }
+
+            .list {
+                width: 100%;
+                border-radius: unset !important;
+                border-bottom: 3px solid $sky;
+            }
+        }
+
+        .nice-select .option.selected {
+            color: $sky !important;
+            background: $sky !important
+        }
+
+        .nice-select .option.selected.focus,
+        .nice-select .option:hover,
+        .nice-select .option.focus {
+            color: #fff !important;
+            background: $sky !important
+        }
+
+        .main-btn {
+            margin-top: 40px;
+            padding: 19.5px 42px !important;
+            border-radius: 48px;
+        }
+    }
+}

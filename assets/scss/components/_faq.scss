@@ -1,0 +1,78 @@
+//faq page
+.faq {
+    .faq_text {
+        color: #6c7585;
+    }
+
+    .accordion-button::after {
+        background-image: none !important;
+        content: '\f078';
+        font-family: 'fontawesome';
+        font-size: 18px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        transform: rotateX(180deg) !important;
+    }
+
+    .accordion-button:focus {
+        outline: unset;
+        box-shadow: unset;
+        border: unset;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: $dark-blue !important;
+        background-color: unset;
+        box-shadow: unset;
+    }
+
+    .accordion {
+        .accordion-item {
+            border-top: 1px solid $dark-blue !important;
+            border-color: $dark-blue !important;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            .accordion-header {
+                .accordion-button {
+                    padding: 16px 30px;
+                    font-size: 24px;
+                    color: $dark-blue;
+                    font-weight: 500;
+                }
+            }
+
+            .accordion-body {
+                padding: 16px 30px !important;
+                padding-top: 0 !important;
+            }
+
+        }
+    }
+}
+
+.faq_form {
+    background-image: url("../img/tour_bg_3.jpg");
+    background-size: contain;
+    background-position: top center;
+
+    .title-area {
+        margin-bottom: 30px !important;
+    }
+
+    .contact-form {
+        button {
+            width: auto !important;
+        }
+
+        .main-btn {
+            padding: 19.5px 42px;
+            border-radius: 48px;
+            font-size: 16px !important;
+        }
+    }
+}

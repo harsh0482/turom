@@ -8,7 +8,6 @@
 
 .hero-text {
     font-size: 26px;
-    // line-height: 18x;
     color: $white;
     display: block;
     font-weight: 600;
@@ -24,6 +23,34 @@
     font-size: 18px;
     color: $white;
     margin-bottom: 35px;
+}
+
+//swiper pagination 
+.swiper-pagination.costum_pagination {
+    max-width: 180px;
+    display: block;
+    overflow: hidden;
+    height: 21px;
+    margin: auto;
+    position: relative;
+
+    span {
+        font-size: 0;
+        opacity: 1;
+        margin: 0px 8px !important;
+        border: 1px solid #113D48;
+        color: #E4E4E4;
+        background: transparent;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+
+        &.swiper-pagination-bullet-active {
+            background-color: $sky ;
+            border-color: $sky;
+        }
+
+    }
 }
 
 .slider {
@@ -292,8 +319,6 @@
 
 .tour-categorie {
     .swiper {
-        // padding-bottom: 60px !important;
-
         .swiper-wrapper {
             align-items: center;
             height: 100%;
@@ -305,10 +330,6 @@
                 height: 100%;
                 min-height: 230px !important;
                 margin-bottom: 40px;
-
-                // &.active .categories-card{
-                //     scale: 2 !important;
-                // }
 
                 .categories-card {
                     height: 100%;
@@ -365,66 +386,14 @@
                 }
             }
         }
-
-        .swiper-pagination {
-            max-width: 180px;
-            display: block;
-            overflow: hidden;
-            height: 21px;
-            margin: auto;
-            position: relative;
-
-            span {
-                font-size: 0;
-                opacity: 1;
-                margin: 0px 8px !important;
-                border: 1px solid #113D48;
-                color: #E4E4E4;
-                background: transparent;
-                height: 16px;
-                width: 16px;
-                border-radius: 50%;
-
-                &.swiper-pagination-bullet-active {
-                    background-color: $sky ;
-                    border-color: $sky;
-                }
-
-            }
-        }
-
     }
 }
 
 // meet-guide-swiper
-.meet-guide-swiper,.guider_details_swiper {
- 
-
+.meet-guide-swiper,
+.guider_details_swiper {
     .swiper-pagination {
-        display: block;
-        overflow: hidden;
-        height: 21px;
-        margin: auto;
-        position: relative;
         margin-top: 45px;
-
-        span {
-            font-size: 0;
-            opacity: 1;
-            margin: 0px 8px !important;
-            border: 1px solid #113D48;
-            color: #E4E4E4;
-            background: transparent;
-            height: 16px;
-            width: 16px;
-            border-radius: 50%;
-
-            &.swiper-pagination-bullet-active {
-                background-color: $sky ;
-                border-color: $sky;
-            }
-
-        }
     }
 }
 
@@ -584,30 +553,7 @@
 
 
     .swiper-pagination {
-        display: block;
-        overflow: hidden;
-        height: 21px;
-        margin: auto;
-        position: relative;
         margin-top: 45px;
-
-        span {
-            font-size: 0;
-            opacity: 1;
-            margin: 0px 14px !important;
-            border: 1px solid #113D48;
-            color: #E4E4E4;
-            background: transparent;
-            height: 16px;
-            width: 16px;
-            border-radius: 50%;
-
-            &.swiper-pagination-bullet-active {
-                background-color: $sky ;
-                border-color: $sky;
-            }
-
-        }
     }
 }
 
@@ -618,45 +564,27 @@
     }
 
     .swiper-pagination {
-        display: block;
-        overflow: hidden;
         height: 20px;
-        margin: auto;
-        position: relative;
         margin-top: 45px;
-
         span {
-            font-size: 0;
-            opacity: 1;
             margin: 0px 14px !important;
-            border: 1px solid #113D48;
-            color: #E4E4E4;
-            background: transparent;
-            height: 16px;
-            width: 16px;
-            border-radius: 50%;
-
-            &.swiper-pagination-bullet-active {
-                background-color: $sky ;
-                border-color: $sky;
-            }
-
         }
     }
 }
 
 //tour_swiper activites page
 .slider_area {
-        
-        .tour_thum_swiper{
-            margin-top: 20px;
-        }
+
+    .tour_thum_swiper {
+        margin-top: 20px;
+    }
 }
+
 .tour-slider-img {
     border-radius: 10px;
     overflow: hidden;
 
-    img{
+    img {
         width: 100%;
     }
 }
