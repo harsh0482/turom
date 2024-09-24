@@ -2880,6 +2880,7 @@ form button {
 
 .paly-btn {
   position: relative;
+  cursor: pointer;
   height: 130px;
   width: 130px;
   border-radius: 50%;
@@ -3427,6 +3428,42 @@ form button {
   border-radius: 48px;
 }
 
+.modal .modal-content {
+  border-radius: unset;
+  background-color: transparent;
+  border: unset;
+}
+.modal .modal-content button {
+  position: absolute;
+  top: -2px;
+  right: -20px;
+  z-index: 22;
+}
+.modal .modal-content .btn-close {
+  background: none;
+  opacity: 1;
+}
+.modal .modal-content .btn-close i {
+  font-size: 30px;
+  color: #fff;
+}
+.modal .modal-content .btn-close:focus {
+  overflow: unset;
+  box-shadow: unset;
+}
+.modal .modal-content .modal-body {
+  padding: 0;
+  width: 100%;
+}
+.modal .modal-content .modal-body .img-cover {
+  width: 100%;
+}
+.modal .modal-content .modal-body iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+
 @media screen and (min-width: 1930px) {
   .mySwiper2 {
     max-width: 100% !important;
@@ -3723,6 +3760,15 @@ form button {
   .faq .accordion .accordion-header .accordion-button {
     font-size: 20px !important;
   }
+  .modal .modal-content button {
+    position: absolute;
+    top: -2px;
+    right: -20px;
+    z-index: 22;
+  }
+  .modal .modal-content .modal-body iframe {
+    min-height: 350px;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer .row .col-md-6:nth-child(-n+3) {
@@ -3897,6 +3943,15 @@ form button {
   }
   .faq .accordion .accordion-header .accordion-body {
     padding: 16px 25px !important;
+  }
+  .modal .modal-content button {
+    position: absolute;
+    top: -40px;
+    right: 5px;
+    z-index: 22;
+  }
+  .modal .modal-content .modal-body iframe {
+    min-height: 350px;
   }
 }
 @media screen and (max-width: 575px) and (max-width: 480px) {

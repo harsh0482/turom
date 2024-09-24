@@ -467,6 +467,22 @@
             }
         }
     }
+    //modal
+    .modal {
+        .modal-content {
+            button {
+                position: absolute;
+                top: -2px;
+                right: -20px;
+                z-index: 22;
+            }
+            .modal-body {
+                iframe{
+                    min-height: 350px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width :767px) {
@@ -782,6 +798,22 @@
                     padding: 16px 25px !important;
                 }
 
+            }
+        }
+    }
+    //modal
+    .modal {
+        .modal-content {
+            button {
+                position: absolute;
+                top: -40px;
+                right: 5px;
+                z-index: 22;
+            }
+            .modal-body {
+                iframe{
+                    min-height: 350px;
+                }
             }
         }
     }

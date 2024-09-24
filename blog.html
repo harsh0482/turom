@@ -55,7 +55,8 @@
                         <div class="header_link d-flex align-items-center">
                             <ul class="d-flex">
                                 <li class="d-none d-md-inline-block px-3 header_link_li"><a href="faq.html">FAQ</a></li>
-                                <li class="d-none d-md-inline-block px-3 header_link_li"><a href="contact.html">Support</a></li>
+                                <li class="d-none d-md-inline-block px-3 header_link_li"><a
+                                        href="contact.html">Support</a></li>
                                 <li class="ps-3 header_link_li"><a href="#" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal">Sign in Register<i
                                             class="fa-solid fa-user ms-2"></i></a>
@@ -199,21 +200,24 @@
                                     <a href="#">Destination <i class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown_list">
                                         <li class="dropdown_item"><a href="destination.html">Destination</a></li>
-                                        <li class="dropdown_item"><a href="destination_details.html">Destination Details</a></li>
+                                        <li class="dropdown_item"><a href="destination_details.html">Destination
+                                                Details</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu_item dropdown_menu position-relative">
                                     <a href="#">service <i class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown_list">
                                         <li class="dropdown_item"><a href="service.html">Services</a></li>
-                                        <li class="dropdown_item"><a href="service_details.html">Service Details</a></li>
+                                        <li class="dropdown_item"><a href="service_details.html">Service Details</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="menu_item dropdown_menu position-relative">
                                     <a href="#">activities <i class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown_list">
                                         <li class="dropdown_item"><a href="activities.html">activities</a></li>
-                                        <li class="dropdown_item"><a href="activities_details.html">activities Details</a></li>
+                                        <li class="dropdown_item"><a href="activities_details.html">activities
+                                                Details</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu_item dropdown_menu position-relative">
@@ -224,7 +228,8 @@
                                         <li class="dropdown_item"><a href="our_tour.html">Our Tour</a></li>
                                         <li class="dropdown_item"><a href="tour_details.html">Tour Details</a></li>
                                         <li class="dropdown_item"><a href="tour_guider.html">Tour Guider</a></li>
-                                        <li class="dropdown_item"><a href="guider_details.html">Tour Guider Details</a></li>
+                                        <li class="dropdown_item"><a href="guider_details.html">Tour Guider Details</a>
+                                        </li>
                                         <li class="dropdown_item"><a href="faq.html">Faq Page</a></li>
                                         <li class="dropdown_item"><a href="price_package.html">Price Package</a></li>
                                         <li class="dropdown_item"><a href="error.html">Error Page</a></li>
@@ -354,10 +359,15 @@
                                     <img src="./assets/img/activities/blog-s-1-2.jpg" alt="img">
                                 </a>
 
-                                <a href="https://www.youtube.com/watch?v=tzordXwckBM" class="youtube_btn"
+                                <!-- <a href="https://www.youtube.com/watch?v=tzordXwckBM" class="youtube_btn"
                                     target="_blank">
                                     <i class="fa-solid fa-play"></i>
-                                </a>
+                                </a> -->
+                                <div class="video-box">
+                                    <div class="youtube_btn" data-bs-toggle="modal" data-bs-target="#video_modal">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
                             </div>
                             <div class="living">
                                 <ul class="living_header">
@@ -384,7 +394,7 @@
                                 <li><a href="#" class="next_btn">Next<i
                                             class="fa-solid fa-arrow-right-long ms-2 align-middle"></i></a></li>
                             </ul>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -623,7 +633,22 @@
         </div>
     </div>
     <!-- footer end -->
-
+    <!-- video Modal start-->
+    <div class="modal fade" id="video_modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="fa-solid fa-xmark"></i></button>
+                <div class="modal-body">
+                    <iframe src="https://www.youtube.com/embed/ojp1IuMMZpw?si=FPawenpLbIfed94D"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video Modal end-->
     <!-- jquery js -->
     <script src="./vendor/js/jquery-3.7.1.js"></script>
     <!-- bootstrap cdn -->
