@@ -3502,10 +3502,9 @@ form button {
     transition: all 0.4s ease;
   }
   .header .menu-list ul .dropdown_menu:hover .dropdown_list {
-    transform: scaleY(1);
-    visibility: visible;
     opacity: 1;
-    z-index: 2;
+    visibility: visible;
+    transform: scaleY(1) translateZ(0);
   }
   .header .menu-list ul .dropdown_menu .dropdown_list {
     position: absolute;
@@ -3515,10 +3514,12 @@ form button {
     min-width: 230px;
     border-bottom: 3px solid #1ca8cb;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-    transform: scaleY(0);
-    transition: all 0.4s ease;
+    z-index: 11;
     opacity: 0;
     visibility: hidden;
+    transform-origin: top center;
+    transform: scaleY(0) translateZ(100px);
+    transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.7s ease;
   }
   .header .menu-list ul .dropdown_menu .dropdown_list .dropdown_item {
     padding: 5px 20px;
