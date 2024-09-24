@@ -3538,25 +3538,35 @@ form button {
   .header .menu-list ul .menu_item > a i {
     transition: all 0.4s ease;
   }
-  .header .menu-list ul .dropdown_menu:hover .dropdown_list {
+  .header .menu-list ul .dropdown_menu:hover .dropdown_list,
+  .header .menu-list ul .child_dropdown_menu:hover .child_dropdown_list {
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
     opacity: 1;
     visibility: visible;
     transform: scaleY(1) translateZ(0);
   }
-  .header .menu-list ul .dropdown_menu .dropdown_list {
+  .header .menu-list ul .dropdown_menu .dropdown_list,
+  .header .menu-list ul .child_dropdown_menu .child_dropdown_list {
     position: absolute;
     background-color: #fff;
-    top: 100%;
-    left: -30px;
-    min-width: 230px;
     border-bottom: 3px solid #1ca8cb;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    transform: scaleY(0);
+    transition: all 0.4s ease;
     z-index: 11;
     opacity: 0;
     visibility: hidden;
     transform-origin: top center;
     transform: scaleY(0) translateZ(100px);
     transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.7s ease;
+  }
+  .header .menu-list ul .dropdown_menu .dropdown_list {
+    top: 100%;
+    left: -30px;
+    min-width: 230px;
   }
   .header .menu-list ul .dropdown_menu .dropdown_list .dropdown_item {
     padding: 5px 20px;
@@ -3588,6 +3598,23 @@ form button {
     opacity: 1;
     left: 0;
     transition: all 0.4s ease-out;
+  }
+  .header .menu-list ul .dropdown_menu .dropdown_list .dropdown_item.child_dropdown_menu > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .menu-list ul .dropdown_menu .dropdown_list .dropdown_item.child_dropdown_menu > a i {
+    transition: all 0.3s ease;
+  }
+  .header .menu-list ul .dropdown_menu .dropdown_list .dropdown_item.child_dropdown_menu > a:hover i {
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+  }
+  .header .menu-list ul .dropdown_menu .dropdown_list .dropdown_item.child_dropdown_menu .child_dropdown_list {
+    top: 3px;
+    left: 100%;
+    min-width: 220px;
   }
   .header .menu-list ul .dropdown_menu .dropdown_list .dropdown_item + .dropdown_item {
     border-top: 1px solid #999;
@@ -3638,49 +3665,31 @@ form button {
   }
   .header .menu-list .mobile-menu > ul {
     flex-direction: column;
-    padding: 0px 20px;
   }
   .header .menu-list .mobile-menu > ul li {
     border-top: 1px solid #999;
   }
   .header .menu-list .mobile-menu > ul li a {
-    padding: 7px 0px;
-  }
-  .header .menu-list .mobile-menu > ul .dropdown_menu > a::after {
-    content: "\f067";
-    font-family: "Font Awesome 5 Free";
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    text-align: center;
-    font-size: 13px;
-    border-radius: 50px;
-    background-color: #E9F6F9;
-    float: right;
-  }
-  .header .menu-list .mobile-menu > ul .dropdown_menu > a.active::after {
-    content: "\f146";
-  }
-  .header .menu-list .mobile-menu > ul .dropdown_menu > a.active::before {
-    content: "\f107";
-    color: #1ca8cb;
+    padding: 7px 20px;
   }
   .header .menu-list .mobile-menu > ul .menu_item:first-child {
     border-top: unset !important;
   }
   .header .menu-list .mobile-menu > ul .menu_item .dropdown_list a {
-    padding-left: 20px;
+    padding-left: 30px;
   }
-  .header .menu-list .mobile-menu > ul .menu_item a::before {
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    display: inline-block;
-    padding-right: 5px;
-    vertical-align: middle;
-    font-weight: 600;
+  .header .menu-list .mobile-menu > ul .menu_item > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .header .menu-list .mobile-menu > ul .menu_item a i {
-    display: none;
+  .header .menu-list .mobile-menu .child_dropdown_menu > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .menu-list .mobile-menu .child_dropdown_menu .dropdown_item a {
+    padding-left: 40px !important;
   }
   .footer .row .col-md-6:nth-child(-n+2) {
     margin-bottom: 30px;
