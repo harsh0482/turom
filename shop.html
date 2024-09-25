@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>shop</title>
     <!-- bootstrap  -->
     <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
     <!-- fancybox -->
@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://assets.codepen.io/9487/sal.css">
     <!-- fontawsome -->
     <link rel="stylesheet" href="./vendor/css/fontawsome-all.min.css">
-    <!-- nice select -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" />
     <!-- coustom css -->
     <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
@@ -185,9 +183,10 @@
                         </div>
                         <div class="mobile-menu">
                             <ul class="d-flex">
-                                <li class="menu_item  position-relative">
+                                <li class="menu_item  dropdown_menu position-relative">
                                     <a href="index.html">home</a>
-                                    <!-- <ul class="dropdown_list" dropdown_menu>
+                                    <!-- <ul class="dropdown_list" >
+                                        
                                         <li class="dropdown_item"><a href="#">Home Travel</a></li>
                                         <li class="dropdown_item"><a href="#">Home Tour</a></li>
                                         <li class="dropdown_item"><a href="#">Home Agency</a></li>
@@ -223,7 +222,16 @@
                                 <li class="menu_item dropdown_menu position-relative">
                                     <a href="#">pages <i class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown_list">
-                                        <li class="dropdown_item"><a href="#">Shop</a></li>
+                                        <li class="dropdown_item child_dropdown_menu position-relative">
+                                            <a href="#">Shop<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="child_dropdown_list">
+                                                <li class="dropdown_item"><a href="shop.html">shop</a></li>
+                                                <li class="dropdown_item"><a href="shop_details.html">shop details</a></li>
+                                                <li class="dropdown_item"><a href="cart.html">cart page</a></li>
+                                                <li class="dropdown_item"><a href="checkout.html">checkout</a></li>                   
+                                                <li class="dropdown_item"><a href="wishlist.html">wishlist</a></li>                   
+                                            </ul>
+                                        </li>
                                         <li class="dropdown_item"><a href="gallery.html">Gallery</a></li>
                                         <li class="dropdown_item"><a href="our_tour.html">Our Tour</a></li>
                                         <li class="dropdown_item"><a href="tour_details.html">Tour Details</a></li>
@@ -251,129 +259,279 @@
             </div>
         </div>
     </header>
+
     <!-- this is box shodow full screen -->
     <div class="wapper"></div>
+
     <!-- header end -->
 
     <div class="background_wrapper">
         <div class="container">
-            <h1 class="breadcumb-title">Contact Us</h1>
+            <h1 class="breadcumb-title">Shops</h1>
             <ul class="breadcumb-menu">
                 <li><a href="index.html">home</a></li>
-                <li class="ps-2">Contact Us</li>
+                <li class="ps-2">Shops</li>
             </ul>
         </div>
     </div>
 
-    <!-- Our Contact start -->
-    <section class="our-contact  padding-py-70">
-        <div class="container  th-container2">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-area" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-                        <div class="section-subtitle ">Get In Touch</div>
-                        <h2 class="section-title ">Our Contact Information</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                    <div class="about-contact d-flex align-items-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="content">
-                            <h6>Our Address</h6>
-                            <p>2690 Hiltona Street Victoria</p>
-                            <p>Road, New York, Canada</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 mt-4 mt-lg-0" data-sal-delay="300" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="about-contact d-flex align-items-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="content">
-                            <h6>Phone Number</h6>
-                            <p>+01 234 567 890</p>
-                            <p>+09 876 543 210</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 mt-4 mt-xl-0" data-sal-delay="400" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="about-contact d-flex align-items-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="content">
-                            <h6>Email Address</h6>
-                            <p>mailinfo00@tourm.com</p>
-                            <p>support24@tourm.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our Contact end -->
 
-    <!-- form_contain start -->
-    <section class="form_contain overflow-hidden">
+    <section class="shop padding-py-70">
         <div class="container th-container2">
-            <div class="row">
-                <div class="col-lg-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="800">
-                    <form action="" class="contact-form">
-                        <h3 class="text-capitalize">Book a tour</h3>
-                        <div class="form-group">
-                            <input type="text" placeholder="First Name" class="form-control">
-                            <img src="./assets/img/user.svg" alt="user">
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <div class="search-form-area">
+                        <input type="text" placeholder="Search">
+                        <div class="search_btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
-                        <div class="form-group mt-4">
-                            <input type="text" placeholder="Your mail" class="form-control">
-                            <img src="./assets/img/mail.svg" alt="mail">
-                        </div>
-                        <div class="mt-4">
-                            <select>
-                                <option value="Select Tour Type" selected="selected" disabled="disabled">Select Tour
-                                    Type</option>
-                                <option value="Africa Adventure">Africa Adventure</option>
-                                <option value="Africa Wild">Africa Wild</option>
-                                <option value="Asia">Asia</option>
-                                <option value="Scandinavia">Scandinavia</option>
-                                <option value="Western Europe">Western Europe</option>
-                            </select>
-                        </div>
-                        <div class="form-group mt-4">
-                            <textarea name="" id="" class="form-control" placeholder="Your Message" rows="3"></textarea>
-                            <img src="./assets/img/chat.svg" alt="chat">
-                        </div>
-                        <a href="#" class="main-btn">send message <img src="./assets/img/plane.svg" alt=""></a>
-                    </form>
+                    </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-center order-lg-last order-first"
-                    data-sal-delay="100" data-sal="slide-left" data-sal-duration="800">
-                    <div class="video-box">
-                        <div class="paly-btn" data-bs-toggle="modal" data-bs-target="#video_modal">
-                            <i class="fa-solid fa-play"></i>
+                <div class="col-md-auto mt-4 mt-md-0">
+                    <div class="sorting-filter-wrap d-flex gap-4">
+                        <div class="tab_list d-flex align-items-center ">
+                            <div class="grid tab_list_btn btnactive"><i class="fa-solid fa-table-cells-large"></i></div>
+                            <div class="de_list tab_list_btn"><i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <select>
+                            <option value="menu_order" selected="selected">Default Sorting</option>
+                            <option value="popularity">Sort by popularity</option>
+                            <option value="rating">Sort by average rating</option>
+                            <option value="date">Sort by latest</option>
+                            <option value="price">Sort by price: low to high</option>
+                            <option value="price-desc">Sort by price: high to low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 grid single_card mt-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_1.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">sale</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">beach casual-shoe</a></h3>
+                            <span class="price">$35.00</span>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_2.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">sale</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">Beach football</a></h3>
+                            <span class="price">$45.00</span><del class="ms-2">$60.00</del>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_3.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">new</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">Hamok</a></h3>
+                            <span class="price">$20.00</span>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_4.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">sale</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">Beach Hat</a></h3>
+                            <span class="price">$40.00</span>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_5.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">new</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">Sony Black Headphone</a></h3>
+                            <span class="price">$65.00</span>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_6.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">sale</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">Hoodie With Zipper</a></h3>
+                            <span class="price">$35.00</span>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_7.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">new</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">Trendy Sunglass</a></h3>
+                            <span class="price">$25.00</span>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="shop_card">
+                        <div class="shop_img">
+                            <img src="./assets/img/shope/product_1_1.png" alt="img" class="img-fluid">
+                            <div class="shop_action">
+                                <a href="#" class="icon" data-bs-toggle="modal" data-bs-target="#modal_product"><i
+                                        class="fa-solid fa-eye"></i></a>
+                                <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <span class="product-tag">sale</span>
+                        </div>
+                        <div class="shop_content">
+                            <h3 class="shop-title"><a href="#">V-Neck T-Shirt</a></h3>
+                            <span class="price">$35.00</span>
+                            <div class="product_ratting">
+                                <span class="count_review">(5.00 Review)</span>
+                                <span class="count_ratting">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- form_contain end -->
-
-    <!-- map start -->
-    <div class="map_section position-relative">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29749.225124029366!2d72.86179986239642!3d21.245598798571976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f4fb5c0b087%3A0xb7aabd8a90da0679!2sMota%20Varachha%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1725949081199!5m2!1sen!2sin"
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <!-- map end -->
     <!-- footer start -->
     <footer class="footer padding-py-70">
         <div class="container th-container2">
@@ -381,8 +539,7 @@
                 <div class="row justify-content-between align-items-center border_bottom " data-sal-delay="100"
                     data-sal="slide-up" data-sal-duration="800">
                     <div class="col-lg-5">
-                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">
-                            get updated the
+                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">get updated the
                             latest newsletter</h2>
                     </div>
                     <div class="col-lg-7">
@@ -403,8 +560,7 @@
                                 <img src="./assets/img/logo-white.svg" alt="">
                             </a>
                         </div>
-                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual
-                            capital model.
+                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual capital model.
                             Appropriately create interactive infrastructures</p>
                         <div class="about-social d-flex align-items-center gap-3">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -503,8 +659,7 @@
         <div class="container th-container2">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All
-                        Rights Reserved.</p>
+                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="d-none d-md-flex align-items-center justify-content-end">
@@ -517,19 +672,60 @@
     </div>
     <!-- footer end -->
 
-
-    <!-- video Modal start-->
-    <div class="modal fade video_modal" id="video_modal">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                <div class="modal-body">
-                    <iframe src="https://www.youtube.com/embed/ojp1IuMMZpw?si=FPawenpLbIfed94D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- modal product start -->
+    <div class="modal fade modal_product" id="modal_product" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content modal_box">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body p-0 modal_box_body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="modal_img">
+                                <img src="./assets/img/shope/product_1_5.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                            <div class="modal_content ps-0 ps-lg-4">
+                                <p class="product_price">$120.85 <del>$150.99</del></p>
+                                <h2 class="product_title">Bluetooth Headphone</h2>
+                                <div class="product_ratting">
+                                    <span class="count_ratting">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <a href="#" class="customer_review">(4 customer reviews)</a>
+                                </div>
+                                <p class="product_text">Bluetooth headphones are a popular choice for many people due to
+                                    their
+                                    convenience and wireless capabilities. They allow users to listen to music,
+                                    podcasts, or
+                                    make calls without being tethered to their device</p>
+                                <p class="info_text"><strong class="me-3">Availability:</strong><span class="stock"><i
+                                            class="fa-solid fa-square-check ms-1 me-2"></i>In Stock</span></p>
+                                <div class="action">
+                                    <div class="quantity">
+                                        <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                                        <input class="counter" type='text'>
+                                        <button class="increment"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <a href="cart.html" class="main-btn">Add to Cart</a>
+                                    <a href="wishlist.html" class="wishlist_btn"><i class="fa-solid fa-heart"></i></a>
+                                </div>
+                                <p class="info_text mb-2"><strong class="me-3">SKU:</strong><span class="stock">BH-1001-BT</span></p>
+                                <p class="info_text mb-2"><strong class="me-3">Category:</strong><span class="stock">sports, gaming, music listening</span></p>
+                                <p class="info_text mb-2"><strong class="me-3">Tags:</strong><span class="stock">Wireless, Sports</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- video Modal end-->
+    <!-- modal product end -->
 
     <!-- jquery js -->
     <script src="./vendor/js/jquery-3.7.1.js"></script>
@@ -539,8 +735,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- sal js -->
     <script src="https://assets.codepen.io/9487/sal.js"></script>
-    <!-- nice-select -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
     <!-- coustom js -->
     <script src="./assets/js/main.js"></script>
     <script>
@@ -557,10 +751,8 @@
             Thumbs: false,
             Toolbar: false
         });
-        $(document).ready(function () {
-            $('select').niceSelect();
-        });
     </script>
+
 </body>
 
 </html>

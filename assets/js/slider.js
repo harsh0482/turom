@@ -314,3 +314,29 @@ const guider_details_swiper = new Swiper(".guider_details_swiper", {
         }
     }
 });
+
+//similar-swiper
+const similar_swiper = new Swiper(".similar-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 4000,
+        speed: 800,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        1199: {
+            slidesPerView: 4,
+        }
+    }
+});

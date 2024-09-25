@@ -714,63 +714,7 @@ body.body_hidden {
     }
 }
 
-// ****************
-//   destination page
-// ****************
-.destination {
-    .sorting-filter-wrap {
-        .tab_list {
-            border: 1px solid #E9F6F9;
-            padding: 5px;
-            border-radius: 4px;
 
-            .btnactive {
-                background-color: $sky;
-                border-radius: 5px;
-                color: $white;
-            }
-
-            .tab_list_btn {
-                padding: 6px 7px;
-            }
-
-            .tab_list_btn i {
-                font-size: 17px;
-            }
-        }
-
-        select {
-            outline: unset !important;
-            border: unset !important;
-            font-size: 16px;
-            color: $dark-blue;
-            font-weight: 500;
-            width: fit-content;
-            max-width: 160px;
-        }
-
-    }
-
-    .de_list {
-        .col-md-6 {
-            width: 100%;
-        }
-
-        .destination_card {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-
-            .destination_content {
-                padding: 0;
-
-                .destination_bottom {
-                    gap: 30px;
-                }
-            }
-        }
-    }
-}
 
 
 //destination_details page 

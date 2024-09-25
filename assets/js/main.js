@@ -79,7 +79,7 @@ $(document).ready(function () {
     $(this).addClass("active").siblings().removeClass("active")
   }));
 
-  //destination page
+  //sorting-filter-wrap
 
   $('.sorting-filter-wrap .tab_list_btn').on('click', function (e) {
     if ($(this).hasClass('de_list')) {
@@ -157,5 +157,20 @@ $('.counter-number').each(function () {
   });
 });
 
-
+// quantity countr
+let value = 1
+$(".counter").val(value);
+$('.increment').on("click", function() {
+  value = parseInt(value+1);
+  $(".counter").val(value);
+});
+$('.decrement').on("click", function(){
+  if(value > 1){
+    value = parseInt(value-1);
+    $(".counter").val(value);
+  }else{
+    value = 1;
+    $(".counter").val(value);
+  }
+});
 

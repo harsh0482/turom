@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Details</title>
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="./vendor/css/swiper-bundle.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="./vendor/css/animate.css">
+    <!-- sal animation -->
+    <link rel="stylesheet" href="https://assets.codepen.io/9487/sal.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="./vendor/css/fontawsome-all.min.css">
+    <!-- coustom css -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+
+<body>
+    <!-- header-top start -->
+    <div class="header-top border-bottom">
+        <div class="container container-th">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="left-content d-none d-xl-block py-2">
+                        <ul class="d-flex">
+                            <li class="pe-3">
+                                <i class="fa-solid fa-location-dot me-2"></i><span>45 New Eskaton Road, Austria</span>
+                            </li>
+                            <li class="ps-3">
+                                <i class="fa-solid fa-clock me-2"></i><span>Sun to Friday: 8.00 am - 7.00 pm</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12">
+                    <div class="right-content py-2 d-flex justify-content-xl-end justify-content-center ">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-circle-dollar-to-slot me-2"></i>USD
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">CNY</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">AUD</a></li>
+                            </ul>
+                        </div>
+                        <div class="header_link d-flex align-items-center">
+                            <ul class="d-flex">
+                                <li class="d-none d-md-inline-block px-3 header_link_li"><a href="faq.html">FAQ</a></li>
+                                <li class="d-none d-md-inline-block px-3 header_link_li"><a
+                                        href="contact.html">Support</a></li>
+                                <li class="ps-3 header_link_li"><a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Sign in Register<i
+                                            class="fa-solid fa-user ms-2"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal register-->
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile">Register</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                                <form action="" class="needs-validation" novalidate>
+                                    <h3>Sign in to your account</h3>
+                                    <div class="mt-3">
+                                        <label for="username" class="form-label">User
+                                            Name</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter username
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter password
+                                        </div>
+                                    </div>
+                                    <button class="main-btn mt-3" type="submit">
+                                        <a href="#" class="text-white">login <i
+                                                class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                                    </button>
+
+                                    <div class="mt-4 mb-2">
+                                        <a href="#" class="forgot_link fs-5">Forgot Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <form action="" class="needs-validation" novalidate>
+                                    <h3>Sign in to your account</h3>
+                                    <div class="mt-3">
+                                        <label for="username" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="username" required>
+                                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                                        <div class="invalid-feedback">
+                                            Please Enter name
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter email
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter password
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="cpassword" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="cpassword" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter Confirm Password
+                                        </div>
+                                    </div>
+                                    <button class="main-btn mt-3 mb-2" type="submit">
+                                        <a href="#" class="text-white">sing up <i
+                                                class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-top end -->
+
+    <!-- header start -->
+    <header class="header">
+        <div class="container container-th">
+            <div class="row ">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <div class="logo-brand">
+                        <a href="index.html">
+                            <img src="./assets/img/logo3.svg" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="bar d-block d-xl-none">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <div class="menu-list">
+                        <div class="side_logo d-block d-xl-none">
+                            <img src="./assets/img/logo3.svg" alt="logo">
+                            <div class="colse d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="mobile-menu">
+                            <ul class="d-flex">
+                                <li class="menu_item  dropdown_menu position-relative">
+                                    <a href="index.html">home</a>
+                                    <!-- <ul class="dropdown_list" >
+                                        
+                                        <li class="dropdown_item"><a href="#">Home Travel</a></li>
+                                        <li class="dropdown_item"><a href="#">Home Tour</a></li>
+                                        <li class="dropdown_item"><a href="#">Home Agency</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="menu_item">
+                                    <a href="about.html">about us</a>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">Destination <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="destination.html">Destination</a></li>
+                                        <li class="dropdown_item"><a href="destination_details.html">Destination
+                                                Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">service <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="service.html">Services</a></li>
+                                        <li class="dropdown_item"><a href="service_details.html">Service Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">activities <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="activities.html">activities</a></li>
+                                        <li class="dropdown_item"><a href="activities_details.html">activities
+                                                Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item child_dropdown_menu position-relative">
+                                            <a href="#">Shop<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="child_dropdown_list">
+                                                <li class="dropdown_item"><a href="shop.html">shop</a></li>
+                                                <li class="dropdown_item"><a href="shop_details.html">shop details</a>
+                                                </li>
+                                                <li class="dropdown_item"><a href="cart.html">cart page</a></li>
+                                                <li class="dropdown_item"><a href="checkout.html">checkout</a></li>
+                                                <li class="dropdown_item"><a href="wishlist.html">wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown_item"><a href="gallery.html">Gallery</a></li>
+                                        <li class="dropdown_item"><a href="our_tour.html">Our Tour</a></li>
+                                        <li class="dropdown_item"><a href="tour_details.html">Tour Details</a></li>
+                                        <li class="dropdown_item"><a href="tour_guider.html">Tour Guider</a></li>
+                                        <li class="dropdown_item"><a href="guider_details.html">Tour Guider Details</a>
+                                        </li>
+                                        <li class="dropdown_item"><a href="faq.html">Faq Page</a></li>
+                                        <li class="dropdown_item"><a href="price_package.html">Price Package</a></li>
+                                        <li class="dropdown_item"><a href="error.html">Error Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item dropdown_menu position-relative">
+                                    <a href="#">blog <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown_list">
+                                        <li class="dropdown_item"><a href="blog.html">Blog</a></li>
+                                        <li class="dropdown_item"><a href="blog_details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_item"><a href="contact.html">contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="main-btn d-none">book now <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- this is box shodow full screen -->
+    <div class="wapper"></div>
+
+    <!-- header end -->
+
+    <div class="background_wrapper">
+        <div class="container">
+            <h1 class="breadcumb-title">Shop Details</h1>
+            <ul class="breadcumb-menu">
+                <li><a href="index.html">home</a></li>
+                <li class="ps-2">Shop Details</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- product start -->
+
+    <div class="modal_product padding-py-70">
+        <div class="container th-container2">
+            <div class="modal_box p-0">
+                <div class="modal_box_body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="modal_img">
+                                <img src="./assets/img/shope/product_1_5.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                            <div class="modal_content ps-0 ps-lg-4">
+                                <p class="product_price">$120.85 <del>$150.99</del></p>
+                                <h2 class="product_title">Bluetooth Headphone</h2>
+                                <div class="product_ratting">
+                                    <span class="count_ratting">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <a href="#" class="customer_review">(4 customer reviews)</a>
+                                </div>
+                                <p class="product_text">Bluetooth headphones are a popular choice for many people due to
+                                    their
+                                    convenience and wireless capabilities. They allow users to listen to music,
+                                    podcasts, or
+                                    make calls without being tethered to their device</p>
+                                <p class="info_text"><strong class="me-3">Availability:</strong><span class="stock"><i
+                                            class="fa-solid fa-square-check ms-1 me-2"></i>In Stock</span></p>
+                                <div class="action">
+                                    <div class="quantity">
+                                        <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                                        <input class="counter" type='text'>
+                                        <button class="increment"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <a href="cart.html" class="main-btn">Add to Cart</a>
+                                    <a href="wishlist.html" class="wishlist_btn"><i class="fa-solid fa-heart"></i></a>
+                                </div>
+                                <p class="info_text mb-2"><strong class="me-3">SKU:</strong><span
+                                        class="stock">BH-1001-BT</span></p>
+                                <p class="info_text mb-2"><strong class="me-3">Category:</strong><span
+                                        class="stock">sports, gaming, music listening</span></p>
+                                <p class="info_text mb-2"><strong class="me-3">Tags:</strong><span
+                                        class="stock">Wireless, Sports</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <nav class="product_tab">
+                        <div class="nav nav-tabs" id="nav-tab">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#description"
+                                aria-selected="true">Description
+                            </button>
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#information"
+                                aria-selected="false">Additional Information</button>
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews"
+                                aria-selected="false">Customer Reviews
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active " id="description">
+                            <p>Bluetooth headphones are a wireless audio accessory that connects to your devices, like
+                                smartphones, tablets, or computers, via Bluetooth technology. Here's a typical
+                                description Introducing our [Brand Name] Bluetooth Headphones, the ultimate companion
+                                for your on-the-go audio experience. Immerse yourself in high-fidelity sound without the
+                                hassle of wires, thanks to the latest Bluetooth technology Featuring [insert standout
+                                features such as noise cancellation, long battery life, etc.], our headphones deliver
+                                crystal-clear audio while providing unmatched comfort during extended listening
+                                sessions. Designed for convenience and portability, our sleek and lightweight headphones
+                                fold easily for storage and travel. The adjustable headband ensures a secure and
+                                comfortable fit for all head shapes and sizes.</p>
+                        </div>
+                        <div class="tab-pane fade" id="information">
+                            <p>Advanced Bluetooth Connectivity: Our headphones utilize the latest Bluetooth technology
+                                for seamless pairing with your devices and reliable wireless connectivity up to 30 feet
+                                away. Long-lasting Battery Life: Enjoy hours of uninterrupted music playback with our
+                                long-lasting rechargeable battery. Whether you're on a long flight or a marathon study
+                                session, our headphones have you covered. Immersive Sound Experience: Experience rich,
+                                immersive sound with powerful bass and crisp highs. Our headphones are engineered to
+                                deliver audio that's true to the artist's intention, whether you're listening to music,
+                                podcasts, or watching movies. Comfortable Ergonomic Design: Designed for extended wear,
+                                our headphones feature plush ear cushions and an adjustable headband for a comfortable
+                                fit. Say goodbye to discomfort, even during marathon listening sessions. Foldable and
+                                Portable: Our headphones are designed to go wherever you do. Easily fold them up and
+                                toss them in your bag for on-the-go convenience. Whether you're traveling, commuting, or
+                                hitting the gym, take your music with you everywhere. Intuitive Controls: Control your
+                                music, adjust volume, and take calls with ease using the intuitive onboard controls. No
+                                need to fumble with your device—everything you need is right at your fingertips.</p>
+                        </div>
+                        <div class="tab-pane fade " id="reviews">
+                            <div class="row reviews">
+                                <div class="col-lg-6">
+                                    <div class="reviews_commets">
+                                        <div class="comment-avater">
+                                            <img src="./assets/img/destination/comment-author-1.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="comment-content">
+                                            <h3 class="name mb-0">Adam Jhon</h3>
+                                            <div class="comment-wrapp">
+                                                <span><i class="fa-solid fa-calendar me-2"></i>20 Jun, 2024</span>
+                                                <div class="star_ratting">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                This product is very much qualityful and I love this working system and
+                                                speed.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="reviews_commets">
+                                        <div class="comment-avater">
+                                            <img src="./assets/img/destination/comment-author-4.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="comment-content">
+                                            <h3 class="name mb-0">Maria Willson</h3>
+                                            <div class="comment-wrapp">
+                                                <span><i class="fa-solid fa-calendar me-2"></i>20 Jun, 2024</span>
+                                                <div class="star_ratting">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                It is different from airport transfer or port transfer, which are
+                                                services
+                                                that pick you up
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="reviews_commets mb-lg-0">
+                                        <div class="comment-avater">
+                                            <img src="./assets/img/destination/comment-author-5.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="comment-content">
+                                            <h3 class="name mb-0">Jacklin July</h3>
+                                            <div class="comment-wrapp">
+                                                <span><i class="fa-solid fa-calendar me-2"></i>20 Jun, 2024</span>
+                                                <div class="star_ratting">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                This product is very much qualityful and I love this working system and
+                                                speed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="reviews_commets mb-0">
+                                        <div class="comment-avater">
+                                            <img src="./assets/img/destination/comment-author-5.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="comment-content">
+                                            <h3 class="name mb-0">Michel Edwards</h3>
+                                            <div class="comment-wrapp">
+                                                <span><i class="fa-solid fa-calendar me-2"></i>20 Jun, 2024</span>
+                                                <div class="star_ratting">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                I am just in love with this product. Their service is also very good
+                                                you
+                                                can also try.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reply_form">
+                        <h3 class="mb-1">Add a review</h3>
+                        <p>Your Rating <a href="#" class="ms-2"><i class="fa-solid fa-star-of-david"></i></a>
+                            <a href="#"><i class="fa-solid fa-star-of-david"></i></a>
+                            <a href="#"><i class="fa-solid fa-star-of-david"></i></a>
+                            <a href="#"><i class="fa-solid fa-star-of-david"></i></a>
+                            <a href="#"><i class="fa-solid fa-star-of-david"></i></a>
+                        </p>
+                        <form action="" class="row gy-4">
+                            <div class="col-12 form-group">
+                                <textarea rows="4" class="form-control" placeholder="Write a Message"
+                                    required></textarea>
+                                <i class="fa-solid fa-pencil"></i>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="Your Email" required>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="col-12 form-group form-check d-flex align-items-center">
+                                <input type="checkbox" class="form-check-input" id="save" required>
+                                <label for="save" class="form-check-label">Save my name, email, and website in
+                                    this browser for the next time I comment.</label>
+                            </div>
+
+                            <button class="main-btn">Post Review</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--product end -->
+
+    <!-- Similar Products start -->
+    <div class="similar-product padding-py-70 pt-0">
+        <div class="container th-container2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-area" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
+                        <div class="section-subtitle ">Similar Products</div>
+                        <h2 class="section-title ">Recently Viewed Items</h2>
+                    </div>
+                    <div class="swiper similar-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_1.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">sale</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">beach casual-shoe</a></h3>
+                                        <span class="price">$35.00</span>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_2.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">sale</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">Beach football</a></h3>
+                                        <span class="price">$45.00</span><del class="ms-2">$60.00</del>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_3.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">new</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">Hamok</a></h3>
+                                        <span class="price">$20.00</span>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_4.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">sale</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">Beach Hat</a></h3>
+                                        <span class="price">$40.00</span>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_5.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">new</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">Sony Black Headphone</a></h3>
+                                        <span class="price">$65.00</span>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_6.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">sale</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">Hoodie With Zipper</a></h3>
+                                        <span class="price">$35.00</span>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_7.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">new</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">Trendy Sunglass</a></h3>
+                                        <span class="price">$25.00</span>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./assets/img/shope/product_1_1.png" alt="img" class="img-fluid">
+                                        <div class="shop_action">
+                                            <a href="#" class="icon" data-bs-toggle="modal"
+                                                data-bs-target="#modal_product"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="cart.html" class="icon"><i class="fa-solid fa-cart-plus"></i></a>
+                                            <a href="wishlist.html" class="icon"><i class="fa-solid fa-heart"></i></a>
+                                        </div>
+                                        <span class="product-tag">sale</span>
+                                    </div>
+                                    <div class="shop_content">
+                                        <h3 class="shop-title"><a href="#">V-Neck T-Shirt</a></h3>
+                                        <span class="price">$35.00</span>
+                                        <div class="product_ratting">
+                                            <span class="count_review">(5.00 Review)</span>
+                                            <span class="count_ratting">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Similar Products end -->
+    <!-- footer start -->
+    <footer class="footer padding-py-70">
+        <div class="container th-container2">
+            <div class="footer_top">
+                <div class="row justify-content-between align-items-center border_bottom " data-sal-delay="100"
+                    data-sal="slide-up" data-sal-duration="800">
+                    <div class="col-lg-5">
+                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">get updated the
+                            latest newsletter</h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <form action="" class="d-flex  newletter_form">
+                            <input type="email" class="form-control  me-4" placeholder="Enter Email">
+                            <div class="main-btn d-flex align-items-center justify-content-center">
+                                <a href="#">subscribe now <i class="fa-brands fa-telegram"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xl-3" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <div class="about_logo">
+                            <a href="#">
+                                <img src="./assets/img/logo-white.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual capital model.
+                            Appropriately create interactive infrastructures</p>
+                        <div class="about-social d-flex align-items-center gap-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <ul class="widget_menu">
+                            <li class="widget_link">
+                                <a href="#">home</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">about us</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">our service</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">terms of service</a>
+                            </li>
+                            <li class="widget_link">
+                                <a href="#">tour booking now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Get In Touch</h3>
+                        <ul class="widget_contact">
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">+01 234 567 890</a>
+                                    <a href="#" class="d-block">+09 876 543 210</a>
+                                </div>
+                            </li>
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">mailinfo00@tourm.com</a>
+                                    <a href="#" class="d-block">support24@tourm.com</a>
+                                </div>
+                            </li>
+                            <li class="info_box d-flex align-items-center ">
+                                <div class="about-social">
+                                    <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                                </div>
+                                <div class="details ps-3">
+                                    <a href="#" class="d-block">
+                                        789 Inner Lane, Holy park, California, USA</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto" data-sal-delay="500" data-sal="slide-up" data-sal-duration="800">
+                    <div class="widget">
+                        <h3 class="widget_title">Instagram Post</h3>
+                        <div class="insta-gallery ">
+                            <a href="./assets/img/gallery_1_1.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_1.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_2.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_2.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_3.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_3.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_4.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_4.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_5.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_5.jpg" alt="img">
+                            </a>
+                            <a href="./assets/img/gallery_1_6.jpg" data-fancybox="gallery" class="gallery-thumb">
+                                <img src="./assets/img/gallery_1_6.jpg" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container th-container2">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-none d-md-flex align-items-center justify-content-end">
+                        <span class="me-4">We Accept</span>
+                        <img src="./assets/img/cards.png" alt="card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- modal product start -->
+    <div class="modal fade modal_product" id="modal_product" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content modal_box">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body p-0 modal_box_body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="modal_img">
+                                <img src="./assets/img/shope/product_1_5.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                            <div class="modal_content ps-0 ps-lg-4">
+                                <p class="product_price">$120.85 <del>$150.99</del></p>
+                                <h2 class="product_title">Bluetooth Headphone</h2>
+                                <div class="product_ratting">
+                                    <span class="count_ratting">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <a href="#" class="customer_review">(4 customer reviews)</a>
+                                </div>
+                                <p class="product_text">Bluetooth headphones are a popular choice for many people due to
+                                    their
+                                    convenience and wireless capabilities. They allow users to listen to music,
+                                    podcasts, or
+                                    make calls without being tethered to their device</p>
+                                <p class="info_text"><strong class="me-3">Availability:</strong><span class="stock"><i
+                                            class="fa-solid fa-square-check ms-1 me-2"></i>In Stock</span></p>
+                                <div class="action">
+                                    <div class="quantity">
+                                        <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                                        <input class="counter" type='text'>
+                                        <button class="increment"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <a href="cart.html" class="main-btn">Add to Cart</a>
+                                    <a href="wishlist.html" class="wishlist_btn"><i class="fa-solid fa-heart"></i></a>
+                                </div>
+                                <p class="info_text mb-2"><strong class="me-3">SKU:</strong><span
+                                        class="stock">BH-1001-BT</span></p>
+                                <p class="info_text mb-2"><strong class="me-3">Category:</strong><span
+                                        class="stock">sports, gaming, music listening</span></p>
+                                <p class="info_text mb-2"><strong class="me-3">Tags:</strong><span
+                                        class="stock">Wireless, Sports</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal product end -->
+    <!-- jquery js -->
+    <script src="./vendor/js/jquery-3.7.1.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="./vendor/js/bootstrap.bundle.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- sal js -->
+    <script src="https://assets.codepen.io/9487/sal.js"></script>
+    <!-- Swiper JS -->
+    <script src="./vendor/js/swiper-bundle.min.js"></script>
+    <!-- coustom js -->
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        //animation
+        sal({
+            'threshold': 0.01,
+            once: false
+        });
+
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+        Fancybox.bind('[data-fancybox="gallery1"]', {
+            Thumbs: false,
+            Toolbar: false
+        });
+    </script>
+
+</body>
+
+</html>

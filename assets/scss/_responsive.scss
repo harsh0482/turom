@@ -415,6 +415,23 @@
             padding: 22px 25px 22px 35px;
         }
     }
+
+    // shope page
+    .de_list {
+        .col-sm-6 {
+            .shop_card {
+                .product-tag {
+                    display: none;
+                }
+
+                .shop_content {
+                    .product_ratting .count_review {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width :991px) {
@@ -502,7 +519,7 @@
     }
 
     //modal
-    .modal {
+    .modal.video_modal {
         .modal-content {
             button {
                 position: absolute;
@@ -514,6 +531,26 @@
             .modal-body {
                 iframe {
                     min-height: 350px;
+                }
+            }
+        }
+    }
+
+    // shope page
+    .de_list {
+        .col-sm-6 {
+            .shop_card {
+                .shop_img .shop_action .icon {
+                    font-size: 14px;
+                    width: 28px;
+                    height: 28px;
+                    margin: 0px 2px !important;
+                }
+
+                .shop_content {
+                    .product_ratting .count_review {
+                        display: none;
+                    }
                 }
             }
         }
@@ -682,6 +719,54 @@
             margin-bottom: 30px;
         }
     }
+
+    //shop page
+    .de_list {
+        .col-sm-6 {
+            width: 100%;
+        }
+    }
+
+    .shop {
+        .shop_card {
+            .shop_content {
+                .shop-title {
+                    font-size: 16px;
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    //shop details
+    .product_tab .nav-tabs .nav-link {
+        font-size: 18px;
+        margin-right: 22px;
+    }
+    .tab-content {
+        .reviews {
+            .reviews_commets {
+                .comment-content {
+                    .name{
+                        margin-bottom: 5px !important;
+                    }
+                    .comment-wrapp {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 5px;
+                        margin-bottom: 5px;
+                    }
+
+                    .star_ratting {
+                        position: relative !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width :575px) {
@@ -838,7 +923,7 @@
     }
 
     //modal
-    .modal {
+    .modal.video_modal {
         .modal-content {
             button {
                 position: absolute;
