@@ -50,7 +50,7 @@ if ($(window).width() < 1200) {
       // $(this).toggleClass("active");
     }
   });
-  $(".child_dropdown_list li > a" ).on( "click", function() {      
+  $(".child_dropdown_menu > a" ).on( "click", function() {      
     $(this).parents('.dropdown_list').find(".child_dropdown_list").slideUp('');         
     if($(this).next(".child_dropdown_list").is(':hidden')){
       $(this).next(".child_dropdown_list").slideToggle('');  
@@ -157,20 +157,19 @@ $('.counter-number').each(function () {
   });
 });
 
-// quantity countr
-let value = 1
-$(".counter").val(value);
-$('.increment').on("click", function() {
-  value = parseInt(value+1);
-  $(".counter").val(value);
+//*** Quantity Counter - START ***//
+$('.counter').val(parseInt($('.counter').val()))
+$(document).on('click','.increment',function(){
+  $(this).siblings('.counter').val(parseInt($(this).siblings('.counter').val()) + 1 );
 });
-$('.decrement').on("click", function(){
-  if(value > 1){
-    value = parseInt(value-1);
-    $(".counter").val(value);
-  }else{
-    value = 1;
-    $(".counter").val(value);
+$(document).on('click','.decrement',function(){
+  $(this).siblings('.counter').val(parseInt($(this).siblings('.counter').val()) - 1 );
+  if ($(this).siblings('.counter').val() == 0) {
+    $(this).siblings('.counter').val(1);
   }
 });
 
+//remover cart tr
+$('.remove_btn').click(function(){
+  $(this).parents('tr').remove();
+});

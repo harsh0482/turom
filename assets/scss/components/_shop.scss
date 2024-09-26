@@ -18,7 +18,7 @@
     }
 }
 
-.shop,.similar-product {
+.shop {
     .shop_card {
         background: $white;
         padding: 20px;
@@ -251,32 +251,6 @@
                     margin: 30px 0px;
                     flex-wrap: wrap;
 
-                    .quantity {
-                        display: flex;
-                        gap: 10px;
-
-                        button {
-                            display: inline-block;
-                            display: flex;
-                            align-items: center;
-                            cursor: pointer;
-                            border: none;
-                            background-color: transparent;
-                            outline: none;
-                            padding: 0;
-                        }
-
-                        input {
-                            width: 100%;
-                            max-width: 65px;
-                            display: inline-block;
-                            text-align: center;
-                            padding: 7px 0px;
-                            font-size: 16px;
-                            font-weight: 500;
-                        }
-                    }
-
                     .main-btn {
                         padding: 17px 44px;
                         background-color: $sky;
@@ -308,19 +282,23 @@
             }
         }
     }
+
     //shop details
-    .reply_form{
+    .reply_form {
         margin-top: 20px;
-        h3{
+
+        h3 {
             color: $dark-blue;
-            margin-bottom: 7px !important ;
+            margin-bottom: 7px !important;
         }
-        p{
-            a{
+
+        p {
+            a {
                 color: #FF9C00;
             }
         }
-        .main-btn{
+
+        .main-btn {
             margin-top: 20px;
         }
     }
@@ -383,10 +361,11 @@
 
             .comment-content {
                 .comment-wrapp {
-                    span:not(:last-child):after{
+                    span:not(:last-child):after {
                         width: 0;
                         height: 0;
                     }
+
                     align-items: center;
                     display: flex;
 
@@ -402,5 +381,16 @@
                 }
             }
         }
+    }
+}
+
+.similar-product {
+    .shop_card {
+        box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .has-shadow {
+        padding: 12px;
+        margin: -25px -12px
     }
 }

@@ -209,7 +209,7 @@ h6 {
 //background_wrapper
 
 .background_wrapper {
-    background-image: url("../img/breadcumb-bg.jpg");
+    background-image: url("../assets/img/breadcumb-bg.jpg");
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,7 +236,7 @@ h6 {
 
             &:first-child::after {
                 content: "";
-                background-image: url("../img/arrow-right\ \(1\).svg");
+                background-image: url("../assets/img/arrow-right.svg");
                 background-size: 100% 100%;
                 top: 3px;
                 width: 18px;

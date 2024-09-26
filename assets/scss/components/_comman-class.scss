@@ -924,3 +924,28 @@
          }
      }
  }
+//  quantity product
+ .quantity {
+    display: flex;
+    gap: 10px;
+
+    button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        padding: 0;
+    }
+
+    input {
+        width: 100%;
+        max-width: 65px;
+        display: inline-block;
+        text-align: center;
+        padding: 7px 0px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

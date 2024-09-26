@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Checkout</title>
     <!-- bootstrap  -->
     <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
     <!-- fancybox -->
@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://assets.codepen.io/9487/sal.css">
     <!-- fontawsome -->
     <link rel="stylesheet" href="./vendor/css/fontawsome-all.min.css">
-    <!-- nice select -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" />
     <!-- coustom css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -185,9 +183,10 @@
                         </div>
                         <div class="mobile-menu">
                             <ul class="d-flex">
-                                <li class="menu_item  position-relative">
+                                <li class="menu_item  dropdown_menu position-relative">
                                     <a href="index.html">home</a>
-                                    <!-- <ul class="dropdown_list" dropdown_menu>
+                                    <!-- <ul class="dropdown_list" >
+                                        
                                         <li class="dropdown_item"><a href="#">Home Travel</a></li>
                                         <li class="dropdown_item"><a href="#">Home Tour</a></li>
                                         <li class="dropdown_item"><a href="#">Home Agency</a></li>
@@ -223,7 +222,17 @@
                                 <li class="menu_item dropdown_menu position-relative">
                                     <a href="#">pages <i class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown_list">
-                                        <li class="dropdown_item"><a href="#">Shop</a></li>
+                                        <li class="dropdown_item child_dropdown_menu position-relative">
+                                            <a href="#">Shop<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="child_dropdown_list">
+                                                <li class="dropdown_item"><a href="shop.html">shop</a></li>
+                                                <li class="dropdown_item"><a href="shop_details.html">shop details</a>
+                                                </li>
+                                                <li class="dropdown_item"><a href="cart.html">cart page</a></li>
+                                                <li class="dropdown_item"><a href="checkout.html">checkout</a></li>
+                                                <li class="dropdown_item"><a href="wishlist.html">wishlist</a></li>
+                                            </ul>
+                                        </li>
                                         <li class="dropdown_item"><a href="gallery.html">Gallery</a></li>
                                         <li class="dropdown_item"><a href="our_tour.html">Our Tour</a></li>
                                         <li class="dropdown_item"><a href="tour_details.html">Tour Details</a></li>
@@ -251,129 +260,179 @@
             </div>
         </div>
     </header>
+
     <!-- this is box shodow full screen -->
     <div class="wapper"></div>
+
     <!-- header end -->
 
     <div class="background_wrapper">
         <div class="container">
-            <h1 class="breadcumb-title">Contact Us</h1>
+            <h1 class="breadcumb-title">Checkout</h1>
             <ul class="breadcumb-menu">
                 <li><a href="index.html">home</a></li>
-                <li class="ps-2">Contact Us</li>
+                <li class="ps-2">Checkout</li>
             </ul>
         </div>
     </div>
 
-    <!-- Our Contact start -->
-    <section class="our-contact  padding-py-70">
-        <div class="container  th-container2">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-area" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-                        <div class="section-subtitle ">Get In Touch</div>
-                        <h2 class="section-title ">Our Contact Information</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                    <div class="about-contact d-flex align-items-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="content">
-                            <h6>Our Address</h6>
-                            <p>2690 Hiltona Street Victoria</p>
-                            <p>Road, New York, Canada</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 mt-4 mt-lg-0" data-sal-delay="300" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="about-contact d-flex align-items-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="content">
-                            <h6>Phone Number</h6>
-                            <p>+01 234 567 890</p>
-                            <p>+09 876 543 210</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 mt-4 mt-xl-0" data-sal-delay="400" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="about-contact d-flex align-items-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="content">
-                            <h6>Email Address</h6>
-                            <p>mailinfo00@tourm.com</p>
-                            <p>support24@tourm.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our Contact end -->
-
-    <!-- form_contain start -->
-    <section class="form_contain overflow-hidden">
+    <div class="cart padding-py-70">
         <div class="container th-container2">
             <div class="row">
-                <div class="col-lg-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="800">
-                    <form action="" class="contact-form">
-                        <h3 class="text-capitalize">Book a tour</h3>
-                        <div class="form-group">
-                            <input type="text" placeholder="First Name" class="form-control">
-                            <img src="./assets/img/user.svg" alt="user">
-                        </div>
-                        <div class="form-group mt-4">
-                            <input type="text" placeholder="Your mail" class="form-control">
-                            <img src="./assets/img/mail.svg" alt="mail">
-                        </div>
-                        <div class="mt-4">
-                            <select>
-                                <option value="Select Tour Type" selected="selected" disabled="disabled">Select Tour
-                                    Type</option>
-                                <option value="Africa Adventure">Africa Adventure</option>
-                                <option value="Africa Wild">Africa Wild</option>
-                                <option value="Asia">Asia</option>
-                                <option value="Scandinavia">Scandinavia</option>
-                                <option value="Western Europe">Western Europe</option>
-                            </select>
-                        </div>
-                        <div class="form-group mt-4">
-                            <textarea name="" id="" class="form-control" placeholder="Your Message" rows="3"></textarea>
-                            <img src="./assets/img/chat.svg" alt="chat">
-                        </div>
-                        <a href="#" class="main-btn">send message <img src="./assets/img/plane.svg" alt=""></a>
-                    </form>
+                <div class="col-12">
+                    <div class="woocommerce_message">
+                        <i class="fa-solid fa-square-check me-3"></i>Shipping costs updated.
+                    </div>
+                    <div class="table_responsive">
+                        <table class="table cart_table">
+                            <thead>
+                                <tr>
+                                    <th scope="col text-center">Image</th>
+                                    <th scope="col text-center">Product Name</th>
+                                    <th scope="col text-center">Price</th>
+                                    <th scope="col text-center">Quantity</th>
+                                    <th scope="col text-center">Total</th>
+                                    <th scope="col text-center">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="card_item">
+                                    <td>
+                                        <div class="card_img">
+                                            <img src="./assets/img/shope/product_1_1.png" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>Beach casual-shoe</td>
+                                    <td>$18</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                                            <input class="counter" type='text' value="1">
+                                            <button class="increment"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>$18</td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="remove_btn">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="card_item">
+                                    <td>
+                                        <div class="card_img">
+                                            <img src="./assets/img/shope/product_1_2.png" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>Beach football</td>
+                                    <td>$18</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                                            <input class="counter" type='text' value="1">
+                                            <button class="increment"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>$18</td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="remove_btn">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="card_item">
+                                    <td>
+                                        <div class="card_img">
+                                            <img src="./assets/img/shope/product_1_3.png" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>Hamok</td>
+                                    <td>$18</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                                            <input class="counter" type='text' value="1">
+                                            <button class="increment"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>$18</td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="remove_btn">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="bottom_action">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="coupon_code  mb-4 mb-lg-0">
+                                                    <input type="text" placeholder="Coupon Code.." class="form-control"
+                                                        required>
+                                                    <button class="main-btn">Apply coupon</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 text-start text-lg-end">
+                                                <a href="#" class="main-btn me-3">update card</a>
+                                                <a href="shop.html" class="main-btn">Continue Shopping
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-center order-lg-last order-first"
-                    data-sal-delay="100" data-sal="slide-left" data-sal-duration="800">
-                    <div class="video-box">
-                        <div class="paly-btn" data-bs-toggle="modal" data-bs-target="#video_modal">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+            </div>
+            <div class="row justify-content-md-end">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <h2 class="summery_title">Cart Totals</h2>
+                    <table class="cart_totals">
+                        <tbody>
+                            <tr>
+                                <td>Cart Subtotal</td>
+                                <td><span class="amount"><strong>$47</strong></span></td>
+                            </tr>
+                            <tr>
+                                <td>Shipping and Handling</td>
+                                <td>
+                                    <div class="woocommerce-shipping-methods ">
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="radio" name="shipping_method"
+                                                id="free_shipping">
+                                            <label class="form-check-label" for="free_shipping">
+                                                Free shipping
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="shipping_method"
+                                                id="flat_rate" checked >
+                                            <label class="form-check-label" for="flat_rate">
+                                                Flat rate
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p>Shipping options will be updated during checkout.</p>
+                                    <a href="javascript:void(0)" class="change_btn">Change address</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="total_order">
+                                <td>Order Total</td>
+                                <td><span class="amount"><strong>$47</strong></span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="checkout_process">
+                        <a href="#" class="main-btn">Proceed to checkout</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- form_contain end -->
-
-    <!-- map start -->
-    <div class="map_section position-relative">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29749.225124029366!2d72.86179986239642!3d21.245598798571976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f4fb5c0b087%3A0xb7aabd8a90da0679!2sMota%20Varachha%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1725949081199!5m2!1sen!2sin"
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <!-- map end -->
+
     <!-- footer start -->
     <footer class="footer padding-py-70">
         <div class="container th-container2">
@@ -381,8 +440,7 @@
                 <div class="row justify-content-between align-items-center border_bottom " data-sal-delay="100"
                     data-sal="slide-up" data-sal-duration="800">
                     <div class="col-lg-5">
-                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">
-                            get updated the
+                        <h2 class="text-white text-capitalize text-center text-lg-start mb-4 mb-lg-0">get updated the
                             latest newsletter</h2>
                     </div>
                     <div class="col-lg-7">
@@ -403,8 +461,7 @@
                                 <img src="./assets/img/logo-white.svg" alt="">
                             </a>
                         </div>
-                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual
-                            capital model.
+                        <p class="about_text">Rapidiously myocardinate cross-platform intellectual capital model.
                             Appropriately create interactive infrastructures</p>
                         <div class="about-social d-flex align-items-center gap-3">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -503,8 +560,7 @@
         <div class="container th-container2">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All
-                        Rights Reserved.</p>
+                    <p class="text-center text-md-start">Copyright 2024 <a href="#">Tourm</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="d-none d-md-flex align-items-center justify-content-end">
@@ -518,19 +574,6 @@
     <!-- footer end -->
 
 
-    <!-- video Modal start-->
-    <div class="modal fade video_modal" id="video_modal">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                <div class="modal-body">
-                    <iframe src="https://www.youtube.com/embed/ojp1IuMMZpw?si=FPawenpLbIfed94D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- video Modal end-->
-
     <!-- jquery js -->
     <script src="./vendor/js/jquery-3.7.1.js"></script>
     <!-- bootstrap cdn -->
@@ -539,8 +582,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- sal js -->
     <script src="https://assets.codepen.io/9487/sal.js"></script>
-    <!-- nice-select -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
     <!-- coustom js -->
     <script src="./assets/js/main.js"></script>
     <script>
@@ -557,10 +598,8 @@
             Thumbs: false,
             Toolbar: false
         });
-        $(document).ready(function () {
-            $('select').niceSelect();
-        });
     </script>
+
 </body>
 
 </html>
