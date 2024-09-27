@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Wishlist</title>
     <!-- bootstrap  -->
     <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
     <!-- fancybox -->
@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="https://assets.codepen.io/9487/sal.css">
     <!-- fontawsome -->
     <link rel="stylesheet" href="./vendor/css/fontawsome-all.min.css">
-    <!-- nice select -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" />
-
     <!-- coustom css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -271,265 +268,97 @@
 
     <div class="background_wrapper">
         <div class="container">
-            <h1 class="breadcumb-title">Checkout</h1>
+            <h1 class="breadcumb-title">Wishlist</h1>
             <ul class="breadcumb-menu">
                 <li><a href="index.html">home</a></li>
-                <li class="ps-2">Checkout</li>
+                <li class="ps-2">Wishlist</li>
             </ul>
         </div>
     </div>
 
-    <div class="checkout padding-py-70">
+    <div class="wishlist cart padding-py-70">
         <div class="container th-container2">
             <div class="row">
                 <div class="col-12">
-                    <div class="woocommerce_message">
-                        <i class="fa-solid fa-circle-exclamation me-3"></i>Returning customer?<a href="#">Click here to
-                            login</a>
-                    </div>
-
-                    <div class="returning_customer">
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="user_name" class="mb-2">Username or email *</label>
-                                <input type="text" class="form-control" placeholder="Username or email" id="user_name"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="mb-2">Password *</label>
-                                <input type="text" class="form-control" placeholder="Password" id="password" required>
-                            </div>
-                            <div class="form-group form-check ">
-                                <input type="checkbox" class="form-check-input me-3" id="save" required>
-                                <label for="save" class="form-check-label">Remember Me</label>
-                            </div>
-                            <button class="main-btn">login</button>
-                            <a href="javascript:void(0)" class="link_form">Lost your password?</a>
-                        </form>
-                    </div>
-                    <div class="woocommerce_message">
-                        <i class="fa-solid fa-circle-exclamation me-3"></i>Have a coupon?<a href="#">Click here to enter
-                            your code</a>
-                    </div>
-                    <div class="have_coupon">
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="coupon_code" class="mb-2">Coupon code</label>
-                                <input type="text" class="form-control" placeholder="Write your coupon code"
-                                    id="coupon_code" required>
-                            </div>
-                            <button class="main-btn">Apply coupon</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="row billing_details">
-                <div class="col-lg-6">
-                    <h4 class="title_billing">Billing Details</h4>
-                    <div class="row">
-                        <div class="col-12 form-group">
-                            <select class="form-control">
-                                <option value="uk" selected="selected">United Kingdom (UK)</option>
-                                <option value="us">United State (US)</option>
-                                <option value="gq">Equatorial Guinea (GQ)</option>
-                                <option value="au">Australia (AU)</option>
-                                <option value="de">Germany (DE)</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Your Company Name">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Street Address">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control"
-                                placeholder="Apartment, suite, unit etc. (optional)">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Town / City">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Country">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Postcode / Zip">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Email Address">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Phone number">
-                        </div>
-                        <div class="col-12 form-group ">
-                            <div class="form-check ">
-                                <input type="checkbox" class="form-check-input me-3" id="create" required>
-                                <label for="create" class="form-check-label">Remember Me</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="form-group ">
-                        <div class="form-check ship_address_btn">
-                            <input type="checkbox" class="form-check-input me-3 ship" id="ship" checked>
-                            <label for="ship" class="form-check-label">Ship to a different address?</label>
-                        </div>
-                    </div>
-                    <div class="row ship_form">
-                        <div class="col-12 form-group">
-                            <select class="form-control">
-                                <option value="uk" selected="selected">United Kingdom (UK)</option>
-                                <option value="us">United State (US)</option>
-                                <option value="gq">Equatorial Guinea (GQ)</option>
-                                <option value="au">Australia (AU)</option>
-                                <option value="de">Germany (DE)</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Your Company Name">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Street Address">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control"
-                                placeholder="Apartment, suite, unit etc. (optional)">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Town / City">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Country">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Postcode / Zip">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Email Address">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Phone number">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" class="form-control"
-                            placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                    <div class="table_responsive">
+                        <table class="table cart_table">
+                            <thead>
+                                <tr>
+                                    <th scope="col text-center">Image</th>
+                                    <th scope="col text-center">Product Name</th>
+                                    <th scope="col text-center">Unit Price</th>
+                                    <th scope="col text-center">Date Added</th>
+                                    <th scope="col text-center">Stock Status</th>
+                                    <th scope="col text-center">Add to cart</th>
+                                    <th scope="col text-center">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="card_item">
+                                    <td>
+                                        <div class="card_img">
+                                            <img src="./assets/img/shope/product_1_1.png" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>Beach casual-shoe</td>
+                                    <td>$18</td>
+                                    <td>November 21, 2024</td>
+                                    <td><i class="fa-solid fa-check me-2"></i>In stock</td>
+                                    <td>
+                                        <a href="cart.html" class="main-btn"><i class="fa-solid fa-cart-plus me-2"></i>
+                                            Add to Cart</a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="remove_btn">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="card_item">
+                                    <td>
+                                        <div class="card_img">
+                                            <img src="./assets/img/shope/product_1_2.png" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>Beach football</td>
+                                    <td>$18</td>
+                                    <td> November 21, 2024</td>
+                                    <td><i class="fa-solid fa-check me-2"></i>In stock</td>
+                                    <td>
+                                        <a href="cart.html" class="main-btn"><i class="fa-solid fa-cart-plus me-2"></i>
+                                            Add to Cart</a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="remove_btn">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="card_item">
+                                    <td>
+                                        <div class="card_img">
+                                            <img src="./assets/img/shope/product_1_3.png" alt="img" class="img-fluid">
+                                        </div>
+                                    </td>
+                                    <td>Hamok</td>
+                                    <td>$18</td>
+                                    <td>November 21, 2024</td>
+                                    <td><i class="fa-solid fa-check me-2"></i>In stock</td>
+                                    <td>
+                                        <a href="cart.html" class="main-btn"><i class="fa-solid fa-cart-plus me-2"></i>
+                                            Add to Cart</a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="remove_btn">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <h4 class="mt-4 pt-lg-2 title_billing">Your Order</h4>
-            <div class="table_responsive mb-0">
-                <table class="table checkout_table cart_table">
-                    <thead>
-                        <tr>
-                            <th scope="col text-center">Image</th>
-                            <th scope="col text-center">Product Name</th>
-                            <th scope="col text-center">Price</th>
-                            <th scope="col text-center">Quantity</th>
-                            <th scope="col text-center">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="card_item">
-                            <td>
-                                <div class="card_img">
-                                    <img src="./assets/img/shope/product_1_1.png" alt="img" class="img-fluid">
-                                </div>
-                            </td>
-                            <td>Beach casual-shoe</td>
-                            <td>$18</td>
-                            <td><strong class="dark_blue">01</strong></td>
-                            <td>$18</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>Subtotal</th>
-                            <td colspan="4">$281.05 </td>
-                        </tr>
-                        <tr>
-                            <th>Shipping</th>
-                            <td colspan="4">Enter your address to view shipping options.</td>
-                        </tr>
-                        <tr>
-                            <th>Total</th>
-                            <td colspan="4" class="total_rupees">$281.05 </td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-            <div class="accordion mt-3 mt-lg-0" id="payment">
-                <div class="accordion-item">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="payment_option" id="free_shipping"
-                            data-bs-toggle="collapse" data-bs-target="#One" checked>
-                        <label class="form-check-label" for="free_shipping">
-                            Free shipping
-                        </label>
-                    </div>
-                    <div id="One" class="accordion-collapse collapse show" data-bs-parent="#payment">
-                        <div class="accordion-body">
-                            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="form-check">
-                        <input class="form-check-input collapsed" type="radio" name="payment_option" id="cheque_payment"
-                            data-bs-toggle="collapse" data-bs-target="#two">
-                        <label class="form-check-label" for="cheque_payment">
-                            Cheque Payment
-                        </label>
-                    </div>
-                    <div id="two" class="accordion-collapse collapse" data-bs-parent="#payment">
-                        <div class="accordion-body">
-                            Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="form-check">
-                        <input class="form-check-input collapsed" type="radio" name="payment_option" id="credit_cart"
-                            data-bs-toggle="collapse" data-bs-target="#three">
-                        <label class="form-check-label" for="credit_cart">
-                            Credit Cart
-                        </label>
-                    </div>
-                    <div id="three" class="accordion-collapse collapse" data-bs-parent="#payment">
-                        <div class="accordion-body">
-                            Pay with cash upon delivery.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="form-check">
-                        <input class="form-check-input collapsed" type="radio" name="payment_option" id="Paypal"
-                            data-bs-toggle="collapse" data-bs-target="#four">
-                        <label class="form-check-label" for="Paypal">
-                            Paypal
-                        </label>
-                    </div>
-                    <div id="four" class="accordion-collapse collapse" data-bs-parent="#payment">
-                        <div class="accordion-body">
-                            Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="main-btn mt-4">Place order</button>
         </div>
     </div>
 
@@ -682,9 +511,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- sal js -->
     <script src="https://assets.codepen.io/9487/sal.js"></script>
-    <!-- nice-select -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-
     <!-- coustom js -->
     <script src="./assets/js/main.js"></script>
     <script>
@@ -700,9 +526,6 @@
         Fancybox.bind('[data-fancybox="gallery1"]', {
             Thumbs: false,
             Toolbar: false
-        });
-        $(document).ready(function () {
-            $('select').niceSelect();
         });
     </script>
 

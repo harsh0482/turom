@@ -1,3 +1,13 @@
+function toggleTheme() {
+  const body = document.querySelector('body');
+  const currentTheme = body.getAttribute('data-bs-theme');
+
+  if (currentTheme === 'light') {
+      body.setAttribute('data-bs-theme', 'dark');
+  } else {
+      body.setAttribute('data-bs-theme', 'light');
+  }
+}
 //*** Loader Show ***//
 $(window).on('load', function(){
   $('.codex-loader').fadeOut();
@@ -110,7 +120,11 @@ $(document).ready(function () {
       $('.image_box').filter('.' + filter).show(400);
     }
   });
-  
+
+  //checkout page
+  $('.ship').click(function(){
+    $('.ship_form').slideToggle();
+  });  
 });
 $(document).on("click", function (event) {
 
@@ -173,3 +187,4 @@ $(document).on('click','.decrement',function(){
 $('.remove_btn').click(function(){
   $(this).parents('tr').remove();
 });
+
