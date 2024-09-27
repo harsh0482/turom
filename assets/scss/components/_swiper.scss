@@ -136,7 +136,8 @@
             margin: 0;
             right: 5px;
             z-index: 9;
-            width: 550px;
+            width: 100%;
+            max-width: 550px;
             display: flex;
             align-items: center;
             gap: 36px;

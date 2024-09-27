@@ -770,9 +770,10 @@
 }
 
 @media screen and (max-width :575px) {
-    // .section-title {
-    //     margin-bottom: 35px;
-    // }
+    .slider .mySwiper2 .coustom_swiper_btn{
+        left: 10px !important;
+        max-width: 380px;
+    }
 
     .container {
         padding: 0px 20px;
@@ -941,7 +942,10 @@
     }
 
     @media screen and (max-width :480px) {
-
+        .slider .mySwiper2 .coustom_swiper_btn{
+            max-width: 290px;
+        }
+        
         //swiper
         .slider .mySwiper2 {
             .hero-inner {
@@ -1070,9 +1074,13 @@
         }
 
         //slider
-        .coustom_swiper_btn {
-            display: none !important;
+        .slider .mySwiper2 .coustom_swiper_btn{
+            max-width: 200px !important;
         }
+
+        // .coustom_swiper_btn {
+        //     // display: none !important;
+        // }
 
         // offer-deals
         .offer-deals {
