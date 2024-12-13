@@ -644,7 +644,7 @@
                         <h2 class="section-title ">Offer Deals & Discount</h2>
                     </div>
                     <div class="uk">
-                        <div class="uk-grid-small uk-child-width-auto" uk-grid
+                        <!-- <div class="uk-grid-small uk-child-width-auto" uk-grid
                             uk-countdown="date: 2024-11-09T17:30:00+00:00">
                             <div class="round">
                                 <div class="uk-countdown-number uk-countdown-days"></div>
@@ -666,6 +666,27 @@
                                 <div class="uk-countdown-number uk-countdown-seconds"></div>
                                 <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds
                                 </div>
+                            </div>
+                        </div> -->
+                        <div id="timer" class="timer">
+                            <div class="round">
+                                <div id="days" class="uk-countdown-number"></div>
+                                <span class="uk-countdown-label">Days</span>
+                            </div>
+                            <div class="uk-countdown-separator">:</div>
+                            <div class="round">
+                                <div id="hours" class="uk-countdown-number"></div>
+                                <span class="uk-countdown-label">Hours</span>
+                            </div>
+                            <div class="uk-countdown-separator">:</div>
+                            <div class="round">
+                                <div id="minutes" class="uk-countdown-number"></div>
+                                <span class="uk-countdown-label">Minutes</span>
+                            </div>
+                            <div class="uk-countdown-separator">:</div>
+                            <div class="round">
+                                <div id="seconds" class="uk-countdown-number"></div>
+                                <span class="uk-countdown-label">Seconds</span>
                             </div>
                         </div>
                     </div>
@@ -1666,7 +1687,7 @@
     </div>
     <!-- footer end -->
 
-    
+
     <!-- theme loader start-->
     <div class="codex-loader">
         <div>

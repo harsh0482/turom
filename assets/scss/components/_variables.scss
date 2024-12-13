@@ -19,13 +19,4 @@ $smoke-color:#f3f4f6;
 :root{
     --white:#{$white};
     --black:#{black};
-//   --#{$prefix}white-color: #{$code-color};
-
-}
-// body.dark{
-    
-// }
-[data-bs-theme="dark"]{
-    --white:#000;
-    --black:#fff;
 }

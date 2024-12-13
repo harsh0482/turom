@@ -1,13 +1,4 @@
-function toggleTheme() {
-  const body = document.querySelector('body');
-  const currentTheme = body.getAttribute('data-bs-theme');
 
-  if (currentTheme === 'light') {
-      body.setAttribute('data-bs-theme', 'dark');
-  } else {
-      body.setAttribute('data-bs-theme', 'light');
-  }
-}
 //*** Loader Show ***//
 $(window).on('load', function(){
   $('.codex-loader').fadeOut();
@@ -188,3 +179,32 @@ $('.remove_btn').click(function(){
   $(this).parents('tr').remove();
 });
 
+
+//offer counter
+function makeTimer() {
+
+		var endTime = new Date("29 April 2026 9:56:00 GMT+01:00");			
+			endTime = (Date.parse(endTime) / 1000);
+
+			var now = new Date();
+			now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+
+			var days = Math.floor(timeLeft / 86400); 
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+
+			$("#timer #days").html(days );
+			$("#timer #hours").html(hours);
+			$("#timer #minutes").html(minutes );
+			$("#timer #seconds").html(seconds );		
+
+	}
+
+	setInterval(function() { makeTimer(); }, 1000);

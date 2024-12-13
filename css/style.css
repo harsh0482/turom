@@ -5,11 +5,6 @@
   --black:black;
 }
 
-[data-bs-theme=dark] {
-  --white:#000;
-  --black:#fff;
-}
-
 * {
   margin: 0;
   padding-left: 0;
@@ -142,7 +137,7 @@ body.body_hidden {
   border-radius: 16px;
   transform: rotate(6deg);
 }
-.offer-deals .uk .uk-grid {
+.offer-deals .uk .timer {
   margin-left: 0px !important;
   display: flex;
   align-items: center;
