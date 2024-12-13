@@ -8,7 +8,7 @@
 
                         &.active {
                             background-color: $dark-blue;
-                            color: $white;
+                            color: var(--white);
                         }
                     }
                 }

@@ -129,7 +129,7 @@
                 .dropdown_menu .dropdown_list,
                 .child_dropdown_menu .child_dropdown_list {
                     position: absolute;
-                    background-color: $white;
+                    background-color: var(--white);
                     border-bottom: 3px solid $sky;
                     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
                     transform: scaleY(0);
@@ -236,7 +236,7 @@
             left: -320px;
             height: 100%;
             width: 300px;
-            background-color: $white;
+            background-color: var(--white);
             z-index: 999 !important;
             border-right: 3px solid $sky;
             transition: all 0.4s ease;
@@ -262,7 +262,7 @@
                     cursor: pointer;
 
                     i {
-                        color: $white;
+                        color: var(--white);
                         font-size: 20px;
                     }
                 }

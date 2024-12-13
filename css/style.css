@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+:root {
+  --white:#fff;
+  --black:black;
+}
+
+[data-bs-theme=dark] {
+  --white:#000;
+  --black:#fff;
+}
+
 * {
   margin: 0;
   padding-left: 0;
@@ -52,10 +62,10 @@ body.body_hidden {
   transform: rotate(-90deg);
 }
 .our-featured .destination-area .destination-item .destination-content .box-title {
-  color: #fff;
+  color: var(--white);
 }
 .our-featured .destination-area .destination-item .destination-content .dec-subtitle {
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
   font-family: "Inter", sans-serif;
 }
@@ -237,7 +247,7 @@ body.body_hidden {
   justify-content: end;
 }
 .popular-destination .tour-card .tour-card-content .box-title a {
-  color: #fff;
+  color: var(--white);
   font-size: 20px;
 }
 .popular-destination .tour-card .tour-card-content .box-title a:hover {
@@ -252,17 +262,17 @@ body.body_hidden {
   color: orange;
 }
 .popular-destination .tour-card .tour-card-content .tour_raiting .count {
-  color: #fff;
+  color: var(--white);
 }
 .popular-destination .tour-card .tour-card-content .tour-card_price {
-  color: #fff;
+  color: var(--white);
 }
 .popular-destination .tour-card .tour-card-content .tour-card_price .currency {
   font-size: 25px;
   font-weight: 600;
 }
 .popular-destination .tour-card .tour-card-content .tour_action span {
-  color: #fff;
+  color: var(--white);
 }
 .popular-destination .tour-card .tour-card-content .tour_action span i {
   margin-right: 9px;
@@ -368,14 +378,14 @@ body.body_hidden {
   font-size: 48px !important;
   line-height: 48px;
   text-transform: capitalize;
-  color: #000;
+  color: var(--black);
   margin-bottom: 7px;
 }
 .counter-sec .row .counter-card-wrap .counter-card .media-body .counter-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  color: #000;
+  color: var(--black);
 }
 
 .best-memorable {
@@ -408,7 +418,7 @@ body.body_hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--white);
   font-size: 40px;
   z-index: 2;
   transform: scale(0);
@@ -571,7 +581,7 @@ body.body_hidden {
   font-weight: 500;
 }
 .services .services_card .services_content .main-btn:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 .destination_details h3 {
@@ -591,7 +601,7 @@ body.body_hidden {
   left: -1px;
   height: 40px;
   width: 40px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 .destination_details .blockqutoes::after {
   content: "\f10d";
@@ -611,7 +621,7 @@ body.body_hidden {
   padding: 1px 40px 1px 20px;
   font-size: 20px;
   font-family: "Inter", sans-serif;
-  color: #fff;
+  color: var(--white);
   -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 100%, 0% 100%);
 }
@@ -627,7 +637,7 @@ body.body_hidden {
 }
 .amazing_travel .amazing_tab .nav .nav-link.active {
   background-color: #113d48 !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .amazing_travel .amazing_tab .nav .nav-link.active img {
   filter: brightness(0) invert(1) !important;
@@ -640,7 +650,7 @@ body.body_hidden {
   gap: 6px;
   font-size: 17px;
   color: #1ca8cb;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 48px;
   padding: 8px 30px;
   font-weight: 400;
@@ -667,7 +677,7 @@ body.body_hidden {
   transition: all 0.3s ease;
 }
 .amazing_travel .amazing_tab .nav .nav-item .nav-link:hover {
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .amazing_travel .amazing_tab .tab-content .service_card {
   border-radius: 16px;
@@ -689,23 +699,23 @@ body.body_hidden {
   height: 100%;
 }
 .affordable .price_card:hover, .affordable .price_card.active {
-  color: #fff;
+  color: var(--white);
   background-color: #113d48;
   transform: translateY(2px);
   transition: all 0.3s linear;
 }
 .affordable .price_card:hover .span, .affordable .price_card.active .span {
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .affordable .price_card:hover .price_text, .affordable .price_card.active .price_text {
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .affordable .price_card:hover .checklist li, .affordable .price_card.active .checklist li {
   filter: brightness(0) invert(1) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .affordable .price_card:hover .main-btn, .affordable .price_card.active .main-btn {
-  border-color: #fff !important;
+  border-color: var(--white) !important;
 }
 .affordable .price_card:hover .price_icon, .affordable .price_card.active .price_icon {
   background-color: #e9f6f9 !important;
@@ -721,7 +731,7 @@ body.body_hidden {
   align-items: center;
   gap: 20px;
   padding: 40px 0px 40px 40px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--white);
   margin-bottom: 20px;
   position: relative;
 }
@@ -742,7 +752,7 @@ body.body_hidden {
   position: absolute;
   bottom: 0;
   right: -1px;
-  background-color: #fff;
+  background-color: var(--white);
   color: #113d48;
   font-size: 16px;
   font-weight: 500;
@@ -818,7 +828,7 @@ body.body_hidden {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--white);
   text-align: center;
   align-content: center;
   transition: all 0.4s linear;
@@ -830,7 +840,7 @@ body.body_hidden {
   background-color: #1ca8cb !important;
 }
 .blog_page .youtube_link .youtube_btn:hover i {
-  color: #fff;
+  color: var(--white);
 }
 .blog_page .youtube_link .youtube_btn i {
   color: #113d48;
@@ -844,7 +854,7 @@ body.body_hidden {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #fff;
+  background-color: var(--white);
   z-index: -1;
   border-radius: 50%;
   transition: all ease 0.4s;
@@ -924,12 +934,12 @@ body.body_hidden {
   transition: all 0.4s ease;
 }
 .gallery_filter .filter_menu .buttons:hover {
-  color: #fff;
+  color: var(--white);
   background-color: #1ca8cb;
   transition: all 0.4s ease;
 }
 .gallery_filter .filter_menu .buttons.active {
-  color: #fff;
+  color: var(--white);
   background-color: #1ca8cb;
 }
 .gallery_filter .image_container {
@@ -973,7 +983,7 @@ body.body_hidden {
   border: none;
   font-size: 40px;
   font-weight: 300;
-  color: #fff;
+  color: var(--white);
 }
 .gallery_filter .image_container .image_box:hover .icone-serch {
   scale: 1;
@@ -997,7 +1007,7 @@ body.body_hidden {
 }
 .guider .team_box:hover .team-des,
 .guider_details .team_box:hover .team-des {
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .guider .team_box .guid_img,
 .guider_details .team_box .guid_img {
@@ -1027,7 +1037,7 @@ body.body_hidden {
 }
 .guider .team_box .team_content .media_content,
 .guider_details .team_box .team_content .media_content {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .guider .team_box .team_content .media_content .box-title,
 .guider_details .team_box .team_content .media_content .box-title {
@@ -1299,7 +1309,7 @@ h6 {
 .background_wrapper .breadcumb-title {
   font-size: 54px;
   font-family: "Manrope", sans-serif;
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
@@ -1328,7 +1338,7 @@ h6 {
 }
 .background_wrapper .breadcumb-menu li,
 .background_wrapper .breadcumb-menu a {
-  color: #fff;
+  color: var(--white);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -1338,7 +1348,7 @@ h6 {
   header-top start
   ================*/
 .header-top a {
-  color: rgba(19, 18, 18, 0.918);
+  color: #999;
   font-family: "Inter", sans-serif;
 }
 .header-top .left-content ul li,
@@ -1373,7 +1383,7 @@ h6 {
   transform: translate(16px, 28px) !important;
 }
 .header-top .right-content .dropdown .dropdown-menu .dropdown-item:hover {
-  color: #fff;
+  color: var(--white);
   background-color: #1ca8cb;
 }
 
@@ -1400,7 +1410,7 @@ header start
   width: 100%;
   z-index: 10;
   background-image: unset;
-  background-color: #fff;
+  background-color: var(--white);
   transition: all 0.4s ease;
   animation: fadeInDown 1s ease;
 }
@@ -1425,7 +1435,7 @@ header start
 }
 .header .bar i {
   font-size: 22px;
-  color: #fff;
+  color: var(--white);
 }
 .header .menu-list a {
   font-size: 16px;
@@ -1460,7 +1470,7 @@ header end
 .main-btn {
   padding: 16px 38px;
   background-color: #113d48;
-  color: #fff;
+  color: var(--white);
   border-radius: 30px;
   display: inline-block;
   position: relative;
@@ -1485,7 +1495,7 @@ header end
   transition: all 0.3s ease;
 }
 .main-btn:hover {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -1499,8 +1509,8 @@ header end
   position: relative;
   background-color: transparent;
   border-radius: 30px;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid var(--white);
+  color: var(--white);
   overflow: hidden;
   text-transform: capitalize;
   display: inline-block;
@@ -1513,7 +1523,7 @@ header end
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 0px 30px 30px 0px;
   transition: all 0.3s ease;
   z-index: -1;
@@ -1524,7 +1534,7 @@ header end
   cursor: pointer;
 }
 .white-btn:hover {
-  color: #000;
+  color: var(--black);
 }
 
 .search-form-area {
@@ -1560,7 +1570,7 @@ header end
 }
 .search-form-area .search_btn i {
   font-size: 16px;
-  color: #fff;
+  color: var(--white);
 }
 
 .modal .modal-dialog .modal-body .nav-pills .nav-item .nav-link {
@@ -1568,7 +1578,7 @@ header end
 }
 .modal .modal-dialog .modal-body .nav-pills .nav-item .nav-link.active {
   background-color: #113d48;
-  color: #fff;
+  color: var(--white);
 }
 
 form .form-label {
@@ -1605,7 +1615,7 @@ form button {
   padding-left: 30px;
   height: 60px;
   background-color: transparent;
-  color: #fff;
+  color: var(--white);
 }
 .footer .footer_top .newletter_form .main-btn {
   min-width: 225px;
@@ -1614,7 +1624,7 @@ form button {
   padding: 0 !important;
 }
 .footer .footer_top .newletter_form .main-btn::before {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .footer .footer_top .newletter_form .main-btn:hover:before {
   width: 100%;
@@ -1622,7 +1632,7 @@ form button {
   cursor: pointer;
 }
 .footer .footer_top .newletter_form .main-btn a {
-  color: #fff;
+  color: var(--white);
 }
 .footer .footer_top .newletter_form .main-btn:hover a {
   color: #113d48;
@@ -1631,12 +1641,12 @@ form button {
   color: #1ca8cb;
 }
 .footer .footer_top .newletter_form ::-moz-placeholder {
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   font-size: 15px;
 }
 .footer .footer_top .newletter_form ::placeholder {
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   font-size: 15px;
 }
@@ -1669,7 +1679,7 @@ form button {
   animation: fadeInDown 0.3s linear;
 }
 .footer .widget .widget_title {
-  color: #fff;
+  color: var(--white);
   font-size: 25px;
   margin-bottom: 20px;
 }
@@ -1729,12 +1739,12 @@ form button {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   display: block;
-  color: #fff;
+  color: var(--white);
 }
 
 .hero-text {
   font-size: 26px;
-  color: #fff;
+  color: var(--white);
   display: block;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1747,7 +1757,7 @@ form button {
 
 .hero-dec {
   font-size: 18px;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 35px;
 }
 
@@ -1816,15 +1826,15 @@ form button {
 }
 .slider .mySwiper2 .hero-inner .content .main-btn {
   padding: 18px 35px;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 30px;
 }
 .slider .mySwiper2 .hero-inner .content .main-btn::before {
   background-color: #113d48;
 }
 .slider .mySwiper2 .hero-inner .content .main-btn:hover {
-  color: #fff;
+  color: var(--white);
 }
 .slider .mySwiper2 .swiper-slide.swiper-slide-active .hero-title {
   animation: fadeInUp 0.5s both 0.6s;
@@ -1970,18 +1980,18 @@ form button {
   border-radius: 16px;
 }
 .slider .thumbswiper .swiper-slide .hero_card .hero_details .box-title {
-  color: #fff;
+  color: var(--white);
   margin-bottom: 2px;
 }
 .slider .thumbswiper .swiper-slide .hero_card .hero_details .hero-card_price {
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
   font-weight: 400;
   font-family: "Manrope", sans-serif;
   margin-bottom: 15px;
 }
 .slider .thumbswiper .swiper-slide .hero_card .hero_details span {
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
 }
 
@@ -2143,7 +2153,7 @@ form button {
   max-width: 78px;
   min-width: 78px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2306,7 +2316,7 @@ form button {
   transition: all 0.4s ease-in-out;
 }
 .sidebar .book_now .review i:hover {
-  color: #fff;
+  color: var(--white);
   background-color: #1ca8cb;
 }
 .sidebar .book_now .review span {
@@ -2394,7 +2404,7 @@ form button {
 }
 .sidebar .popular_tags .popular_tags_btn a:hover {
   background-color: #1ca8cb;
-  color: #fff;
+  color: var(--white);
   transition: all 0.3s linear;
 }
 .sidebar .search-form-area {
@@ -2478,7 +2488,7 @@ form button {
 .single_page .page-content .page-meta .page-tag {
   background-color: #113d48;
   font-size: 18px;
-  color: #fff;
+  color: var(--white);
   border-radius: 20px;
   padding: 5px 18px;
 }
@@ -2486,7 +2496,7 @@ form button {
   background: #E9F6F9;
   border-radius: 24px;
   padding: 4px 14px;
-  color: #000;
+  color: var(--black);
   font-size: 16px;
 }
 .single_page .page-content .page-meta .ratting i {
@@ -2630,7 +2640,7 @@ form button {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  background-color: #fff;
+  background-color: var(--white);
   border: 1px solid #BCCED2;
   transition: all 0.3s linear;
 }
@@ -2710,7 +2720,7 @@ form button {
   color: #113d48;
 }
 .destination_card .destination_content .destination_bottom .main-btn:hover {
-  color: #fff;
+  color: var(--white);
   border-color: #1ca8cb;
 }
 
@@ -2894,7 +2904,7 @@ form button {
 }
 .destination_pagination li .activebtn {
   background-color: #1ca8cb;
-  color: #fff;
+  color: var(--white);
 }
 .destination_pagination li a {
   border: 1px solid #E1E4E6;
@@ -2911,7 +2921,7 @@ form button {
 }
 .destination_pagination li a:hover {
   background-color: #1ca8cb;
-  color: #fff;
+  color: var(--white);
 }
 .destination_pagination li a.next_btn {
   width: auto;
@@ -2972,7 +2982,7 @@ form button {
 }
 .living .main-btn:hover {
   border-color: #1ca8cb;
-  color: #fff;
+  color: var(--white);
 }
 
 .team_box {
@@ -2980,14 +2990,14 @@ form button {
 }
 .team_box:hover .media_content {
   background-color: #1ca8cb !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 .team_box:hover .box-title {
-  color: #fff;
+  color: var(--white);
 }
 .team_box:hover .social a {
-  color: #fff !important;
-  border-color: #fff !important;
+  color: var(--white) !important;
+  border-color: var(--white) !important;
 }
 .team_box:hover .team_img img {
   transform: scale(1.1);
@@ -2996,7 +3006,7 @@ form button {
 .team_box .team_img {
   width: 100%;
   max-width: 190px;
-  border: 3px solid #fff;
+  border: 3px solid var(--white);
   border-radius: 50%;
   margin: 0 auto;
   overflow: hidden;
@@ -3008,7 +3018,7 @@ form button {
   transition: all 0.4s linear;
 }
 .team_box .team_content {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 125px 16px 16px 16px;
   margin-top: -100px;
   border-radius: 16px;
@@ -3050,7 +3060,7 @@ form button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   z-index: 99999;
   direction: ltr;
   display: none;
@@ -3171,7 +3181,7 @@ form button {
 .sorting-filter-wrap .tab_list .btnactive {
   background-color: #1ca8cb;
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
 }
 .sorting-filter-wrap .tab_list .tab_list_btn {
   padding: 6px 7px;
@@ -3226,6 +3236,22 @@ form button {
   padding: 7px 0px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.mode {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--black);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  z-index: 55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
 
 .welcome-tourm .img-box {
@@ -3397,7 +3423,7 @@ form button {
 }
 .our-contact .about-contact:hover .icon {
   background-color: #1ca8cb;
-  color: #fff;
+  color: var(--white);
   transition: all 0.3s linear;
 }
 .our-contact .about-contact .icon {
@@ -3408,7 +3434,7 @@ form button {
   transition: all 0.3s linear;
 }
 .our-contact .about-contact .icon i {
-  color: #fff;
+  color: var(--white);
   font-size: 32px;
 }
 .our-contact .about-contact .content h6 {
@@ -3422,7 +3448,7 @@ form button {
 
 .form_contain {
   padding: 70px 0px;
-  background-image: url("../img/video_bg_1.jpg");
+  background-image: url("../assets/img/video_bg_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3512,7 +3538,7 @@ form button {
 }
 
 .shop .shop_card {
-  background: #fff;
+  background: var(--white);
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
@@ -3559,7 +3585,7 @@ form button {
   left: 10px;
   font-size: 15px;
   background-color: #1ca8cb;
-  color: #fff;
+  color: var(--white);
   padding: 0 12px;
   text-align: center;
   min-width: 60px;
@@ -3582,7 +3608,7 @@ form button {
 .shop .shop_card .shop_img .shop_action .icon {
   width: 40px;
   height: 40px;
-  background-color: #fff;
+  background-color: var(--white);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3716,7 +3742,7 @@ form button {
 .modal_product .modal_box .modal_box_body .modal_content .action .wishlist_btn {
   height: 60px;
   width: 60px;
-  color: #fff;
+  color: var(--white);
   background-color: #1ca8cb;
   font-size: 18px;
   display: flex;
@@ -3814,7 +3840,7 @@ form button {
 
 .woocommerce_message {
   background-color: #1ca8cb;
-  color: #fff;
+  color: var(--white);
   padding: 11px 30px;
   font-size: 16px;
   font-weight: 500;
@@ -4045,10 +4071,10 @@ form button {
 }
 
 .woocommerce_message a {
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   margin-left: 5px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--white);
 }
 .woocommerce_message a:hover {
   color: #113d48;
@@ -4143,7 +4169,7 @@ form button {
   border-color: #e9f6f9;
 }
 .checkout .billing_details .form-control:focus {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .checkout .billing_details .ship_address_btn {
   margin-top: 15px;
@@ -4299,7 +4325,7 @@ form button {
   .header .menu-list ul .dropdown_menu .dropdown_list,
   .header .menu-list ul .child_dropdown_menu .child_dropdown_list {
     position: absolute;
-    background-color: #fff;
+    background-color: var(--white);
     border-bottom: 3px solid #1ca8cb;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
     transform: scaleY(0);
@@ -4378,7 +4404,7 @@ form button {
     left: -320px;
     height: 100%;
     width: 300px;
-    background-color: #fff;
+    background-color: var(--white);
     z-index: 999 !important;
     border-right: 3px solid #1ca8cb;
     transition: all 0.4s ease;
@@ -4403,7 +4429,7 @@ form button {
     cursor: pointer;
   }
   .header .menu-list .side_logo .colse i {
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
   }
   .header .menu-list .mobile-menu {

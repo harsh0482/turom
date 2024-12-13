@@ -49,7 +49,7 @@
 
         &:hover .icon {
             background-color: $sky;
-            color: $white;
+            color: var(--white);
             transition: all 0.3s linear;
 
         }
@@ -62,7 +62,7 @@
             transition: all 0.3s linear;
 
             i {
-                color: $white;
+                color: var(--white);
                 font-size: 32px;
             }
         }
@@ -84,7 +84,7 @@
 //form_contain
 .form_contain {
     padding: 70px 0px;
-    background-image: url("../img/video_bg_1.jpg");
+    background-image: url("../assets/img/video_bg_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

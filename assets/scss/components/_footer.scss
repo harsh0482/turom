@@ -14,7 +14,7 @@
                 padding-left: 30px;
                 height: 60px;
                 background-color: transparent;
-                color: $white;
+                color: var(--white);
             }
 
             .main-btn {
@@ -24,7 +24,7 @@
                 padding: 0 !important;
 
                 &::before {
-                    background-color: $white;
+                    background-color: var(--white);
                 }
 
                 &:hover:before {
@@ -34,7 +34,7 @@
                 }
 
                 a {
-                    color: $white;
+                    color: var(--white);
                 }
 
                 &:hover a {
@@ -48,7 +48,7 @@
             }
 
             ::placeholder {
-                color: $white;
+                color: var(--white);
                 font-weight: 500;
                 font-size: 15px;
             }
@@ -90,7 +90,7 @@
         }
 
         .widget_title {
-            color: $white;
+            color: var(--white);
             font-size: 25px;
             margin-bottom: 20px;
         }

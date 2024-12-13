@@ -8,10 +8,24 @@ $Manrope:"Manrope", sans-serif;
 $Montez:"Montez", cursive;
 //color
 $white:#fff;
-$black:#000;
+$black:#000;    
 $dark-black:rgba(19, 18, 18, 0.918);
 $dark-blue:#113d48;
 $sky:#1ca8cb;
 $gray:#999;
 $text-color:#E9F6F9;
 $smoke-color:#f3f4f6;
+
+:root{
+    --white:#{$white};
+    --black:#{black};
+//   --#{$prefix}white-color: #{$code-color};
+
+}
+// body.dark{
+    
+// }
+[data-bs-theme="dark"]{
+    --white:#000;
+    --black:#fff;
+}

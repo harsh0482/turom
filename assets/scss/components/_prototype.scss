@@ -219,7 +219,7 @@ h6 {
     .breadcumb-title {
         font-size: 54px;
         font-family: $Manrope;
-        color: $white;
+        color: var(--white);
         font-weight: 700;
         text-transform: capitalize;
         text-align: center;
@@ -251,7 +251,7 @@ h6 {
 
         li,
         a {
-            color: $white;
+            color: var(--white);
             font-family: $inter;
             font-weight: 400;
             font-size: 20px;
